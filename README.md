@@ -1,6 +1,7 @@
 # This repository will describe my way to Coding
 
-# My goald is to learn different programming approaches end be able to understand React.js, Next.js and write a portfolio website with a modern FE-Framework. 
+# My goal 
+is to learn different programming approaches end be able to understand React.js, Next.js and write a portfolio website with a modern FE-Framework. 
 
 # To Do list: 
 React Tutorials:
