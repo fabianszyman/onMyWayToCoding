@@ -30,9 +30,9 @@ const Form = ({setInputText, inputText, todos, setToDos, setStatus}) => {
             </button>
             <div className="select">
                 <select onChange={statusHandler} name="todos" className="filter-todo">
-                <option value="all">All</option>
-                <option value="completed">Completed</option>
                 <option value="uncompleted">Uncompleted</option>
+                <option value="completed">Completed</option>
+                <option value="all">All</option>
                 </select>
             </div>
         </form>

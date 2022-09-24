@@ -8,7 +8,7 @@ function App() {
   //State stuff
   const [inputText, setInputText] = useState(""); 
   const [todos, setToDos] = useState([]);
-  const [status, setStatus] = useState("all");
+  const [status, setStatus] = useState("uncompleted");
   const [filteredToDos, setFilteredToDos] = useState([]);
 
   //RUN ONCE when the app start
