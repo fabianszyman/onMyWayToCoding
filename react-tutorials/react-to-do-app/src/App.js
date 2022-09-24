@@ -46,12 +46,11 @@ function App() {
       setToDos(todoLocal)
     }
   };
-  
+  var toToLenght = todos.length
+  console.log('to do length'+ toToLenght);
   //Save to Local
   const saveLocalToDos = () => {
-    if (todos.length > 0) { 
       localStorage.setItem('todos', JSON.stringify(todos)) 
-    }
   };
 
   return (
