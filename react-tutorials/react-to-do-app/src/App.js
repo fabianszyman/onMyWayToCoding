@@ -13,6 +13,7 @@ function App() {
   // USE EFFECT 
   useEffect(() => {
     filterHandler();
+    saveLocalToDos();
   }, [todos,status])
 
   //Functions
@@ -29,6 +30,17 @@ function App() {
         break;
     }
   }
+
+  //Save to Local
+  const saveLocalToDos = () => {
+    if(localStorage.getItem("todos") === null){
+      localStorage.setItem("todos", JSON.stringify([]));
+    }
+    else{
+      localStorage.setItem("todos", JSON.stringify(todos));
+    }
+  };
+
   return (
     <div className="App">
       <header>
