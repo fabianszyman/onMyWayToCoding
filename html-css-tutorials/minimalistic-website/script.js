@@ -7,6 +7,11 @@ burger.addEventListener('click', () => {
     } else {
         gsap.to('.links', {x: '0%'})
         gsap.to('.line', {stroke: "black"});
+        gsap.fromTo(
+            '.links a', 
+            {opacity: 0, y:0},
+            {opacity: 1, y:20, delay: 0.25, stagger: 0.25}
+        );
     }
     burger.classList.toggle("active") // evertime I click on the burger svg element it is adding a class with the name "active"
 
