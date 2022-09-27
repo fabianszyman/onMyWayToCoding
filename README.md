@@ -19,5 +19,7 @@ https://www.youtube.com/watch?v=Nl54MJDR2p8
 
 ## HTML, CSS, Javascript Tutorials:
 
-- [ ] 1.Create A Minimalist Website In 2022 | HTML CSS and Javascript Tutorial | by Dev E
+- [x] 1.Create A Minimalist Website In 2022 | HTML CSS and Javascript Tutorial | by Dev E
 https://www.youtube.com/watch?v=tzaHrMx1ncc
+Link to Github project: https://github.com/fabianszyman/onMyWayToCoding/tree/main/html-css-tutorials/minimalistic-website 
+Web App Link: TBD
