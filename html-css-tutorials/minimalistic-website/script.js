@@ -28,7 +28,7 @@ videos.forEach(video => {
         trigger: video,
         start: 'top center',
         end: 'bottom center',
-        markers: true,
+        //markers: true,
         onEnter: () => {
             gsap.to(video, {opacity: 1});
             video.play();

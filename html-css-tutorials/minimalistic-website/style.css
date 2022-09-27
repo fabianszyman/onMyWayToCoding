@@ -178,3 +178,24 @@ h3 {
     width: 100%;
     margin-top: 2rem2;
 }
+
+@media screen and (min-width: 768px) {
+    body {
+        padding: 0 10% 10% 10%;
+    }
+    .videos {
+        display: flex;
+        gap: 2rem;
+    }
+    .about {
+        display: flex;
+        gap: 5rem;
+        justify-content: space-between;
+    }
+    .about img {
+        width: 50%;
+    }
+    .about h2 {
+        text-align: start;
+    }
+}
