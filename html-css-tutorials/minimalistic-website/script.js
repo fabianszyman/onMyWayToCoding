@@ -19,3 +19,22 @@ burger.addEventListener('click', () => {
     burger.classList.toggle("active") // evertime I click on the burger svg element it is adding a class with the name "active"
 
 })
+
+const videos = gsap.utils.toArray('.video')
+gsap.set(videos, {opacity: 0});
+
+videos.forEach(video => {
+    ScrollTrigger.create({
+        trigger: video,
+        start: 'top center',
+        end: 'bottom center',
+        markers: true,
+        onEnter: () => {
+            gsap.to(video, {opacity: 1});
+            video.play();
+        },
+        onEnterBack: () => video.play(),
+        onLeave: () => video.pause(),
+        onLeaveBack: () => video.pause()
+    })
+})
