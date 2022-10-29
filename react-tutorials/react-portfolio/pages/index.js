@@ -1,6 +1,9 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import profileImage from '../public/profileImage.jpg'
+import profileImage from '../public/profileImage.jpg';
+import {MdVerified} from 'react-icons/md';
+import {AiFillPlayCircle} from 'react-icons/ai';
+import {BsThreeDots} from 'react-icons/bs'
 
 
 export default function Home() {
@@ -16,24 +19,31 @@ export default function Home() {
         <Image src={profileImage} className='w-full' layout='fill' objectFit='cover'/>
         <div id="ctasTop" className='absolute top-4 right-4 flex-auto justify-center font-gothamBold text-sm'>
           <button className='p-4 text-gray-400 hover:text-slate-50 hover:scale-105'><a href="mailto:fabianszy@gmail.com">Email</a></button>
-          <button className='p-4 text-black bg-white ml-2 rounded-full px-8 py-4 hover:scale-105'>LinkedIn</button>
+          <button className='p-4 text-black bg-white ml-2 rounded-full px-7 py-3 hover:scale-105'> <a href="https://www.linkedin.com/in/fabian-szymanczyk-30a801154/" target="_blank">LinkedIn</a></button>
         </div>
-        <div className='absolute text-4xl w-full bottom-4 left-4 font-gothamBlack'>
-            Fabian Szymanczyk
+          <div id='heroTextContainer' className='absolute w-full bottom-4 left-4'>
+            <div className='flex items-center'>
+              <MdVerified className='fill-sky-600'/>
+              <p className='text-sm font-bold px-1'>Verified Senior Product Manager</p>
+            </div>
+            <h2 className='text-4xl font-gothamBlack p-1'>
+                Fabian Szymanczyk
+            </h2>
+            <p className='text-xs p-1 font-bold'>54 months work experience</p>
+          </div>
+      </div>
+      <div id="sectionTwo" class="min-h-screen bg-gradient-to-b from-gray-700 via-gray-900 to-black font-gothamBold">
+        <div className=' flex gap-8 p-4'>
+          <AiFillPlayCircle className=' fill-green-500 w-14 h-14 hover:scale-105'/>
+          <button className='text-white border-solid border px-6 rounded-md border-gray-400 my-2 text-sm hover:border-white hover:border-2'>FOLGEN</button>
+          <BsThreeDots className=' fill-gray-400 w-8 h-8 hover:scale-105 hover:fill-white flex my-3'/>
         </div>
+        <h2 className="text-3xls p-4 my-4 text-white">My Portfolio</h2>
       </div>
-      <div id="sectionTwo" class="min-h-screen bg-slate-800 text-blue-800">
-        <div className=' flex justify-center gap-16'>
-          <h4 className="text-3xls">My portfolio</h4>
-          <button >Folgen</button>
-          <button> Play</button>
-        </div>
-
+      <div id="sectionThree" className="min-h-screen bg-yellow-200 p-20 text-blue-800">
+      <p className="text-3sxl mt-64">My Resume</p>
       </div>
-      <div id="sectionThree" class="min-h-screen bg-yellow-200 p-20 text-blue-800">
-      <p class="text-3sxl mt-64">My Resume</p>
-      </div>
-      <nav class="fixed bottom-0 inset-x-0 flex justify-between text-sm text-white-100 bg-black font-gothamBold">
+      <nav className="fixed bottom-0 inset-x-0 flex justify-between text-sm text-white-100 bg-black font-gothamBold">
           
           <a href="#sectionTwo" class="w-full block py-5 px-3 text-center text-gray-400 hover:text-white hover:stroke-white hover:fill-white">
             <svg className="w-8 h-8 mb-2 mx-auto stroke-gray-600 fill-gray-600 hover:stroke-white hover:fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
@@ -42,7 +52,7 @@ export default function Home() {
             My Portfolio
           </a>
           
-          <a href="#sectionThree" class="w-full block py-5 px-3 text-center text-gray-400 hover:text-white hover:stroke-white hover:fill-white">
+          <a href="#sectionThree" className="w-full block py-5 px-3 text-center text-gray-400 hover:text-white hover:stroke-white hover:fill-white">
             <svg className="w-8 h-8 mb-2 mx-auto stroke-gray-600 fill-gray-600 hover:stroke-white hover:fill-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
             <path d="M12.5 3.247a1 1 0 00-1 0L4 7.577V20h4.5v-6a1 1 0 011-1h5a1 1 0 011 1v6H20V7.577l-7.5-4.33zm-2-1.732a3 3 0 013 0l7.5 4.33a2 2 0 011 1.732V21a1 1 0 01-1 1h-6.5a1 1 0 01-1-1v-6h-3v6a1 1 0 01-1 1H3a1 1 0 01-1-1V7.577a2 2 0 011-1.732l7.5-4.33z"></path>
             </svg>
