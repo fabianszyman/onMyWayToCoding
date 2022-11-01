@@ -7,6 +7,8 @@ import check24ProfisLogo from '../public/check24ProfisLogo.png'
 import printManiaLogo from '../public/print_mania.png'
 import instaBotLogo from '../public/instabot.jpeg'
 import btuLogoImage from '../public/btuLogo.png'
+import googleLogo from '../public/googleLogo.png'
+import courseraLogo from '../public/courseraLogo.jpeg'
 import {MdVerified} from 'react-icons/md';
 import {AiFillPlayCircle} from 'react-icons/ai';
 import {BsThreeDots, BsFillPlayFill} from 'react-icons/bs'
@@ -26,7 +28,7 @@ export default function Home() {
         <Image src={profileImage} className='w-full' layout='fill' objectFit='cover'/>
         <div id="ctasTop" className='absolute top-4 right-4 flex-auto justify-center font-gothamBold text-sm'>
           <button className='p-4 text-white hover:text-slate-50 hover:scale-105'><a href="mailto:fabianszy@gmail.com">Email</a></button>
-          <button className='p-4 text-black bg-white ml-2 rounded-full px-7 py-3 hover:scale-105'> <a href="https://www.linkedin.com/in/fabian-szymanczyk-30a801154/" target="_blank">LinkedIn</a></button>
+          <button className='p-4 text-black bg-white ml-2 rounded-full px-7 py-3 hover:scale-105'> <a href="https://www.linkedin.com/in/fabian-szymanczyk-30a801154/" target="_blank" rel='noopener'>LinkedIn</a></button>
         </div>
           <div id='heroTextContainer' className='absolute w-full bottom-4 left-4'>
             <div className='flex items-center'>
@@ -100,11 +102,11 @@ export default function Home() {
                 <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                   <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                     <div id='containerImageTitle' className='flex items-center gap-6'>
-                      <a href='https://www.check24.de/profis/' target="_blank" className='ml-2 w-16 h-16'>
+                      <a href='https://www.check24.de/profis/' target="_blank" rel='noopener' className='ml-2 w-16 h-16'>
                       <Image src={check24ProfisLogo} layout='fill' objectFit='cover'/>
                       </a>
-                      <div className='text-white w-18'>
-                        <h4 className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Senior Product Manager</h4>
+                      <div className='text-white'>
+                        <h4 className='text-ellipsis w-18 whitespace-nowrap overflow-hidden inline-block text-base'>Senior Product Manager</h4>
                         <p className='group-hover:text-white text-left font-gothamLight'>CHECK24 Profis</p>
                       </div>
                     </div>
@@ -116,7 +118,7 @@ export default function Home() {
                 <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                   <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                     <div id='containerImageTitle' className='flex items-center gap-6'>
-                      <a href='https://www.check24.de/profis/' target="_blank" className='ml-2 w-16 h-16'>
+                      <a href='https://www.check24.de/profis/' target="_blank" rel='noopener' className='ml-2 w-16 h-16'>
                       <Image src={check24ProfisLogo} layout='fill' objectFit='cover'/>
                       </a>
                       <div className='text-white w-18'>
@@ -132,7 +134,7 @@ export default function Home() {
                 <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                   <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                     <div id='containerImageTitle' className='flex items-center gap-6'>
-                      <a href='https://www.instagram.com/sneaker_mania_berlin/' target="_blank" className='ml-2 w-16 h-16'>
+                      <a href='https://www.instagram.com/sneaker_mania_berlin/' target="_blank" rel='noopener' className='ml-2 w-16 h-16'>
                       <Image src={printManiaLogo} layout='fill' objectFit='cover'/>
                       </a>
                       <div className='text-white w-18'>
@@ -148,7 +150,7 @@ export default function Home() {
                 <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                   <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                     <div id='containerImageTitle' className='flex items-center gap-6'>
-                      <a href='https://www.check24.de/profis/' target="_blank" className='ml-2 w-16 h-16'>
+                      <a href='https://www.check24.de/profis/' target="_blank" rel='noopener' className='ml-2 w-16 h-16'>
                       <Image src={check24ProfisLogo} layout='fill' objectFit='cover'/>
                       </a>
                       <div className='text-white w-18'>
@@ -179,9 +181,9 @@ export default function Home() {
                       <a href='https://www.b-tu.de/' target="_blank" className='ml-2 w-16 h-16'>
                       <Image src={btuLogoImage} layout='fill' objectFit='cover'/>
                       </a>
-                      <div className='text-white w-18'>
-                        <h4 className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>MSc Economics and Engenieering</h4>
-                        <p className='group-hover:text-white text-left font-gothamLight'>BTU Cottbus - Senftenberg</p>
+                      <div className=' text-white text-ellipsis whitespace-nowrap overflow-hidden max-w-xl'>
+                        <h4 className='w-44 sm:w-64 md:w-64 xl:w-72  text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>MSc Economics and Engenieering</h4>
+                        <p className=' group-hover:text-white text-left font-gothamLight'>BTU Cottbus - Senftenberg</p>
                       </div>
                     </div>
                     <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>October 2015 - March 2018</p>
@@ -192,11 +194,11 @@ export default function Home() {
                 <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                   <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                     <div id='containerImageTitle' className='flex items-center gap-6'>
-                      <a href='https://www.b-tu.de/' target="_blank" className='ml-2 w-16 h-16'>
+                      <a href='https://www.b-tu.de/' target="_blank" rel='noopener' className='ml-2 w-16 h-16'>
                       <Image src={btuLogoImage} layout='fill' objectFit='cover'/>
                       </a>
                       <div className='text-white w-18'>
-                        <h4 className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>BSc Economics and Engenieering</h4>
+                        <h4 className='w-44 sm:w-64 md:w-64 xl:w-72 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>BSc Economics and Engenieering</h4>
                         <p className='group-hover:text-white text-left font-gothamLight'>BTU Cottbus - Senftenberg</p>
                       </div>
                     </div>
@@ -221,12 +223,12 @@ export default function Home() {
                 <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                   <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                     <div id='containerImageTitle' className='flex items-center gap-6'>
-                      <a href='https://www.b-tu.de/' target="_blank" className='ml-2 w-16 h-16'>
-                      <Image src={btuLogoImage} layout='fill' objectFit='cover'/>
+                      <a href='https://www.coursera.org/account/accomplishments/specialization/certificate/RDCB66AKZR6E' target="_blank" rel='noopener' className='ml-2 w-16 h-16'>
+                      <Image src={googleLogo} layout='fill' objectFit='cover'/>
                       </a>
                       <div className='text-white w-18'>
-                        <h4 className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>MSc Economics and Engenieering</h4>
-                        <p className='group-hover:text-white text-left font-gothamLight'>BTU Cottbus - Senftenberg</p>
+                        <h4 className='w-44 sm:w-64 md:w-64 xl:w-72 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Google IT Automation with Python Spezialisierung</h4>
+                        <p className='group-hover:text-white text-left font-gothamLight'>Google</p>
                       </div>
                     </div>
                     <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>October 2015 - March 2018</p>
@@ -237,22 +239,22 @@ export default function Home() {
                 <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                   <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                     <div id='containerImageTitle' className='flex items-center gap-6'>
-                      <a href='https://www.b-tu.de/' target="_blank" className='ml-2 w-16 h-16'>
-                      <Image src={btuLogoImage} layout='fill' objectFit='cover'/>
+                      <a href='https://www.coursera.org/account/accomplishments/certificate/Q7JSQHAYXBLD' target="_blank" rel='noopener' className='ml-2 w-16 h-16'>
+                      <Image src={courseraLogo} layout='fill' objectFit='cover'/>
                       </a>
                       <div className='text-white w-18'>
-                        <h4 className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>BSc Economics and Engenieering</h4>
-                        <p className='group-hover:text-white text-left font-gothamLight'>BTU Cottbus - Senftenberg</p>
+                        <h4 className='w-44 sm:w-64 md:w-64 xl:w-72 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Front-End Web UI Frameworks and Tools: Bootstrap 4</h4>
+                        <p className='group-hover:text-white text-left font-gothamLight'>Coursera</p>
                       </div>
                     </div>
-                    <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>April 2011 - Jul 2015</p>
+                    <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>Issued August 2021</p>
                   </div>
                 </div>
               </div>
 
               <div className='flex justify-center max-w-xl py-2'>
                 <button className=' border border-gray-400 hover:border-green-500 hover:scale-95 text-white font-bold rounded-full m-2 py-2 px-4'>
-                  Show full history
+                  Show all
                 </button>
               </div>
             </div>
@@ -285,7 +287,7 @@ export default function Home() {
           <a href="#certificatesSection" class="w-full block py-2 px-3 text-center text-gray-400 hover:text-white hover:stroke-white hover:fill-white">
             <div className='bg-gradient-to-tl from-green-300 via-blue-500 to-purple-600 w-6 h-6 m-auto mb-2 rounded-sm flex justify-center items-baseline relative'>
               <div className='w-4 h-4 left-1.5 top-1.5 absolute'>
-                <svg className="m-auto stroke-white fill-white hover:stroke-white hover:fill-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white">
+                <svg className="m-auto stroke-gray-400 fill-gray-400 hover:stroke-white hover:fill-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white">
                 <path d="M15.724 4.22A4.313 4.313 0 0012.192.814a4.269 4.269 0 00-3.622 1.13.837.837 0 01-1.14 0 4.272 4.272 0 00-6.21 5.855l5.916 7.05a1.128 1.128 0 001.727 0l5.916-7.05a4.228 4.228 0 00.945-3.577z"></path>
                 </svg>
               </div>
