@@ -13,6 +13,7 @@ import {MdVerified} from 'react-icons/md';
 import {AiFillPlayCircle} from 'react-icons/ai';
 import {BsThreeDots, BsFillPlayFill} from 'react-icons/bs'
 import {GrCertificate} from 'react-icons/gr'
+import Link from 'next/link';
 
 
 export default function Home() {
@@ -87,9 +88,11 @@ export default function Home() {
                 </a>
               </div>
               <div className='p-6 font-gothamBold ml-4 text-gray-400 hover:text-white'>
-                <a href='/portfolio'>
-                  SHOW MORE
-                </a>
+                <Link href='/portfolio'>
+                  <a>
+                    SHOW MORE
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
