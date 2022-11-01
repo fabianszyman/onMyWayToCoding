@@ -181,7 +181,7 @@ export default function Home() {
                 <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                   <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                     <div id='containerImageTitle' className='flex items-center gap-6'>
-                      <a href='https://www.b-tu.de/' target="_blank" className='ml-2 w-16 h-16'>
+                      <a href='https://www.b-tu.de/' target="_blank" rel="noreferrer" className='ml-2 w-16 h-16'>
                       <Image src={btuLogoImage} alt="fallback-text" layout='fill' objectFit='cover'/>
                       </a>
                       <div className=' text-white text-ellipsis whitespace-nowrap overflow-hidden max-w-xl'>
