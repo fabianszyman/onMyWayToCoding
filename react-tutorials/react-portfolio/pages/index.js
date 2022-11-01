@@ -25,10 +25,10 @@ export default function Home() {
       </Head>
       <main className='font-gothamLight text-white scroll-smooth'>
       <div id="heroHeader" className="w-full h-1/3 max-h-96 bg-blue-200 text-white overflow-hidden relative" >  
-        <Image src={profileImage} className='w-full' layout='fill' objectFit='cover'/>
+        <Image src={profileImage} className='w-full' layout='fill' objectFit='cover' alt="fallback-text"/>
         <div id="ctasTop" className='absolute top-4 right-4 flex-auto justify-center font-gothamBold text-sm'>
           <button className='p-4 text-white hover:text-slate-50 hover:scale-105'><a href="mailto:fabianszy@gmail.com">Email</a></button>
-          <button className='p-4 text-black bg-white ml-2 rounded-full px-7 py-3 hover:scale-105'> <a href="https://www.linkedin.com/in/fabian-szymanczyk-30a801154/" target="_blank" rel='noopener'>LinkedIn</a></button>
+          <button className='p-4 text-black bg-white ml-2 rounded-full px-7 py-3 hover:scale-105'> <a href="https://www.linkedin.com/in/fabian-szymanczyk-30a801154/" target="_blank" rel="noopener">LinkedIn</a></button>
         </div>
           <div id='heroTextContainer' className='absolute w-full bottom-4 left-4'>
             <div className='flex items-center'>
@@ -60,7 +60,7 @@ export default function Home() {
                 <div id='PortfolioItem' className='flex items-center gap-6 text-gray-400 py-2 pl-4 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                   <p className='group-hover:hidden px-2 w-2 h-2'>1</p>
                   <BsFillPlayFill className='hidden group-hover:block text-white w-8 h-8'/>
-                  <Image src={reaectToDoAppImage} className='w-12 h-12' layout='fill' objectFit='cover'/>
+                  <Image src={reaectToDoAppImage} alt="fallback-text" className='w-12 h-12' layout='fill' objectFit='cover'/>
                   <h4 className='text-white max-w-lg w-40 text-ellipsis whitespace-nowrap overflow-hidden inline-block'>To Do App</h4>
                   <p className='group-hover:text-white text-right w-28'>React</p>
                   <p className='pl-4 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right'>23 hours</p>
@@ -70,7 +70,7 @@ export default function Home() {
                 <a id='PortfolioItem' className='flex items-center gap-6 text-gray-400 py-2 pl-4 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                   <p className='group-hover:hidden px-2 w-2 h-2'>2</p>
                   <BsFillPlayFill className='hidden group-hover:block text-white w-8 h-8'/>
-                  <Image src={minimalisticLandingPageImage} className='w-12 h-12' layout='fill' objectFit='cover'/>
+                  <Image src={minimalisticLandingPageImage} alt="fallback-text" className='w-12 h-12' layout='fill' objectFit='cover'/>
                   <h4 className='text-white max-w-lg w-40 text-ellipsis whitespace-nowrap overflow-hidden inline-block'>Minimalistic Landing Page</h4>
                   <p className=' group-hover:text-white text-right w-28'>HTML|CSS</p>
                   <p className='pl-4 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right'>12 hours</p>
@@ -80,7 +80,7 @@ export default function Home() {
                 <a id='PortfolioItem' className='flex items-center gap-6 text-gray-400 py-2 pl-4 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                   <p className='group-hover:hidden px-2 w-2 h-2'>3</p>
                   <BsFillPlayFill className='hidden group-hover:block text-white w-8 h-8'/>
-                  <Image src={instaBotLogo} className='w-12 h-12' layout='fill' objectFit='cover'/>
+                  <Image src={instaBotLogo} alt="fallback-text" className='w-12 h-12' layout='fill' objectFit='cover'/>
                   <h4 className='text-white max-w-lg w-40 text-ellipsis whitespace-nowrap overflow-hidden inline-block'>Instagram LikeBot</h4>
                   <p className=' group-hover:text-white text-right w-28 text-ellipsis whitespace-nowrap overflow-hidden inline-block'>Node.js|JavaScript</p>
                   <p className='pl-4 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right'>34 hours</p>
@@ -102,8 +102,8 @@ export default function Home() {
                 <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                   <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                     <div id='containerImageTitle' className='flex items-center gap-6'>
-                      <a href='https://www.check24.de/profis/' target="_blank" rel='noopener' className='ml-2 w-16 h-16'>
-                      <Image src={check24ProfisLogo} layout='fill' objectFit='cover'/>
+                      <a href='https://www.check24.de/profis/' target="_blank" rel="noopener" className='ml-2 w-16 h-16'>
+                      <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectFit='cover'/>
                       </a>
                       <div className='text-white'>
                         <h4 className='text-ellipsis w-18 whitespace-nowrap overflow-hidden inline-block text-base'>Senior Product Manager</h4>
@@ -118,8 +118,8 @@ export default function Home() {
                 <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                   <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                     <div id='containerImageTitle' className='flex items-center gap-6'>
-                      <a href='https://www.check24.de/profis/' target="_blank" rel='noopener' className='ml-2 w-16 h-16'>
-                      <Image src={check24ProfisLogo} layout='fill' objectFit='cover'/>
+                      <a href='https://www.check24.de/profis/' target="_blank" rel="noopener" className='ml-2 w-16 h-16'>
+                      <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectFit='cover'/>
                       </a>
                       <div className='text-white w-18'>
                         <h4 className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Product Manager</h4>
@@ -134,8 +134,8 @@ export default function Home() {
                 <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                   <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                     <div id='containerImageTitle' className='flex items-center gap-6'>
-                      <a href='https://www.instagram.com/sneaker_mania_berlin/' target="_blank" rel='noopener' className='ml-2 w-16 h-16'>
-                      <Image src={printManiaLogo} layout='fill' objectFit='cover'/>
+                      <a href='https://www.instagram.com/sneaker_mania_berlin/' target="_blank" rel="noopener" className='ml-2 w-16 h-16'>
+                      <Image src={printManiaLogo} alt="fallback-text" layout='fill' objectFit='cover'/>
                       </a>
                       <div className='text-white w-18'>
                         <h4 className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Founder</h4>
@@ -150,8 +150,8 @@ export default function Home() {
                 <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                   <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                     <div id='containerImageTitle' className='flex items-center gap-6'>
-                      <a href='https://www.check24.de/profis/' target="_blank" rel='noopener' className='ml-2 w-16 h-16'>
-                      <Image src={check24ProfisLogo} layout='fill' objectFit='cover'/>
+                      <a href='https://www.check24.de/profis/' target="_blank" rel="noopener" className='ml-2 w-16 h-16'>
+                      <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectFit='cover'/>
                       </a>
                       <div className='text-white w-18'>
                         <h4 className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Junior Product Manager</h4>
@@ -179,7 +179,7 @@ export default function Home() {
                   <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                     <div id='containerImageTitle' className='flex items-center gap-6'>
                       <a href='https://www.b-tu.de/' target="_blank" className='ml-2 w-16 h-16'>
-                      <Image src={btuLogoImage} layout='fill' objectFit='cover'/>
+                      <Image src={btuLogoImage} alt="fallback-text" layout='fill' objectFit='cover'/>
                       </a>
                       <div className=' text-white text-ellipsis whitespace-nowrap overflow-hidden max-w-xl'>
                         <h4 className='w-44 sm:w-64 md:w-64 xl:w-72  text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>MSc Economics and Engenieering</h4>
@@ -194,8 +194,8 @@ export default function Home() {
                 <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                   <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                     <div id='containerImageTitle' className='flex items-center gap-6'>
-                      <a href='https://www.b-tu.de/' target="_blank" rel='noopener' className='ml-2 w-16 h-16'>
-                      <Image src={btuLogoImage} layout='fill' objectFit='cover'/>
+                      <a href='https://www.b-tu.de/' target="_blank" rel="noopener" className='ml-2 w-16 h-16'>
+                      <Image src={btuLogoImage} alt="fallback-text" layout='fill' objectFit='cover'/>
                       </a>
                       <div className='text-white w-18'>
                         <h4 className='w-44 sm:w-64 md:w-64 xl:w-72 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>BSc Economics and Engenieering</h4>
@@ -223,8 +223,8 @@ export default function Home() {
                 <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                   <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                     <div id='containerImageTitle' className='flex items-center gap-6'>
-                      <a href='https://www.coursera.org/account/accomplishments/specialization/certificate/RDCB66AKZR6E' target="_blank" rel='noopener' className='ml-2 w-16 h-16'>
-                      <Image src={googleLogo} layout='fill' objectFit='cover'/>
+                      <a href='https://www.coursera.org/account/accomplishments/specialization/certificate/RDCB66AKZR6E' target="_blank" rel="noopener" className='ml-2 w-16 h-16'>
+                      <Image src={googleLogo} alt="fallback-text" layout='fill' objectFit='cover'/>
                       </a>
                       <div className='text-white w-18'>
                         <h4 className='w-44 sm:w-64 md:w-64 xl:w-72 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Google IT Automation with Python Spezialisierung</h4>
@@ -239,8 +239,8 @@ export default function Home() {
                 <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                   <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                     <div id='containerImageTitle' className='flex items-center gap-6'>
-                      <a href='https://www.coursera.org/account/accomplishments/certificate/Q7JSQHAYXBLD' target="_blank" rel='noopener' className='ml-2 w-16 h-16'>
-                      <Image src={courseraLogo} layout='fill' objectFit='cover'/>
+                      <a href='https://www.coursera.org/account/accomplishments/certificate/Q7JSQHAYXBLD' target="_blank" rel="noopener" className='ml-2 w-16 h-16'>
+                      <Image src={courseraLogo} alt="fallback-text" layout='fill' objectFit='cover'/>
                       </a>
                       <div className='text-white w-18'>
                         <h4 className='w-44 sm:w-64 md:w-64 xl:w-72 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Front-End Web UI Frameworks and Tools: Bootstrap 4</h4>
