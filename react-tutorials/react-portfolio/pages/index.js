@@ -28,7 +28,7 @@ export default function Home() {
         <Image src={profileImage} className='w-full' layout='fill' objectFit='cover' alt="fallback-text"/>
         <div id="ctasTop" className='absolute top-4 right-4 flex-auto justify-center font-gothamBold text-sm'>
           <button className='p-4 text-white hover:text-slate-50 hover:scale-105'><a href="mailto:fabianszy@gmail.com">Email</a></button>
-          <button className='p-4 text-black bg-white ml-2 rounded-full px-7 py-3 hover:scale-105'> <a href="https://www.linkedin.com/in/fabian-szymanczyk-30a801154/" target="_blank" rel="noopener">LinkedIn</a></button>
+          <button className='p-4 text-black bg-white ml-2 rounded-full px-7 py-3 hover:scale-105'> <a href="https://www.linkedin.com/in/fabian-szymanczyk-30a801154/" target="_blank" rel="noreferrer">LinkedIn</a></button>
         </div>
           <div id='heroTextContainer' className='absolute w-full bottom-4 left-4'>
             <div className='flex items-center'>
@@ -102,7 +102,7 @@ export default function Home() {
                 <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                   <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                     <div id='containerImageTitle' className='flex items-center gap-6'>
-                      <a href='https://www.check24.de/profis/' target="_blank" rel="noopener" className='ml-2 w-16 h-16'>
+                      <a href='https://www.check24.de/profis/' target="_blank" rel="noreferrer" className='ml-2 w-16 h-16'>
                       <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectFit='cover'/>
                       </a>
                       <div className='text-white'>
@@ -118,7 +118,7 @@ export default function Home() {
                 <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                   <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                     <div id='containerImageTitle' className='flex items-center gap-6'>
-                      <a href='https://www.check24.de/profis/' target="_blank" rel="noopener" className='ml-2 w-16 h-16'>
+                      <a href='https://www.check24.de/profis/' target="_blank" rel="noreferrer" className='ml-2 w-16 h-16'>
                       <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectFit='cover'/>
                       </a>
                       <div className='text-white w-18'>
@@ -134,7 +134,7 @@ export default function Home() {
                 <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                   <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                     <div id='containerImageTitle' className='flex items-center gap-6'>
-                      <a href='https://www.instagram.com/sneaker_mania_berlin/' target="_blank" rel="noopener" className='ml-2 w-16 h-16'>
+                      <a href='https://www.instagram.com/sneaker_mania_berlin/' target="_blank" rel="noreferrer" className='ml-2 w-16 h-16'>
                       <Image src={printManiaLogo} alt="fallback-text" layout='fill' objectFit='cover'/>
                       </a>
                       <div className='text-white w-18'>
@@ -150,7 +150,7 @@ export default function Home() {
                 <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                   <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                     <div id='containerImageTitle' className='flex items-center gap-6'>
-                      <a href='https://www.check24.de/profis/' target="_blank" rel="noopener" className='ml-2 w-16 h-16'>
+                      <a href='https://www.check24.de/profis/' target="_blank" rel="noreferrer" className='ml-2 w-16 h-16'>
                       <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectFit='cover'/>
                       </a>
                       <div className='text-white w-18'>
@@ -194,7 +194,7 @@ export default function Home() {
                 <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                   <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                     <div id='containerImageTitle' className='flex items-center gap-6'>
-                      <a href='https://www.b-tu.de/' target="_blank" rel="noopener" className='ml-2 w-16 h-16'>
+                      <a href='https://www.b-tu.de/' target="_blank" rel="noreferrer" className='ml-2 w-16 h-16'>
                       <Image src={btuLogoImage} alt="fallback-text" layout='fill' objectFit='cover'/>
                       </a>
                       <div className='text-white w-18'>
@@ -223,7 +223,7 @@ export default function Home() {
                 <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                   <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                     <div id='containerImageTitle' className='flex items-center gap-6'>
-                      <a href='https://www.coursera.org/account/accomplishments/specialization/certificate/RDCB66AKZR6E' target="_blank" rel="noopener" className='ml-2 w-16 h-16'>
+                      <a href='https://www.coursera.org/account/accomplishments/specialization/certificate/RDCB66AKZR6E' target="_blank" rel="noreferrer" className='ml-2 w-16 h-16'>
                       <Image src={googleLogo} alt="fallback-text" layout='fill' objectFit='cover'/>
                       </a>
                       <div className='text-white w-18'>
@@ -239,7 +239,7 @@ export default function Home() {
                 <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                   <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                     <div id='containerImageTitle' className='flex items-center gap-6'>
-                      <a href='https://www.coursera.org/account/accomplishments/certificate/Q7JSQHAYXBLD' target="_blank" rel="noopener" className='ml-2 w-16 h-16'>
+                      <a href='https://www.coursera.org/account/accomplishments/certificate/Q7JSQHAYXBLD' target="_blank" rel="noreferrer" className='ml-2 w-16 h-16'>
                       <Image src={courseraLogo} alt="fallback-text" layout='fill' objectFit='cover'/>
                       </a>
                       <div className='text-white w-18'>
