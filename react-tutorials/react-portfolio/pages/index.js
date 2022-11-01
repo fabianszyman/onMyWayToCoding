@@ -89,9 +89,7 @@ export default function Home() {
               </div>
               <div className='p-6 font-gothamBold ml-4 text-gray-400 hover:text-white'>
                 <Link href='/portfolio'>
-                  <a>
                     SHOW MORE
-                  </a>
                 </Link>
               </div>
             </div>
@@ -223,36 +221,42 @@ export default function Home() {
             <h2 className="text-3xls p-4 pt-4 text-white">Certificates & Recommendations</h2>
             <div id="myPortfolioItems" className=' font-gothamBold text-xs'>
               <div id="PortfolioItemGroup" class="group">
-                <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
-                  <div id='containerAllItems' className='flex items-center justify-between gap-6'>
-                    <div id='containerImageTitle' className='flex items-center gap-6'>
-                      <a href='https://www.coursera.org/account/accomplishments/specialization/certificate/RDCB66AKZR6E' target="_blank" rel="noreferrer" className='ml-2 w-16 h-16'>
-                      <Image src={googleLogo} alt="fallback-text" layout='fill' objectFit='cover'/>
-                      </a>
-                      <div className='text-white w-18'>
-                        <h4 className='w-44 sm:w-64 md:w-64 xl:w-72 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Google IT Automation with Python Spezialisierung</h4>
-                        <p className='group-hover:text-white text-left font-gothamLight'>Google</p>
+                  <div id='PortfolioItem' className=' group-hover:bg-gray-700 rounded-md max-w-xl relative mx-4'>
+                    <a href='https://www.coursera.org/account/accomplishments/specialization/certificate/RDCB66AKZR6E' target="_blank" rel="noreferrer" className='absolute top-0 bottom-0 left-0 right-0'></a>
+                    <div id='containerAllItems' className='flex items-center justify-between gap-6 '>
+                      <div id='containerImageTitle' className='flex items-center py-2  gap-6'>
+                        <div className='relative pointer-events-none z-0 w-16 h-16 ml-2'>
+                          <a href='https://www.coursera.org/professional-certificates/google-it-automation' target="_blank" rel="noreferrer" className='pointer-events-auto'>
+                          <Image src={googleLogo} alt="fallback-text" layout='fill' objectFit='cover'/>
+                          </a>
+                        </div>
+                        <div className='text-white w-18'>
+                          <h4 className='w-44 sm:w-64 md:w-64 xl:w-72 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Google IT Automation with Python Certification</h4>
+                          <p className='group-hover:text-white text-left font-gothamLight'>Google</p>
+                        </div>
                       </div>
+                      <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>Issued October 2021</p>
                     </div>
-                    <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>October 2015 - March 2018</p>
                   </div>
-                </div>
               </div>
               <div id="PortfolioItemGroup" class="group">
-                <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
-                  <div id='containerAllItems' className='flex items-center justify-between gap-6'>
-                    <div id='containerImageTitle' className='flex items-center gap-6'>
-                      <a href='https://www.coursera.org/account/accomplishments/certificate/Q7JSQHAYXBLD' target="_blank" rel="noreferrer" className='ml-2 w-16 h-16'>
-                      <Image src={courseraLogo} alt="fallback-text" layout='fill' objectFit='cover'/>
-                      </a>
-                      <div className='text-white w-18'>
-                        <h4 className='w-44 sm:w-64 md:w-64 xl:w-72 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Front-End Web UI Frameworks and Tools: Bootstrap 4</h4>
-                        <p className='group-hover:text-white text-left font-gothamLight'>Coursera</p>
+                  <div id='PortfolioItem' className=' group-hover:bg-gray-700 rounded-md max-w-xl relative mx-4'>
+                    <a href='https://www.coursera.org/account/accomplishments/certificate/4AXBCMRR3HXH' target="_blank" rel="noreferrer" className='absolute top-0 bottom-0 left-0 right-0'></a>
+                    <div id='containerAllItems' className='flex items-center justify-between gap-6 '>
+                      <div id='containerImageTitle' className='flex items-center py-2  gap-6'>
+                        <div className='relative pointer-events-none z-0 w-16 h-16 ml-2'>
+                          <a href='https://www.coursera.org/learn/bootstrap-4' target="_blank" rel="noreferrer" className='pointer-events-auto'>
+                          <Image src={courseraLogo} alt="fallback-text" layout='fill' objectFit='cover'/>
+                          </a>
+                        </div>
+                        <div className='text-white w-18'>
+                          <h4 className='w-44 sm:w-64 md:w-64 xl:w-72 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Front-End Web UI Frameworks and Tools: Bootstrap 4</h4>
+                          <p className='group-hover:text-white text-left font-gothamLight'>Coursera</p>
+                        </div>
                       </div>
+                      <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>Issued August 2021</p>
                     </div>
-                    <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>Issued August 2021</p>
                   </div>
-                </div>
               </div>
 
               <div className='flex justify-center max-w-xl py-2'>
