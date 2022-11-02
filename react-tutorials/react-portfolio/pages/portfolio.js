@@ -23,13 +23,13 @@ export default function Home() {
         <link rel="icon" href="/spotifyIcon.ico" />
       </Head>
       <main className='text-white font-gothamBold bg-black h-screen '>
-        <nav className=' bg-slate-700 flex justify-start items-center relative h-14'>
-            <div className='w-2/12 md:w-1/12 lg:w-1/12 flex items-center justify-center text-white'>
+        <nav className='flex bg-slate-800 justify-start items-center h-14'>
+            <div className=' w-2/12 md:w-1/12 lg:w-1/12 text-white'>
                 <Link href='./'>
-                    <IoIosArrowBack className='w-8 h-8'/>
+                    <IoIosArrowBack className='w-8 h-14 ml-4'/>
                 </Link>
             </div>
-            <div className='w-screen flex items-center justify-center px-12'>
+            <div className='w-screen text-center'>
                 <h3>My Portfolio</h3>
             </div>
         </nav>
@@ -66,23 +66,25 @@ export default function Home() {
                 {/*SECTION: Minimalistic Landing Page*/}
                 <div class='group'>
                     <div className='w-full font-gothamLight text-xs'>
-                        <div className='flex items-center gap-1 text-gray-400 py-2 group-hover:bg-gray-700 rounded-md max-w-xl relative '>
-                            <div className='w-1/12 h-12 py-4 px-4'>
-                                2
+                        <Link href='/toDoAppComingFromPortfolioPage'>
+                            <div className='flex items-center gap-1 text-gray-400 py-2 group-hover:bg-gray-700 rounded-md max-w-xl relative '>
+                                <div className='w-1/12 h-12 py-4 px-4'>
+                                    2
+                                </div>
+                                <div className='w-12 h-12'>
+                                <Image src={reaectToDoAppImage} alt="fallback-text" className='w-12 h-12' layout='fill' objectFit='cover'/>
+                                </div>
+                                <div className='w-6/12 py-4 px-3 text-left group-hover:text-white text-ellipsis whitespace-nowrap overflow-hidden'>
+                                    To Do App
+                                </div>
+                                <div className=' w-2/12 h-12 py-4 text-right group-hover:text-white text-ellipsis whitespace-nowrap overflow-hidden'>
+                                    React
+                                </div>
+                                <div className='w-2/12 h-12 py-4 px-2 text-right text-ellipsis whitespace-nowrap overflow-hidden'>
+                                    23 hours
+                                </div>
                             </div>
-                            <div className='w-12 h-12'>
-                            <Image src={reaectToDoAppImage} alt="fallback-text" className='w-12 h-12' layout='fill' objectFit='cover'/>
-                            </div>
-                            <div className='w-6/12 py-4 px-3 text-left group-hover:text-white text-ellipsis whitespace-nowrap overflow-hidden'>
-                                To Do App
-                            </div>
-                            <div className=' w-2/12 h-12 py-4 text-right group-hover:text-white text-ellipsis whitespace-nowrap overflow-hidden'>
-                                React
-                            </div>
-                            <div className='w-2/12 h-12 py-4 px-2 text-right text-ellipsis whitespace-nowrap overflow-hidden'>
-                                23 hours
-                            </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>            
 
@@ -92,23 +94,25 @@ export default function Home() {
                 {/*SECTION: Instagram AutoLike Bot*/}
                 <div class='group'>
                     <div className='w-full font-gothamLight text-xs'>
-                        <div className='flex items-center gap-1 text-gray-400 py-2 group-hover:bg-gray-700 rounded-md max-w-xl relative '>
-                            <div className='w-1/12 h-12 py-4 px-4'>
-                                3
+                        <Link href='/instagramLikeBotComingFromPortfolioPage'>
+                            <div className='flex items-center gap-1 text-gray-400 py-2 group-hover:bg-gray-700 rounded-md max-w-xl relative '>
+                                <div className='w-1/12 h-12 py-4 px-4'>
+                                    3
+                                </div>
+                                <div className='w-12 h-12'>
+                                <Image src={instaBotLogo} alt="fallback-text" className='w-12 h-12' layout='fill' objectFit='cover'/>
+                                </div>
+                                <div className='w-5/12 py-4 px-3 text-left group-hover:text-white text-ellipsis whitespace-nowrap overflow-hidden'>
+                                    Instagram LikeBot
+                                </div>
+                                <div className=' w-3/12 h-12 py-4 text-right group-hover:text-white text-ellipsis whitespace-nowrap overflow-hidden'>
+                                    Node.js|JavaScript
+                                </div>
+                                <div className='w-2/12 h-12 py-4 px-2 text-right text-ellipsis whitespace-nowrap overflow-hidden'>
+                                    34 hours
+                                </div>
                             </div>
-                            <div className='w-12 h-12'>
-                            <Image src={instaBotLogo} alt="fallback-text" className='w-12 h-12' layout='fill' objectFit='cover'/>
-                            </div>
-                            <div className='w-5/12 py-4 px-3 text-left group-hover:text-white text-ellipsis whitespace-nowrap overflow-hidden'>
-                                Instagram LikeBot
-                            </div>
-                            <div className=' w-3/12 h-12 py-4 text-right group-hover:text-white text-ellipsis whitespace-nowrap overflow-hidden'>
-                                Node.js|JavaScript
-                            </div>
-                            <div className='w-2/12 h-12 py-4 px-2 text-right text-ellipsis whitespace-nowrap overflow-hidden'>
-                                34 hours
-                            </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>   
 

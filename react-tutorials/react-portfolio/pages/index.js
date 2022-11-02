@@ -58,46 +58,49 @@ export default function Home() {
             <h2 className="text-3xls p-4 text-white">Portfolio</h2>
             <div id="myPortfolioItems" className=' font-gothamLight text-xs'>
               <div id="PortfolioItemGroup" class="group">
-
-              <Link href='/minimalisticLandingPageComingFromHome'>
-                <div id='PortfolioItem' className='flex items-center gap-6 text-gray-400 py-2 pl-4 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
-                  <p className='group-hover:hidden px-2 w-2 h-2'>1</p>
-                  <BsFillPlayFill className='hidden group-hover:block text-white w-8 h-8'/>
-                  <Image src={reaectToDoAppImage} alt="fallback-text" className='w-12 h-12' layout='fill' objectFit='cover'/>
-                  <h4 className='text-white max-w-lg w-40 text-ellipsis whitespace-nowrap overflow-hidden inline-block'>To Do App</h4>
-                  <p className='group-hover:text-white text-right w-28'>React</p>
-                  <p className='pl-4 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right'>23 hours</p>
-                </div>
-              </Link>
-
-
-
-              </div>
-              <div id="PortfolioItemGroup" class="group">
-                <a id='PortfolioItem' className='flex items-center gap-6 text-gray-400 py-2 pl-4 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
-                  <p className='group-hover:hidden px-2 w-2 h-2'>2</p>
-                  <BsFillPlayFill className='hidden group-hover:block text-white w-8 h-8'/>
-                  <Image src={minimalisticLandingPageImage} alt="fallback-text" className='w-12 h-12' layout='fill' objectFit='cover'/>
-                  <h4 className='text-white max-w-lg w-40 text-ellipsis whitespace-nowrap overflow-hidden inline-block'>Minimalistic Landing Page</h4>
-                  <p className=' group-hover:text-white text-right w-28'>HTML|CSS</p>
-                  <p className='pl-4 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right'>12 hours</p>
-                </a>
-              </div>
-              <div id="PortfolioItemGroup" class="group">
-                <a id='PortfolioItem' className='flex items-center gap-6 text-gray-400 py-2 pl-4 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
-                  <p className='group-hover:hidden px-2 w-2 h-2'>3</p>
-                  <BsFillPlayFill className='hidden group-hover:block text-white w-8 h-8'/>
-                  <Image src={instaBotLogo} alt="fallback-text" className='w-12 h-12' layout='fill' objectFit='cover'/>
-                  <h4 className='text-white max-w-lg w-40 text-ellipsis whitespace-nowrap overflow-hidden inline-block'>Instagram LikeBot</h4>
-                  <p className=' group-hover:text-white text-right w-28 text-ellipsis whitespace-nowrap overflow-hidden inline-block'>Node.js|JavaScript</p>
-                  <p className='pl-4 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right'>34 hours</p>
-                </a>
-              </div>
-              <div className='p-6 font-gothamBold ml-4 text-gray-400 hover:text-white'>
-                <Link href='/portfolio'>
-                    SHOW MORE
+                <Link href='/minimalisticLandingPageComingFromHome'>
+                  <div id='PortfolioItem' className='flex items-center gap-6 text-gray-400 py-2 pl-4 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
+                    <p className='group-hover:hidden px-2 w-2 h-2'>1</p>
+                    <BsFillPlayFill className='hidden group-hover:block text-white w-8 h-8'/>
+                    <Image src={minimalisticLandingPageImage} alt="fallback-text" className='w-12 h-12' layout='fill' objectFit='cover'/>
+                    <h4 className='text-white max-w-lg w-40 text-ellipsis whitespace-nowrap overflow-hidden inline-block'>Minimalistic Landing Page</h4>
+                    <p className=' group-hover:text-white text-right w-28'>HTML|CSS</p>
+                    <p className='pl-4 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right'>12 hours</p>
+                  </div>
                 </Link>
               </div>
+
+              <div id="PortfolioItemGroup" class="group">
+                <Link href='/toDoAppComingFromHome'>
+                  <div id='PortfolioItem' className='flex items-center gap-6 text-gray-400 py-2 pl-4 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
+                    <p className='group-hover:hidden px-2 w-2 h-2'>2</p>
+                    <BsFillPlayFill className='hidden group-hover:block text-white w-8 h-8'/>
+                    <Image src={reaectToDoAppImage} alt="fallback-text" className='w-12 h-12' layout='fill' objectFit='cover'/>
+                    <h4 className='text-white max-w-lg w-40 text-ellipsis whitespace-nowrap overflow-hidden inline-block'>To Do App</h4>
+                    <p className='group-hover:text-white text-right w-28'>React</p>
+                    <p className='pl-4 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right'>23 hours</p>
+                  </div>
+                </Link>
+              </div>
+
+              <div id="PortfolioItemGroup" class="group">
+                <Link href='/instagramLikeBotComingFromHome'>
+                  <div id='PortfolioItem' className='flex items-center gap-6 text-gray-400 py-2 pl-4 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
+                    <p className='group-hover:hidden px-2 w-2 h-2'>3</p>
+                    <BsFillPlayFill className='hidden group-hover:block text-white w-8 h-8'/>
+                    <Image src={instaBotLogo} alt="fallback-text" className='w-12 h-12' layout='fill' objectFit='cover'/>
+                    <h4 className='text-white max-w-lg w-40 text-ellipsis whitespace-nowrap overflow-hidden inline-block'>Instagram LikeBot</h4>
+                    <p className=' group-hover:text-white text-right w-28 text-ellipsis whitespace-nowrap overflow-hidden inline-block'>Node.js|JavaScript</p>
+                    <p className='pl-4 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right'>34 hours</p>
+                  </div>
+                </Link>
+              </div>
+
+              <Link href='/portfolio'>
+                <div className='p-6 max-w-xs font-gothamBold ml-4 text-gray-400 hover:text-white'>
+                      SHOW MORE
+                </div>
+              </Link>
             </div>
           </div>
 

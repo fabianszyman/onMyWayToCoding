@@ -23,16 +23,16 @@ export default function Home() {
         <link rel="icon" href="/spotifyIcon.ico" />
       </Head>
       <main className='text-white font-gothamBold bg-black h-screen '>
-        <nav className=' bg-slate-700 flex justify-start items-center relative h-14'>
-            <div className='w-2/12 md:w-1/12 lg:w-1/12 flex items-center justify-center text-white'>
-                <Link href='./portfolio'>
-                    <IoIosArrowBack className='w-8 h-8'/>
-                </Link>
-            </div>
-            <div className='w-screen flex items-center justify-center px-12'>
-                <h3>Minimalistic Landing Page</h3>
-            </div>
-        </nav>
+            <nav className='flex bg-slate-800 justify-start items-center h-14'>
+                <div className=' w-2/12 md:w-1/12 lg:w-1/12 text-white'>
+                    <Link href='./portfolio'>
+                        <IoIosArrowBack className='w-8 h-14 ml-4'/>
+                    </Link>
+                </div>
+                <div className='w-screen text-center'>
+                    <h3>Minimalistic Landing Page</h3>
+                </div>
+            </nav>
         <div className=' bg-black pt-4 px-4'>
             <h4 className=' font-gothamLight text-sm'>Personal Project</h4>
             <h1 className=' text-xl '>Responsive Single Page Landing Page</h1>

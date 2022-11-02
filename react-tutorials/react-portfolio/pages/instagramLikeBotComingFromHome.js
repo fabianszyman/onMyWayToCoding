@@ -30,7 +30,7 @@ export default function Home() {
                     </Link>
                 </div>
                 <div className='w-screen text-center'>
-                    <h3>Minimalistic Landing Page</h3>
+                    <h3>Instagram LikeBot</h3>
                 </div>
             </nav>
         <div className=' bg-black pt-4 px-4'>
