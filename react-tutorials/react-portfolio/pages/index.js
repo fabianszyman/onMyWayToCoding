@@ -58,6 +58,8 @@ export default function Home() {
             <h2 className="text-3xls p-4 text-white">Portfolio</h2>
             <div id="myPortfolioItems" className=' font-gothamLight text-xs'>
               <div id="PortfolioItemGroup" class="group">
+
+              <Link href='/minimalisticLandingPageComingFromHome'>
                 <div id='PortfolioItem' className='flex items-center gap-6 text-gray-400 py-2 pl-4 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                   <p className='group-hover:hidden px-2 w-2 h-2'>1</p>
                   <BsFillPlayFill className='hidden group-hover:block text-white w-8 h-8'/>
@@ -66,6 +68,10 @@ export default function Home() {
                   <p className='group-hover:text-white text-right w-28'>React</p>
                   <p className='pl-4 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right'>23 hours</p>
                 </div>
+              </Link>
+
+
+
               </div>
               <div id="PortfolioItemGroup" class="group">
                 <a id='PortfolioItem' className='flex items-center gap-6 text-gray-400 py-2 pl-4 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>

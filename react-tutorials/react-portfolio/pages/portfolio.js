@@ -23,48 +23,50 @@ export default function Home() {
         <link rel="icon" href="/spotifyIcon.ico" />
       </Head>
       <main className='text-white font-gothamBold bg-black h-screen '>
-        <nav className=' bg-slate-700 flex justify-start items-center relative h-12'>
-            <div className='w-1/12 flex items-center justify-center text-white'>
+        <nav className=' bg-slate-700 flex justify-start items-center relative h-14'>
+            <div className='w-2/12 md:w-1/12 lg:w-1/12 flex items-center justify-center text-white'>
                 <Link href='./'>
                     <IoIosArrowBack className='w-8 h-8'/>
                 </Link>
             </div>
-            <div className='w-11/12 flex items-center justify-center h-screen'>
+            <div className='w-screen flex items-center justify-center px-12'>
                 <h3>My Portfolio</h3>
             </div>
         </nav>
-        <div className=' bg-black p-4'>
-            <h2>HTML & CSS</h2>
+        <div className=' bg-black pt-4 px-4'>
+            <h2>Frontend ( HTML | CSS | React.js )</h2>
                 {/*SECTION: To Do App*/}
                 <div class='group'>
                     <div className='w-full font-gothamLight text-xs'>
-                        <div className='flex items-center gap-1 text-gray-400 py-2 group-hover:bg-gray-700 rounded-md max-w-lg relative '>
-                            <div className='w-1/12 h-12 py-4 px-4'>
-                                1
+
+                        <Link href='/minimalisticLandingPageComingFromPortfolioPage'>
+                            <div className='flex items-center gap-1 text-gray-400 py-2 group-hover:bg-gray-700 rounded-md max-w-xl relative '>
+                                <div className='w-1/12 h-12 py-4 px-4'>
+                                    1
+                                </div>
+                                <div className='w-12 h-12'>
+                                <Image src={minimalisticLandingPageImage} alt="fallback-text" className='w-12 h-12' layout='fill' objectFit='cover'/>
+                                </div>
+                                <div className='w-6/12 py-4 px-3 text-left group-hover:text-white text-ellipsis whitespace-nowrap overflow-hidden'>
+                                    Minimalistic Landing Page
+                                </div>
+                                <div className=' w-2/12 h-12 py-4 text-right group-hover:text-white text-ellipsis whitespace-nowrap overflow-hidden'>
+                                    HTML|CSS
+                                </div>
+                                <div className='w-2/12 h-12 py-4 px-2 text-right text-ellipsis whitespace-nowrap overflow-hidden'>
+                                    12 hours
+                                </div>
                             </div>
-                            <div className='w-12 h-12'>
-                            <Image src={minimalisticLandingPageImage} alt="fallback-text" className='w-12 h-12' layout='fill' objectFit='cover'/>
-                            </div>
-                            <div className='w-6/12 py-4 px-3 text-left group-hover:text-white text-ellipsis whitespace-nowrap overflow-hidden'>
-                                Minimalistic Landing Page
-                            </div>
-                            <div className=' w-2/12 h-12 py-4 text-right group-hover:text-white text-ellipsis whitespace-nowrap overflow-hidden'>
-                                HTML|CSS
-                            </div>
-                            <div className='w-2/12 h-12 py-4 px-2 text-right text-ellipsis whitespace-nowrap overflow-hidden'>
-                                12 hours
-                            </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
         </div>
 
-        <div className=' bg-black p-4'>
-            <h2>React</h2>
+        <div className=' bg-black px-4'>
                 {/*SECTION: Minimalistic Landing Page*/}
                 <div class='group'>
                     <div className='w-full font-gothamLight text-xs'>
-                        <div className='flex items-center gap-1 text-gray-400 py-2 group-hover:bg-gray-700 rounded-md max-w-lg relative '>
+                        <div className='flex items-center gap-1 text-gray-400 py-2 group-hover:bg-gray-700 rounded-md max-w-xl relative '>
                             <div className='w-1/12 h-12 py-4 px-4'>
                                 2
                             </div>
@@ -86,21 +88,21 @@ export default function Home() {
 
         </div>
         <div className=' bg-black p-4'>
-            <h2>JavaScript | Node.js</h2>
+            <h2>Backend ( Node.js | Express )</h2>
                 {/*SECTION: Instagram AutoLike Bot*/}
                 <div class='group'>
                     <div className='w-full font-gothamLight text-xs'>
-                        <div className='flex items-center gap-1 text-gray-400 py-2 group-hover:bg-gray-700 rounded-md max-w-lg relative '>
+                        <div className='flex items-center gap-1 text-gray-400 py-2 group-hover:bg-gray-700 rounded-md max-w-xl relative '>
                             <div className='w-1/12 h-12 py-4 px-4'>
                                 3
                             </div>
                             <div className='w-12 h-12'>
                             <Image src={instaBotLogo} alt="fallback-text" className='w-12 h-12' layout='fill' objectFit='cover'/>
                             </div>
-                            <div className='w-6/12 py-4 px-3 text-left group-hover:text-white text-ellipsis whitespace-nowrap overflow-hidden'>
+                            <div className='w-5/12 py-4 px-3 text-left group-hover:text-white text-ellipsis whitespace-nowrap overflow-hidden'>
                                 Instagram LikeBot
                             </div>
-                            <div className=' w-2/12 h-12 py-4 text-right group-hover:text-white text-ellipsis whitespace-nowrap overflow-hidden'>
+                            <div className=' w-3/12 h-12 py-4 text-right group-hover:text-white text-ellipsis whitespace-nowrap overflow-hidden'>
                                 Node.js|JavaScript
                             </div>
                             <div className='w-2/12 h-12 py-4 px-2 text-right text-ellipsis whitespace-nowrap overflow-hidden'>
