@@ -177,7 +177,7 @@ export default function Home() {
                                     <Image src={bvLogo} alt="fallback-text" layout='fill' objectFit='cover'/>
                                     </a>
                                     <div className='text-white w-18'>
-                                        <h4 className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Bank Clerk </h4>
+                                    <h4 className='text-ellipsis w-32 sm:w-48 md:w-64 lg:w-64 whitespace-nowrap overflow-hidden inline-block text-base'>Bank Clerk</h4>
                                         <p className='group-hover:text-white text-left font-gothamLight'>Berliner Volksbank</p>
                                     </div>
                                     </div>

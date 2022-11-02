@@ -220,9 +220,11 @@ export default function Home() {
               </div>
 
               <div className='flex justify-center max-w-xl py-2'>
-                <button className=' border border-gray-400 hover:border-green-500 hover:scale-95 text-white font-bold rounded-full m-2 py-2 px-4'>
-                  Show full history
-                </button>
+                <Link href='/educationHistory'>
+                  <button className=' border border-gray-400 hover:border-green-500 hover:scale-95 text-white font-bold rounded-full m-2 py-2 px-4'>
+                    Show full history
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
