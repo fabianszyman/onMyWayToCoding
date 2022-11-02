@@ -9,6 +9,7 @@ import instaBotLogo from '../public/instabot.jpeg'
 import btuLogoImage from '../public/btuLogo.png'
 import ibmIxLogo from '../public/ibmIx.png'
 import auto1Logo from '../public/auto1GroupLogo.jpeg'
+import bvLogo from '../public/bvLogo.jpeg'
 import {MdVerified} from 'react-icons/md';
 import {AiFillPlayCircle} from 'react-icons/ai';
 import {BsThreeDots, BsFillPlayFill} from 'react-icons/bs'
@@ -107,6 +108,24 @@ export default function Home() {
                             </div>
                             </div>
                         </div>
+                        <div id="PortfolioItemGroup" class="group">
+                            <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
+                            <div id='containerAllItems' className='flex items-center justify-between gap-6'>
+                                <div id='containerImageTitle' className='flex items-center gap-6'>
+                                <a href='https://www.berliner-volksbank.de/homepage.html' target="_blank" rel="noreferrer" className='ml-2 w-16 h-16'>
+                                <Image src={bvLogo} alt="fallback-text" layout='fill' objectFit='cover'/>
+                                </a>
+                                <div className='text-white w-18'>
+                                    <h4 className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Account Manager</h4>
+                                    <p className='group-hover:text-white text-left font-gothamLight'>Berliner Volksbank</p>
+                                </div>
+                                </div>
+                                <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>July 2011 - September 2011</p>
+                            </div>
+                            </div>
+                        </div>
+
+
                     </div>
 
 
@@ -147,6 +166,29 @@ export default function Home() {
                                 </div>
                         </div>
                     </div>
+
+                    <h2 className="text-3xls p-4 pt-4 text-white">Apprenticeship</h2>
+                    <div id="myPortfolioItems" className=' font-gothamBold text-xs pb-20'>
+                        <div id="PortfolioItemGroup" class="group">
+                            <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
+                                <div id='containerAllItems' className='flex items-center justify-between gap-6'>
+                                    <div id='containerImageTitle' className='flex items-center gap-6'>
+                                    <a href='https://www.berliner-volksbank.de/homepage.html' target="_blank" rel="noreferrer" className='ml-2 w-16 h-16'>
+                                    <Image src={bvLogo} alt="fallback-text" layout='fill' objectFit='cover'/>
+                                    </a>
+                                    <div className='text-white w-18'>
+                                        <h4 className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Bank Clerk </h4>
+                                        <p className='group-hover:text-white text-left font-gothamLight'>Berliner Volksbank</p>
+                                    </div>
+                                    </div>
+                                    <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>August 2009 - June 2011</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
                 </div>
             </div>
       </main>
