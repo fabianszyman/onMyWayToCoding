@@ -7,6 +7,7 @@ import check24ProfisLogo from '../public/check24ProfisLogo.png'
 import printManiaLogo from '../public/print_mania.png'
 import instaBotLogo from '../public/instabot.jpeg'
 import btuLogoImage from '../public/btuLogo.png'
+import ibmIxLogo from '../public/ibmIx.png'
 import {MdVerified} from 'react-icons/md';
 import {AiFillPlayCircle} from 'react-icons/ai';
 import {BsThreeDots, BsFillPlayFill, BsGithub} from 'react-icons/bs'
