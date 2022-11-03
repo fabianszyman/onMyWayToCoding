@@ -229,9 +229,9 @@ export default function Home() {
             </div>
           </div>
 
-          {/*SECTION: Certificates*/}
-          <div id='certificatesSection' className='bg-black pb-20'>
-            <h2 className="text-3xls p-4 pt-4 text-white">Certificates & Recommendations</h2>
+          {/*SECTION: Certifications*/}
+          <div id='certificationsSection' className='bg-black pb-20'>
+            <h2 className="text-3xls p-4 pt-4 text-white">Certifications & Recommendations</h2>
             <div id="myPortfolioItems" className=' font-gothamBold text-xs'>
               <div id="PortfolioItemGroup" class="group">
                   <div id='PortfolioItem' className=' group-hover:bg-gray-700 rounded-md max-w-xl relative mx-4'>
@@ -239,12 +239,12 @@ export default function Home() {
                     <div id='containerAllItems' className='flex items-center justify-between gap-6 '>
                       <div id='containerImageTitle' className='flex items-center py-2  gap-6'>
                         <div className='relative pointer-events-none z-0 w-16 h-16 ml-2'>
-                          <a href='https://www.coursera.org/professional-certificates/google-it-automation' target="_blank" rel="noreferrer" className='pointer-events-auto'>
+                          <a href='https://www.coursera.org/account/accomplishments/professional-cert/RDCB66AKZR6E' target="_blank" rel="noreferrer" className='pointer-events-auto'>
                           <Image src={googleLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
                           </a>
                         </div>
                         <div className='text-white w-18'>
-                          <h4 className='w-44 sm:w-64 md:w-64 xl:w-72 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Google IT Automation with Python Certification</h4>
+                          <h4 className='w-44 sm:w-64 md:w-64 xl:w-72 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Google IT Automation with Python</h4>
                           <p className='group-hover:text-white text-left font-gothamLight'>Google</p>
                         </div>
                       </div>
@@ -263,7 +263,7 @@ export default function Home() {
                           </a>
                         </div>
                         <div className='text-white w-18'>
-                          <h4 className='w-44 sm:w-64 md:w-64 xl:w-72 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Front-End Web UI Frameworks and Tools: Bootstrap 4</h4>
+                          <h4 className='w-44 sm:w-64 md:w-64 xl:w-72 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Crash Course on Python</h4>
                           <p className='group-hover:text-white text-left font-gothamLight'>Coursera</p>
                         </div>
                       </div>
@@ -273,9 +273,11 @@ export default function Home() {
               </div>
 
               <div className='flex justify-center max-w-xl py-2'>
-                <button className=' border border-gray-400 hover:border-green-500 hover:scale-95 text-white font-bold rounded-full m-2 py-2 px-4'>
-                  Show all
-                </button>
+                <Link href='/certificates'>
+                  <button className=' border border-gray-400 hover:border-green-500 hover:scale-95 text-white font-bold rounded-full m-2 py-2 px-4'>
+                    Show all
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -304,7 +306,7 @@ export default function Home() {
             </svg>
             Education
           </a>
-          <a href="#certificatesSection" class="w-full block py-2 px-3 text-center text-gray-400 hover:text-white hover:stroke-white hover:fill-white">
+          <a href="#certificationsSection" class="w-full block py-2 px-3 text-center text-gray-400 hover:text-white hover:stroke-white hover:fill-white">
             <div className='bg-gradient-to-tl from-green-300 via-blue-500 to-purple-600 w-6 h-6 m-auto mb-2 rounded-sm flex justify-center items-baseline relative'>
               <div className='w-4 h-4 left-1.5 top-1.5 absolute'>
                 <svg className="m-auto stroke-gray-400 fill-gray-400 hover:stroke-white hover:fill-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white">
@@ -312,7 +314,7 @@ export default function Home() {
                 </svg>
               </div>
             </div>
-            Certificates
+            Certifications
           </a>
         </nav>  
       </main>

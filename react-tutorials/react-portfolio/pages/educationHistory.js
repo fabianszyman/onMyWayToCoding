@@ -52,7 +52,7 @@ export default function Home() {
                                                 <Image src={btuLogoImage} alt="fallback-text" layout='fill' objectFit='cover'/>
                                             </div>
                                             <div className='text-white'>
-                                                <h4 className='text-ellipsis w-18 whitespace-nowrap overflow-hidden inline-block text-base'>MSc Economics and Engenieering</h4>
+                                                <h4 className='w-44 sm:w-64 md:w-64 xl:w-72 text-ellipsis w-18 whitespace-nowrap overflow-hidden inline-block text-base'>MSc Economics and Engenieering</h4>
                                                 <p className='group-hover:text-white text-left font-gothamLight'>BTU Cottbus - Senftenberg</p>
                                             </div>
                                         </div>
@@ -71,7 +71,7 @@ export default function Home() {
                                             <Image src={btuLogoImage} alt="fallback-text" layout='fill' objectFit='cover'/>
                                             </div>
                                             <div className='text-white'>
-                                                <h4 className='text-ellipsis w-18 whitespace-nowrap overflow-hidden inline-block text-base'>BSc Economics and Engenieering</h4>
+                                                <h4 className='w-44 sm:w-64 md:w-64 xl:w-72 text-ellipsis w-18 whitespace-nowrap overflow-hidden inline-block text-base'>BSc Economics and Engenieering</h4>
                                                 <p className='group-hover:text-white text-left font-gothamLight'>BTU Cottbus - Senftenberg</p>
                                             </div>
                                         </div>
