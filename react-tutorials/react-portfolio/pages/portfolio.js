@@ -34,7 +34,7 @@ export default function Home() {
             </div>
         </nav>
         <div className=' bg-black pt-4 px-4'>
-            <h2>Frontend ( HTML | CSS | React.js )</h2>
+            <h2>Personal Projects</h2>
                 {/*SECTION: To Do App*/}
                 <div class='group'>
                     <div className='w-full font-gothamLight text-xs'>
@@ -90,7 +90,7 @@ export default function Home() {
 
         </div>
         <div className=' bg-black p-4'>
-            <h2>Backend ( Node.js | Express )</h2>
+            <h2>Work related projects</h2>
                 {/*SECTION: Instagram AutoLike Bot*/}
                 <div class='group'>
                     <div className='w-full font-gothamLight text-xs'>

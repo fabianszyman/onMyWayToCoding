@@ -109,20 +109,23 @@ export default function Home() {
             <h2 className="text-3xls p-4 pt-4 text-white">Employment History</h2>
             <div id="myPortfolioItems" className=' font-gothamBold text-xs'>
               <div id="PortfolioItemGroup" class="group">
-                <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
-                  <div id='containerAllItems' className='flex items-center justify-between gap-6'>
-                    <div id='containerImageTitle' className='flex items-center gap-6'>
-                      <a href='https://www.check24.de/profis/' target="_blank" rel="noreferrer" className='ml-2 w-16 h-16'>
-                      <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
-                      </a>
-                      <div className='text-white'>
-                        <h4 className='text-ellipsis w-18 whitespace-nowrap overflow-hidden inline-block text-base'>Senior Product Manager</h4>
-                        <p className='group-hover:text-white text-left font-gothamLight'>CHECK24 Profis</p>
+                <Link href='/seniorProjectComingFromHome'>
+                  <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
+                      <div id='containerAllItems' className='flex items-center justify-between gap-6'>
+                        <div id='containerImageTitle' className='flex items-center gap-6'>
+                          
+                          <div href='https://www.check24.de/profis/' target="_blank" rel="noreferrer" className='ml-2 w-16 h-16'>
+                          <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
+                          </div>
+                          <div className='text-white'>
+                            <h4 className='text-ellipsis w-18 whitespace-nowrap overflow-hidden inline-block text-base'>Senior Product Manager</h4>
+                            <p className='group-hover:text-white text-left font-gothamLight'>CHECK24 Profis</p>
+                          </div>
+                        </div>
+                        <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>January 2022 - Present</p>
                       </div>
                     </div>
-                    <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>January 2022 - Present</p>
-                  </div>
-                </div>
+                </Link>
               </div>
               <div id="PortfolioItemGroup" class="group">
                 <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
@@ -285,37 +288,62 @@ export default function Home() {
       </div>
 
       <nav className="fixed bottom-0 inset-x-0 flex justify-between text-xs text-white-100 bg-black font-gothamBold">
+        <div className='w-full block py-2 px-3 text-center text-gray-400'>
+          <div class='group'>
+              <a href='#heroHeader' className='w-full'>
+                <div className= 'group-hover:stroke-white group-hover:fill-white group-hover:text-white'>
+                      <svg className="w-6 h-6 mb-2 mx-auto stroke-gray-600 fill-gray-600 group-hover:stroke-white group-hover:fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+                        <path d="M1.126 10.558c0-5.14 4.226-9.28 9.407-9.28 5.18 0 9.407 4.14 9.407 9.28a9.157 9.157 0 01-2.077 5.816l4.344 4.344a1 1 0 01-1.414 1.414l-4.353-4.353a9.454 9.454 0 01-5.907 2.058c-5.18 0-9.407-4.14-9.407-9.28zm9.407-7.28c-4.105 0-7.407 3.274-7.407 7.28s3.302 7.279 7.407 7.279 7.407-3.273 7.407-7.28c0-4.005-3.302-7.278-7.407-7.278z"></path>
+                      </svg>
+                      Portfolio
+                </div>
+              </a>
+          </div>
+        </div>
+        
+        <div className='w-full block py-2 px-3 text-center text-gray-400'>
+          <div class='group'>
+              <a href='#employmentHistorySection' className='w-full'>
+                <div className= 'group-hover:stroke-white group-hover:fill-white group-hover:text-white'>
+                      <svg className="w-6 h-6 mb-2 mx-auto stroke-gray-600 fill-gray-600 group-hover:stroke-white group-hover:fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+                        <path d="M12.5 3.247a1 1 0 00-1 0L4 7.577V20h4.5v-6a1 1 0 011-1h5a1 1 0 011 1v6H20V7.577l-7.5-4.33zm-2-1.732a3 3 0 013 0l7.5 4.33a2 2 0 011 1.732V21a1 1 0 01-1 1h-6.5a1 1 0 01-1-1v-6h-3v6a1 1 0 01-1 1H3a1 1 0 01-1-1V7.577a2 2 0 011-1.732l7.5-4.33z"></path>
+                      </svg>
+                      Employment
+                </div>
+              </a>
+          </div>
+        </div>
+
+        <div className='w-full block py-2 px-3 text-center text-gray-400'>
+          <div class='group'>
+              <a href='#educationHistorySection' className='w-full'>
+                <div className= 'group-hover:stroke-white group-hover:fill-white group-hover:text-white'>
+                      <svg className="w-6 h-6 mb-2 mx-auto stroke-gray-600 fill-gray-600 group-hover:stroke-white group-hover:fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+                        <path d="M14.5 2.134a1 1 0 011 0l6 3.464a1 1 0 01.5.866V21a1 1 0 01-1 1h-6a1 1 0 01-1-1V3a1 1 0 01.5-.866zM16 4.732V20h4V7.041l-4-2.309zM3 22a1 1 0 01-1-1V3a1 1 0 012 0v18a1 1 0 01-1 1zm6 0a1 1 0 01-1-1V3a1 1 0 012 0v18a1 1 0 01-1 1z"></path>
+                      </svg>
+                      Education
+                </div>
+              </a>
+          </div>
+        </div>
+
+        <div className='w-full block py-2 px-3 text-center text-gray-400'>
+          <div class='group'>
+              <a href="#certificationsSection" class="w-full">
+                <div className= 'group-hover:stroke-white group-hover:fill-white group-hover:text-white'>
+                  <div className='bg-gradient-to-tl from-green-300 via-blue-500 to-purple-600 w-6 h-6 m-auto mb-2 rounded-sm flex justify-center items-baseline relative'>
+                      <div className='w-4 h-4 left-1.5 top-1.5 absolute'>
+                        <svg className="m-auto stroke-gray-400 fill-gray-400 group-hover:stroke-white group-hover:fill-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white">
+                        <path d="M15.724 4.22A4.313 4.313 0 0012.192.814a4.269 4.269 0 00-3.622 1.13.837.837 0 01-1.14 0 4.272 4.272 0 00-6.21 5.855l5.916 7.05a1.128 1.128 0 001.727 0l5.916-7.05a4.228 4.228 0 00.945-3.577z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  Certifications
+                </div>
+              </a>
+          </div>
+        </div>
           
-          <a href="#heroHeader" class="w-full block py-2 px-3 text-center text-gray-400 hover:text-white hover:stroke-white hover:fill-white">
-            <svg className="w-6 h-6 mb-2 mx-auto stroke-gray-600 fill-gray-600 hover:stroke-white hover:fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
-            <path d="M1.126 10.558c0-5.14 4.226-9.28 9.407-9.28 5.18 0 9.407 4.14 9.407 9.28a9.157 9.157 0 01-2.077 5.816l4.344 4.344a1 1 0 01-1.414 1.414l-4.353-4.353a9.454 9.454 0 01-5.907 2.058c-5.18 0-9.407-4.14-9.407-9.28zm9.407-7.28c-4.105 0-7.407 3.274-7.407 7.28s3.302 7.279 7.407 7.279 7.407-3.273 7.407-7.28c0-4.005-3.302-7.278-7.407-7.278z"></path>
-            </svg>
-            Portfolio
-          </a>
-          
-          <a href="#employmentHistorySection" className="w-full block py-2 px-3 text-center text-gray-400 hover:text-white hover:stroke-white hover:fill-white">
-            <svg className="w6 h-6 mb-2 mx-auto stroke-gray-600 fill-gray-600 hover:stroke-white hover:fill-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-            <path d="M12.5 3.247a1 1 0 00-1 0L4 7.577V20h4.5v-6a1 1 0 011-1h5a1 1 0 011 1v6H20V7.577l-7.5-4.33zm-2-1.732a3 3 0 013 0l7.5 4.33a2 2 0 011 1.732V21a1 1 0 01-1 1h-6.5a1 1 0 01-1-1v-6h-3v6a1 1 0 01-1 1H3a1 1 0 01-1-1V7.577a2 2 0 011-1.732l7.5-4.33z"></path>
-            </svg>
-            Employment
-          </a>
-          
-          <a href="#educationHistorySection" class="w-full block py-2 px-3 text-center text-gray-400 hover:text-white hover:stroke-white hover:fill-white">
-            <svg className="w-6 h-6 mb-2 mx-auto stroke-gray-600 fill-gray-600 hover:stroke-white hover:fill-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white">
-            <path d="M14.5 2.134a1 1 0 011 0l6 3.464a1 1 0 01.5.866V21a1 1 0 01-1 1h-6a1 1 0 01-1-1V3a1 1 0 01.5-.866zM16 4.732V20h4V7.041l-4-2.309zM3 22a1 1 0 01-1-1V3a1 1 0 012 0v18a1 1 0 01-1 1zm6 0a1 1 0 01-1-1V3a1 1 0 012 0v18a1 1 0 01-1 1z"></path>
-            </svg>
-            Education
-          </a>
-          <a href="#certificationsSection" class="w-full block py-2 px-3 text-center text-gray-400 hover:text-white hover:stroke-white hover:fill-white">
-            <div className='bg-gradient-to-tl from-green-300 via-blue-500 to-purple-600 w-6 h-6 m-auto mb-2 rounded-sm flex justify-center items-baseline relative'>
-              <div className='w-4 h-4 left-1.5 top-1.5 absolute'>
-                <svg className="m-auto stroke-gray-400 fill-gray-400 hover:stroke-white hover:fill-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="white">
-                <path d="M15.724 4.22A4.313 4.313 0 0012.192.814a4.269 4.269 0 00-3.622 1.13.837.837 0 01-1.14 0 4.272 4.272 0 00-6.21 5.855l5.916 7.05a1.128 1.128 0 001.727 0l5.916-7.05a4.228 4.228 0 00.945-3.577z"></path>
-                </svg>
-              </div>
-            </div>
-            Certifications
-          </a>
         </nav>  
       </main>
     </div>
