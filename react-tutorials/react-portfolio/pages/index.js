@@ -12,6 +12,7 @@ import courseraLogo from '../public/courseraLogo.jpeg'
 import {MdVerified} from 'react-icons/md';
 import {AiFillPlayCircle} from 'react-icons/ai';
 import {BsThreeDots, BsFillPlayFill} from 'react-icons/bs'
+import {TbBrandGithub} from 'react-icons/tb'
 import {GrCertificate} from 'react-icons/gr'
 import Link from 'next/link';
 
@@ -44,16 +45,28 @@ export default function Home() {
       </div>
       <div className='font-gothamBold '>
         {/*SECTION: Portfolio*/}
-        <div id="myPortfolioSection" className='bg-gradient-to-b from-gray-700 via-gray-900 to-black '>
-          <div className=' flex gap-8 p-4'>
-            <a href='../CVExample.pdf'>
-              <AiFillPlayCircle className=' fill-green-500 w-14 h-14 hover:scale-105'/>
-            </a>
-            <a href='../CVExample.pdf'>
-              <button className='text-white border-solid border py-2 px-6 rounded-md border-gray-400 my-2 text-sm hover:border-white hover:border-2'>RESUME</button>
-            </a>
-        
-            <BsThreeDots className=' fill-gray-400 w-8 h-8 hover:scale-105 hover:fill-white flex my-3'/>
+        <div id="myPortfolioSection" className='bg-gradient-to-b from-gray-700 via-gray-900 to-black'>
+          <div className='flex gap-8 p-4'>
+            <div className='flex w-full justify-between gap-12 sm:justify-start md:justify-start'>
+              <div className='flex gap-6'>
+                <Link href='https://github.com/fabianszyman' target="_blank" rel="noreferrer">
+                  <TbBrandGithub className=' w-10 h-10 hover:text-white text-gray-400 my-2 hover:scale-105'/>
+                </Link>
+                <a href='../CVExample.pdf'>
+                  <button className=' text-white border-solid border py-2 px-6 rounded-full border-gray-400 my-2 text-sm hover:border-white hover:border-2'>RESUME</button>
+                </a>
+                 {/*To Do: 
+                 Add Three Dot Icon incl. Dialog with multiple menu items
+
+                 <BsThreeDots className='  fill-gray-400 w-8 h-8 hover:scale-105 hover:fill-white my-3'/>
+                 */}
+              </div>
+              <div className='flex justify-start  sm:pl-10 md:pl-10'>
+                <a href='../CVExample.pdf'>
+                  <AiFillPlayCircle className='fill-green-500 w-16 h-16 hover:scale-105'/>
+                </a>
+              </div>
+            </div>
           </div>
             <h2 className="text-3xls p-4 text-white">Portfolio</h2>
             <div id="myPortfolioItems" className=' font-gothamLight text-xs'>

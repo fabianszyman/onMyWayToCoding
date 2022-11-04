@@ -46,7 +46,7 @@ export default function Home() {
                             <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                                 <div id='containerImageTitle' className='flex items-center gap-6'>
                                 <a href='https://www.check24.de/profis/' target="_blank" rel="noreferrer" className='ml-2 w-16 h-16'>
-                                <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectFit='cover'/>
+                                <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
                                 </a>
                                 <div className='text-white'>
                                     <h4 className='text-ellipsis w-18 whitespace-nowrap overflow-hidden inline-block text-base'>Senior Product Manager</h4>
@@ -63,7 +63,7 @@ export default function Home() {
                             <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                                 <div id='containerImageTitle' className='flex items-center gap-6'>
                                 <a href='https://www.check24.de/profis/' target="_blank" rel="noreferrer" className='ml-2 w-16 h-16'>
-                                <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectFit='cover'/>
+                                <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
                                 </a>
                                 <div className='text-white w-18'>
                                     <h4 className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Product Manager</h4>
@@ -80,7 +80,7 @@ export default function Home() {
                             <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                                 <div id='containerImageTitle' className='flex items-center gap-6'>
                                 <a href='https://www.instagram.com/sneaker_mania_berlin/' target="_blank" rel="noreferrer" className='ml-2 w-16 h-16'>
-                                <Image src={printManiaLogo} alt="fallback-text" layout='fill' objectFit='cover'/>
+                                <Image src={printManiaLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
                                 </a>
                                 <div className='text-white w-18'>
                                     <h4 className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Founder</h4>
@@ -97,7 +97,7 @@ export default function Home() {
                             <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                                 <div id='containerImageTitle' className='flex items-center gap-6'>
                                 <a href='https://www.check24.de/profis/' target="_blank" rel="noreferrer" className='ml-2 w-16 h-16'>
-                                <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectFit='cover'/>
+                                <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
                                 </a>
                                 <div className='text-white w-18'>
                                     <h4 className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Junior Product Manager</h4>
@@ -113,7 +113,7 @@ export default function Home() {
                             <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                                 <div id='containerImageTitle' className='flex items-center gap-6'>
                                 <a href='https://www.berliner-volksbank.de/homepage.html' target="_blank" rel="noreferrer" className='ml-2 w-16 h-16'>
-                                <Image src={bvLogo} alt="fallback-text" layout='fill' objectFit='cover'/>
+                                <Image src={bvLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
                                 </a>
                                 <div className='text-white w-18'>
                                     <h4 className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Account Manager</h4>
@@ -136,7 +136,7 @@ export default function Home() {
                                 <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                                     <div id='containerImageTitle' className='flex items-center gap-6'>
                                     <a href='https://ibmix.de/en/' target="_blank" rel="noreferrer" className='ml-2 w-16 h-16'>
-                                    <Image src={ibmIxLogo} alt="fallback-text" layout='fill' objectFit='cover'/>
+                                    <Image src={ibmIxLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
                                     </a>
                                     <div className='text-white w-18'>
                                         <h4 className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Project Manager</h4>
@@ -154,7 +154,7 @@ export default function Home() {
                                 <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                                     <div id='containerImageTitle' className='flex items-center gap-6'>
                                     <a href='https://www.auto1-group.com/' target="_blank" rel="noreferrer" className='ml-2 w-16 h-16'>
-                                    <Image src={auto1Logo} alt="fallback-text" layout='fill' objectFit='cover'/>
+                                    <Image src={auto1Logo} alt="fallback-text" layout='fill' objectfit='cover'/>
                                     </a>
                                     <div className='text-white w-18'>
                                         <h4 className='text-ellipsis w-40 sm:w-48 md:w-64 lg:w-64 whitespace-nowrap overflow-hidden inline-block text-base'>Business Development Manager</h4>
@@ -174,7 +174,7 @@ export default function Home() {
                                 <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                                     <div id='containerImageTitle' className='flex items-center gap-6'>
                                     <a href='https://www.berliner-volksbank.de/homepage.html' target="_blank" rel="noreferrer" className='ml-2 w-16 h-16'>
-                                    <Image src={bvLogo} alt="fallback-text" layout='fill' objectFit='cover'/>
+                                    <Image src={bvLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
                                     </a>
                                     <div className='text-white w-18'>
                                     <h4 className='text-ellipsis w-32 sm:w-48 md:w-64 lg:w-64 whitespace-nowrap overflow-hidden inline-block text-base'>Bank Clerk</h4>

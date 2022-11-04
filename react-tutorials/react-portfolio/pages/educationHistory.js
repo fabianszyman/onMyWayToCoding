@@ -49,7 +49,7 @@ export default function Home() {
                                     <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                                         <div id='containerImageTitle' className='flex items-center gap-6'>
                                             <div className='ml-2 w-16 h-16'>
-                                                <Image src={btuLogoImage} alt="fallback-text" layout='fill' objectFit='cover'/>
+                                                <Image src={btuLogoImage} alt="fallback-text" layout='fill' objectfit='cover'/>
                                             </div>
                                             <div className='text-white'>
                                                 <h4 className='w-44 sm:w-64 md:w-64 xl:w-72 text-ellipsis w-18 whitespace-nowrap overflow-hidden inline-block text-base'>MSc Economics and Engenieering</h4>
@@ -68,7 +68,7 @@ export default function Home() {
                                     <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                                         <div id='containerImageTitle' className='flex items-center gap-6'>
                                             <div className='ml-2 w-16 h-16'>
-                                            <Image src={btuLogoImage} alt="fallback-text" layout='fill' objectFit='cover'/>
+                                            <Image src={btuLogoImage} alt="fallback-text" layout='fill' objectfit='cover'/>
                                             </div>
                                             <div className='text-white'>
                                                 <h4 className='w-44 sm:w-64 md:w-64 xl:w-72 text-ellipsis w-18 whitespace-nowrap overflow-hidden inline-block text-base'>BSc Economics and Engenieering</h4>
@@ -92,7 +92,7 @@ export default function Home() {
                                     <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                                         <div id='containerImageTitle' className='flex items-center gap-6'>
                                         <div className='ml-2 w-16 h-16'>
-                                        <Image src={rmitLogo} alt="fallback-text" layout='fill' objectFit='cover'/>
+                                        <Image src={rmitLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
                                         </div>
                                         <div className='text-white w-18'>
                                             <h4 className='w-44 sm:w-64 md:w-64 xl:w-72 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>RMIT University</h4>
@@ -113,7 +113,7 @@ export default function Home() {
                                     <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                                         <div id='containerImageTitle' className='flex items-center gap-6'>
                                         <div className='ml-2 w-16 h-16'>
-                                        <Image src={csufLogo} alt="fallback-text" layout='fill' objectFit='cover'/>
+                                        <Image src={csufLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
                                         </div>
                                         <div className='text-white w-18'>
                                             <h4 className='w-44 sm:w-64 md:w-64 xl:w-72 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>California State University (CSUF)</h4>

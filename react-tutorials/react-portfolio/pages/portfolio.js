@@ -45,7 +45,7 @@ export default function Home() {
                                     1
                                 </div>
                                 <div className='w-12 h-12'>
-                                <Image src={minimalisticLandingPageImage} alt="fallback-text" className='w-12 h-12' layout='fill' objectFit='cover'/>
+                                <Image src={minimalisticLandingPageImage} alt="fallback-text" className='w-12 h-12' layout='fill' objectfit='cover'/>
                                 </div>
                                 <div className='w-6/12 py-4 px-3 text-left group-hover:text-white text-ellipsis whitespace-nowrap overflow-hidden'>
                                     Minimalistic Landing Page
@@ -72,7 +72,7 @@ export default function Home() {
                                     2
                                 </div>
                                 <div className='w-12 h-12'>
-                                <Image src={reaectToDoAppImage} alt="fallback-text" className='w-12 h-12' layout='fill' objectFit='cover'/>
+                                <Image src={reaectToDoAppImage} alt="fallback-text" className='w-12 h-12' layout='fill' objectfit='cover'/>
                                 </div>
                                 <div className='w-6/12 py-4 px-3 text-left group-hover:text-white text-ellipsis whitespace-nowrap overflow-hidden'>
                                     To Do App
@@ -100,7 +100,7 @@ export default function Home() {
                                     3
                                 </div>
                                 <div className='w-12 h-12'>
-                                <Image src={instaBotLogo} alt="fallback-text" className='w-12 h-12' layout='fill' objectFit='cover'/>
+                                <Image src={instaBotLogo} alt="fallback-text" className='w-12 h-12' layout='fill' objectfit='cover'/>
                                 </div>
                                 <div className='w-5/12 py-4 px-3 text-left group-hover:text-white text-ellipsis whitespace-nowrap overflow-hidden'>
                                     Instagram LikeBot
