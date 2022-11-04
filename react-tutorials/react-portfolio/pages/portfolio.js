@@ -94,7 +94,7 @@ export default function Home() {
                 {/*SECTION: Instagram AutoLike Bot*/}
                 <div class='group'>
                     <div className='w-full font-gothamLight text-xs'>
-                        <Link href='/instagramLikeBotComingFromPortfolioPage'>
+                        <Link href='/instagramLikeBot'>
                             <div className='flex items-center gap-1 text-gray-400 py-2 group-hover:bg-gray-700 rounded-md max-w-xl relative '>
                                 <div className='w-1/12 h-12 py-4 px-4'>
                                     3

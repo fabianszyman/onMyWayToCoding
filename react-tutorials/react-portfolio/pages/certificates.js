@@ -34,7 +34,6 @@ export default function Home(headerName) {
       </Head>
       <main className='text-white font-gothamBold bg-black h-screen '>
         <Navbar headerName={pageName}/>
-         
         
             {/*SECTION: Certificates*/}
             <div className='w-screen'>

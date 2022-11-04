@@ -97,7 +97,7 @@ export default function Home() {
               </div>
 
               <div id="PortfolioItemGroup" class="group">
-                <Link href='/instagramLikeBotComingFromHome'>
+                <Link href='/instagramLikeBot'>
                   <div id='PortfolioItem' className='flex items-center gap-6 text-gray-400 py-2 pl-4 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                     <p className='group-hover:hidden px-2 w-2 h-2'>3</p>
                     <BsFillPlayFill className='hidden group-hover:block text-white w-8 h-8'/>
