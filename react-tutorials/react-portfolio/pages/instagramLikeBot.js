@@ -15,7 +15,7 @@ import Link from 'next/link';
 import Navbar from '../components/Navbar';
 
 
-export default function Home(headerName) {
+export default function Home() {
     let pageName ='Instagram LikeBot'
     return (
     <div >

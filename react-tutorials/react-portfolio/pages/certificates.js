@@ -23,7 +23,7 @@ import Nabar from '../components/Navbar.js'
 import Navbar from '../components/Navbar.js';
 
 
-export default function Home(headerName) {
+export default function Home() {
     let pageName ='Certifications & Recommendations'
   return (
     <div >

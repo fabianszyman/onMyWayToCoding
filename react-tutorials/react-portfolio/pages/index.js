@@ -71,7 +71,7 @@ export default function Home() {
             <h2 className="text-3xls p-4 text-white">Portfolio</h2>
             <div id="myPortfolioItems" className=' font-gothamLight text-xs'>
               <div id="PortfolioItemGroup" class="group">
-                <Link href='/minimalisticLandingPageComingFromHome'>
+                <Link href='/minimalisticLandingPage'>
                   <div id='PortfolioItem' className='flex items-center gap-6 text-gray-400 py-2 pl-4 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                     <p className='group-hover:hidden px-2 w-2 h-2'>1</p>
                     <BsFillPlayFill className='hidden group-hover:block text-white w-8 h-8'/>
@@ -84,7 +84,7 @@ export default function Home() {
               </div>
 
               <div id="PortfolioItemGroup" class="group">
-                <Link href='/toDoAppComingFromHome'>
+                <Link href='/toDoApp'>
                   <div id='PortfolioItem' className='flex items-center gap-6 text-gray-400 py-2 pl-4 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                     <p className='group-hover:hidden px-2 w-2 h-2'>2</p>
                     <BsFillPlayFill className='hidden group-hover:block text-white w-8 h-8'/>
@@ -122,7 +122,7 @@ export default function Home() {
             <h2 className="text-3xls p-4 pt-4 text-white">Employment History</h2>
             <div id="myPortfolioItems" className=' font-gothamBold text-xs'>
               <div id="PortfolioItemGroup" class="group">
-                <Link href='/seniorProjectComingFromHome'>
+                <Link href='/seniorProjects'>
                   <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                       <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                         <div id='containerImageTitle' className='flex items-center gap-6'>
