@@ -8,12 +8,12 @@ export default function Navbar(props) {
     return(
         
         <nav className='flex bg-slate-800 justify-start items-center h-14'>
-            <div className=' w-2/12 md:w-1/12 lg:w-1/12 text-white'>
+            <div className=' text-white absolute  h-14 mt-1 '>
                 <button type="button" onClick={() => router.back()}>
-                    <IoIosArrowBack className='w-8 h-14 ml-4'/>
+                    <IoIosArrowBack className='m-2 w-8 h-9 text-center '/>
                 </button>
             </div>
-            <div className='w-screen text-center'>
+            <div className='text-center text-ellipsis w-full whitespace-nowrap overflow-hidden inline-block text-base'>
                 <h3>{props.headerName}</h3>
             </div>
         </nav>
