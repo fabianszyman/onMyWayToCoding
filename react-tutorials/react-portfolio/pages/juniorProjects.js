@@ -19,7 +19,7 @@ import Navbar from '../components/Navbar';
 
 
 export default function Home() {
-    let pageName ='Work related projects (Senior PM)'
+    let pageName ='Work related projects (Junior PM)'
   return (
     <div >
       <Head>
@@ -32,10 +32,10 @@ export default function Home() {
             {/*SECTION: Employment History*/}
             <div className='w-screen'>
                 <div id='employmentHistorySection' className='bg-black'>
-                    <h2 className="text-3xls p-4 text-white">Senior Product Manager (CHECK24 Profis)</h2>
+                    <h2 className="text-3xls p-4 text-white">Junior Product Manager (CHECK24 Profis)</h2>
                     <div id="myPortfolioItems" className=' font-gothamBold text-xs'>
                         <div id="PortfolioItemGroup" class="group">
-                            <Link href='/forkProject'>
+                            <Link href='/questionEditor'>
                                 <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                                 <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                                     <div id='containerImageTitle' className='flex items-center gap-6'>
@@ -43,7 +43,7 @@ export default function Home() {
                                     <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
                                     </div>
                                     <div className='text-white'>
-                                        <h4 className='text-ellipsis w-18 whitespace-nowrap overflow-hidden inline-block text-base'>Fork Project</h4>
+                                        <h4 className='text-ellipsis w-18 whitespace-nowrap overflow-hidden inline-block text-base'>Question Editor</h4>
                                         <p className='group-hover:text-white text-left font-gothamLight'>CHECK24 Profis</p>
                                     </div>
                                     </div>
@@ -54,7 +54,7 @@ export default function Home() {
                         </div>
 
                         <div id="PortfolioItemGroup" class="group">
-                            <Link href='/backofficeProject'>
+                            <Link href='/instantResultPage'>
                                 <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                                 <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                                     <div id='containerImageTitle' className='flex items-center gap-6'>
@@ -62,7 +62,7 @@ export default function Home() {
                                     <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
                                     </div>
                                     <div className='text-white w-18'>
-                                        <h4 className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Backoffice Project</h4>
+                                        <h4 className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Instant Result Page</h4>
                                         <p className='group-hover:text-white text-left font-gothamLight'>CHECK24 Profis</p>
                                     </div>
                                     </div>
@@ -73,7 +73,7 @@ export default function Home() {
                         </div>
 
                         <div id="PortfolioItemGroup" class="group">
-                            <Link href='/nativeMessenger'>
+                            <Link href='/paymentProcessProject'>
                                 <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                                 <div id='containerAllItems' className='flex items-center justify-between gap-6'>
                                     <div id='containerImageTitle' className='flex items-center gap-6'>
@@ -81,7 +81,26 @@ export default function Home() {
                                     <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
                                     </div>
                                     <div className='text-white w-18'>
-                                        <h4 className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Native Messengers (iOS & Android)</h4>
+                                        <h4 className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Payment process (Stripe)</h4>
+                                        <p className='group-hover:text-white text-left font-gothamLight'>CHECK24 Profis</p>
+                                    </div>
+                                    </div>
+                                    <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>March 2019 - Present</p>
+                                </div>
+                                </div>
+                            </Link>
+                        </div>
+
+                        <div id="PortfolioItemGroup" class="group">
+                            <Link href='/happinessGarantieProject'>
+                                <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
+                                <div id='containerAllItems' className='flex items-center justify-between gap-6'>
+                                    <div id='containerImageTitle' className='flex items-center gap-6'>
+                                    <div className='ml-2 w-16 h-16'>
+                                    <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
+                                    </div>
+                                    <div className='text-white w-18'>
+                                        <h4 className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Happiness Garantie</h4>
                                         <p className='group-hover:text-white text-left font-gothamLight'>CHECK24 Profis</p>
                                     </div>
                                     </div>

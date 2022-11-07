@@ -141,20 +141,22 @@ export default function Home() {
                 </Link>
               </div>
               <div id="PortfolioItemGroup" class="group">
-                <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
-                  <div id='containerAllItems' className='flex items-center justify-between gap-6'>
-                    <div id='containerImageTitle' className='flex items-center gap-6'>
-                      <a href='https://www.check24.de/profis/' target="_blank" rel="noreferrer" className='ml-2 w-16 h-16'>
-                      <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
-                      </a>
-                      <div className='text-white w-18'>
-                        <h4 className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Product Manager</h4>
-                        <p className='group-hover:text-white text-left font-gothamLight'>CHECK24 Profis</p>
+                <Link href='/professionalProjects' rel="noreferrer">
+                  <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
+                    <div id='containerAllItems' className='flex items-center justify-between gap-6'>
+                      <div id='containerImageTitle' className='flex items-center gap-6'>
+                        <div className='ml-2 w-16 h-16'>
+                        <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
+                        </div>
+                        <div className='text-white w-18'>
+                          <h4 className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Product Manager</h4>
+                          <p className='group-hover:text-white text-left font-gothamLight'>CHECK24 Profis</p>
+                        </div>
                       </div>
+                      <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>April 2019 - December 2021</p>
                     </div>
-                    <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>April 2019 - December 2021</p>
                   </div>
-                </div>
+                </Link>
               </div>
               <div id="PortfolioItemGroup" class="group">
                 <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
@@ -173,20 +175,22 @@ export default function Home() {
                 </div>
               </div>
               <div id="PortfolioItemGroup" class="group">
-                <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
-                  <div id='containerAllItems' className='flex items-center justify-between gap-6'>
-                    <div id='containerImageTitle' className='flex items-center gap-6'>
-                      <a href='https://www.check24.de/profis/' target="_blank" rel="noreferrer" className='ml-2 w-16 h-16'>
-                      <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
-                      </a>
-                      <div className='text-white w-18'>
-                        <h4 className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Junior Product Manager</h4>
-                        <p className='group-hover:text-white text-left font-gothamLight'>CHECK24 Profis</p>
+                <Link href='/juniorProjects'>
+                  <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
+                    <div id='containerAllItems' className='flex items-center justify-between gap-6'>
+                      <div id='containerImageTitle' className='flex items-center gap-6'>
+                        <div className='ml-2 w-16 h-16'>
+                        <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
+                        </div>
+                        <div className='text-white w-18'>
+                          <h4 className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Junior Product Manager</h4>
+                          <p className='group-hover:text-white text-left font-gothamLight'>CHECK24 Profis</p>
+                        </div>
                       </div>
+                      <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>April 2018 - March 2019</p>
                     </div>
-                    <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>April 2018 - March 2019</p>
                   </div>
-                </div>
+                </Link>
               </div>
               <div className='flex justify-center max-w-xl py-2'>
                 <Link href='/employmentHistory'>

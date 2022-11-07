@@ -7,6 +7,9 @@ import check24ProfisLogo from '../public/check24ProfisLogo.png'
 import printManiaLogo from '../public/print_mania.png'
 import instaBotLogo from '../public/instabot.jpeg'
 import btuLogoImage from '../public/btuLogo.png'
+import ibmIxLogo from '../public/ibmIx.png'
+import auto1Logo from '../public/auto1GroupLogo.jpeg'
+import bvLogo from '../public/bvLogo.jpeg'
 import {MdVerified} from 'react-icons/md';
 import {AiFillPlayCircle} from 'react-icons/ai';
 import {BsThreeDots, BsFillPlayFill} from 'react-icons/bs'
@@ -79,11 +82,8 @@ export default function Home() {
                             </div>
                         </Link>
                     </div>
-                </div>            
+                </div>    
 
-        </div>
-        <div className=' bg-black p-4'>
-            <h2>Work related projects</h2>
                 {/*SECTION: Instagram AutoLike Bot*/}
                 <div class='group'>
                     <div className='w-full font-gothamLight text-xs'>
@@ -107,12 +107,219 @@ export default function Home() {
                             </div>
                         </Link>
                     </div>
-                </div>   
+                </div>           
 
         </div>
+
+
+        <div id='employmentHistorySection' className='bg-black'>
+        <h2 className="text-3xls p-4 text-white">Work related Projects</h2>
+        <div id="myPortfolioItems" className=' font-gothamBold text-xs'>
+            <div id="PortfolioItemGroup" class="group">
+                <Link href='/forkProject'>
+                    <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
+                    <div id='containerAllItems' className='flex items-center justify-between gap-6'>
+                        <div id='containerImageTitle' className='flex items-center gap-6'>
+                        <div className='ml-2 w-16 h-16'>
+                        <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
+                        </div>
+                        <div className='text-white'>
+                            <h4 className='text-ellipsis w-18 whitespace-nowrap overflow-hidden inline-block text-base'>Fork Project</h4>
+                            <p className='group-hover:text-white text-left font-gothamLight'>CHECK24 Profis (Senior PM)</p>
+                        </div>
+                        </div>
+                        <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>January 2022 - Present</p>
+                    </div>
+                    </div>
+                </Link>
+            </div>
+
+            <div id="PortfolioItemGroup" class="group">
+                <Link href='/backofficeProject'>
+                    <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
+                    <div id='containerAllItems' className='flex items-center justify-between gap-6'>
+                        <div id='containerImageTitle' className='flex items-center gap-6'>
+                        <div className='ml-2 w-16 h-16'>
+                        <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
+                        </div>
+                        <div className='text-white w-18'>
+                            <h4 className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Backoffice Project</h4>
+                            <p className='group-hover:text-white text-left font-gothamLight'>CHECK24 Profis (Senior PM)</p>
+                        </div>
+                        </div>
+                        <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>April 2019 - December 2021</p>
+                    </div>
+                    </div>
+                </Link>
+            </div>
+
+            <div id="PortfolioItemGroup" class="group">
+                <Link href='/nativeMessenger'>
+                    <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
+                    <div id='containerAllItems' className='flex items-center justify-between gap-6'>
+                        <div id='containerImageTitle' className='flex items-center gap-6'>
+                        <div className='ml-2 w-16 h-16'>
+                        <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
+                        </div>
+                        <div className='text-white w-18'>
+                            <h4 className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Native Messenger (iOS & Android)</h4>
+                            <p className='group-hover:text-white text-left font-gothamLight'>CHECK24 Profis (Senior PM)</p>
+                        </div>
+                        </div>
+                        <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>March 2019 - Present</p>
+                    </div>
+                    </div>
+                </Link>
+            </div>
+
+            <div id="PortfolioItemGroup" class="group">
+                <Link href='/eggCrackerProject'>
+                    <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
+                    <div id='containerAllItems' className='flex items-center justify-between gap-6'>
+                        <div id='containerImageTitle' className='flex items-center gap-6'>
+                        <div className='ml-2 w-16 h-16'>
+                        <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
+                        </div>
+                        <div className='text-white'>
+                            <h4 className='text-ellipsis w-18 whitespace-nowrap overflow-hidden inline-block text-base'>Egg Cracker</h4>
+                            <p className='group-hover:text-white text-left font-gothamLight'>CHECK24 Profis (Professional PM)</p>
+                        </div>
+                        </div>
+                        <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>January 2022 - Present</p>
+                    </div>
+                    </div>
+                </Link>
+            </div>
+
+            <div id="PortfolioItemGroup" class="group">
+                <Link href='/documentUploaderProject'>
+                    <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
+                    <div id='containerAllItems' className='flex items-center justify-between gap-6'>
+                        <div id='containerImageTitle' className='flex items-center gap-6'>
+                        <div className='ml-2 w-16 h-16'>
+                        <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
+                        </div>
+                        <div className='text-white w-18'>
+                            <h4 className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Document Uploader</h4>
+                            <p className='group-hover:text-white text-left font-gothamLight'>CHECK24 Profis (Professional PM)</p>
+                        </div>
+                        </div>
+                        <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>April 2019 - December 2021</p>
+                    </div>
+                    </div>
+                </Link>
+            </div>
+
+            <div id="PortfolioItemGroup" class="group">
+                <Link href='/invoiceProject'>
+                    <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
+                    <div id='containerAllItems' className='flex items-center justify-between gap-6'>
+                        <div id='containerImageTitle' className='flex items-center gap-6'>
+                        <div className='ml-2 w-16 h-16'>
+                        <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
+                        </div>
+                        <div className='text-white w-18'>
+                            <h4 className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Invoice Feature</h4>
+                            <p className='group-hover:text-white text-left font-gothamLight'>CHECK24 Profis (Professional PM)</p>
+                        </div>
+                        </div>
+                        <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>March 2019 - Present</p>
+                    </div>
+                    </div>
+                </Link>
+            </div>
+
+            <div id="PortfolioItemGroup" class="group">
+                <Link href='/happinessGarantieProject'>
+                    <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
+                    <div id='containerAllItems' className='flex items-center justify-between gap-6'>
+                        <div id='containerImageTitle' className='flex items-center gap-6'>
+                        <div className='ml-2 w-16 h-16'>
+                        <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
+                        </div>
+                        <div className='text-white w-18'>
+                            <h4 className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Happiness Garantie</h4>
+                            <p className='group-hover:text-white text-left font-gothamLight'>CHECK24 Profis (Professional PM)</p>
+                        </div>
+                        </div>
+                        <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>March 2019 - Present</p>
+                    </div>
+                    </div>
+                </Link>
+            </div>
+
+            <div id="PortfolioItemGroup" class="group">
+                <Link href='/questionEditor'>
+                    <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
+                    <div id='containerAllItems' className='flex items-center justify-between gap-6'>
+                        <div id='containerImageTitle' className='flex items-center gap-6'>
+                        <div className='ml-2 w-16 h-16'>
+                        <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
+                        </div>
+                        <div className='text-white'>
+                            <h4 className='text-ellipsis w-18 whitespace-nowrap overflow-hidden inline-block text-base'>Question Editor</h4>
+                            <p className='group-hover:text-white text-left font-gothamLight'>CHECK24 Profis (Junior PM)</p>
+                        </div>
+                        </div>
+                        <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>January 2022 - Present</p>
+                    </div>
+                    </div>
+                </Link>
+            </div>
+
+            <div id="PortfolioItemGroup" class="group">
+                <Link href='/instantResultPage'>
+                    <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
+                    <div id='containerAllItems' className='flex items-center justify-between gap-6'>
+                        <div id='containerImageTitle' className='flex items-center gap-6'>
+                        <div className='ml-2 w-16 h-16'>
+                        <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
+                        </div>
+                        <div className='text-white w-18'>
+                            <h4 className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Instant Result Page</h4>
+                            <p className='group-hover:text-white text-left font-gothamLight'>CHECK24 Profis (Junior PM)</p>
+                        </div>
+                        </div>
+                        <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>April 2019 - December 2021</p>
+                    </div>
+                    </div>
+                </Link>
+            </div>
+
+            <div id="PortfolioItemGroup" class="group">
+                <Link href='/paymentProcessProject'>
+                    <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
+                    <div id='containerAllItems' className='flex items-center justify-between gap-6'>
+                        <div id='containerImageTitle' className='flex items-center gap-6'>
+                        <div className='ml-2 w-16 h-16'>
+                        <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
+                        </div>
+                        <div className='text-white w-18'>
+                            <h4 className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Payment process (Stripe)</h4>
+                            <p className='group-hover:text-white text-left font-gothamLight'>CHECK24 Profis (Junior PM)</p>
+                        </div>
+                        </div>
+                        <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>March 2019 - Present</p>
+                    </div>
+                    </div>
+                </Link>
+            </div>
+    
+        </div>
+
+
+
+
+
+
+
+
+</div>
+
+        
+
+        
       </main>
     </div>
   )
 }
-
-
