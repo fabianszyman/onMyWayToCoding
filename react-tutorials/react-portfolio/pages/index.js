@@ -15,6 +15,15 @@ import {BsThreeDots, BsFillPlayFill} from 'react-icons/bs'
 import {TbBrandGithub} from 'react-icons/tb'
 import {GrCertificate} from 'react-icons/gr'
 import Link from 'next/link';
+import BigListItem from '../components/BigListItem';
+
+let seniorProjectPage = '/seniorProjects';
+let professionalProjectPage ='/professionalProjects';
+let printManiaInstagram = 'https://www.instagram.com/sneaker_mania_berlin/';
+let juniorProjectPage = '/juniorProjects';
+let btuPage = 'https://www.b-tu.de/';
+let googleItAutomationWithPython = 'https://www.coursera.org/account/accomplishments/specialization/certificate/RDCB66AKZR6E';
+let crashCourseOnPython = 'https://www.coursera.org/account/accomplishments/certificate/Q7JSQHAYXBLD';
 
 
 export default function Home() {
@@ -120,78 +129,42 @@ export default function Home() {
           {/*SECTION: Employment History*/}
           <div id='employmentHistorySection' className='bg-black'>
             <h2 className="text-3xls p-4 pt-4 text-white">Employment History</h2>
-            <div id="myPortfolioItems" className=' font-gothamBold text-xs'>
-              <div id="PortfolioItemGroup" class="group">
-                <Link href='/seniorProjects'>
-                  <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
-                      <div id='containerAllItems' className='flex items-center justify-between gap-6'>
-                        <div id='containerImageTitle' className='flex items-center gap-6'>
-                          
-                          <div href='https://www.check24.de/profis/' target="_blank" rel="noreferrer" className='ml-2 w-16 h-16'>
-                          <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
-                          </div>
-                          <div className='text-white'>
-                            <h4 className='text-ellipsis w-18 whitespace-nowrap overflow-hidden inline-block text-base'>Senior Product Manager</h4>
-                            <p className='group-hover:text-white text-left font-gothamLight'>CHECK24 Profis</p>
-                          </div>
-                        </div>
-                        <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>January 2022 - Present</p>
-                      </div>
-                    </div>
-                </Link>
-              </div>
-              <div id="PortfolioItemGroup" class="group">
-                <Link href='/professionalProjects' rel="noreferrer">
-                  <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
-                    <div id='containerAllItems' className='flex items-center justify-between gap-6'>
-                      <div id='containerImageTitle' className='flex items-center gap-6'>
-                        <div className='ml-2 w-16 h-16'>
-                        <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
-                        </div>
-                        <div className='text-white w-18'>
-                          <h4 className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Product Manager</h4>
-                          <p className='group-hover:text-white text-left font-gothamLight'>CHECK24 Profis</p>
-                        </div>
-                      </div>
-                      <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>April 2019 - December 2021</p>
-                    </div>
-                  </div>
-                </Link>
-              </div>
-              <div id="PortfolioItemGroup" class="group">
-                <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
-                  <div id='containerAllItems' className='flex items-center justify-between gap-6'>
-                    <div id='containerImageTitle' className='flex items-center gap-6'>
-                      <a href='https://www.instagram.com/sneaker_mania_berlin/' target="_blank" rel="noreferrer" className='ml-2 w-16 h-16'>
-                      <Image src={printManiaLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
-                      </a>
-                      <div className='text-white w-18'>
-                        <h4 className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Founder</h4>
-                        <p className='group-hover:text-white text-left font-gothamLight'>Print Mania UG</p>
-                      </div>
-                    </div>
-                    <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>March 2019 - Present</p>
-                  </div>
-                </div>
-              </div>
-              <div id="PortfolioItemGroup" class="group">
-                <Link href='/juniorProjects'>
-                  <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
-                    <div id='containerAllItems' className='flex items-center justify-between gap-6'>
-                      <div id='containerImageTitle' className='flex items-center gap-6'>
-                        <div className='ml-2 w-16 h-16'>
-                        <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
-                        </div>
-                        <div className='text-white w-18'>
-                          <h4 className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Junior Product Manager</h4>
-                          <p className='group-hover:text-white text-left font-gothamLight'>CHECK24 Profis</p>
-                        </div>
-                      </div>
-                      <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>April 2018 - March 2019</p>
-                    </div>
-                  </div>
-                </Link>
-              </div>
+            
+            <div id="myPortfolioItems" className='font-gothamBold text-xs'>
+
+              <BigListItem 
+              src={check24ProfisLogo}
+              title='Senior Product Manager'
+              subline='CHECK24 Profis'
+              durationText='January 2022 - Present'
+              href={seniorProjectPage}
+              />
+
+              <BigListItem 
+              src={check24ProfisLogo}
+              title='Professional Product Manager'
+              subline='CHECK24 Profis'
+              durationText='April 2019 - December 2021'
+              href={professionalProjectPage}
+              />  
+
+              <BigListItem 
+              src={printManiaLogo}
+              title='Founder'
+              subline='Print Mania UG'
+              durationText='March 2019 - Present'
+              href={printManiaInstagram}
+              />        
+
+              <BigListItem 
+              src={check24ProfisLogo}
+              title='Junior Product Manager'
+              subline='CHECK24 Profis'
+              durationText='April 2018 - March 2019'
+              href={juniorProjectPage}
+              />  
+
+
               <div className='flex justify-center max-w-xl py-2'>
                 <Link href='/employmentHistory'>
                   <button className=' border border-gray-400 hover:border-green-500 hover:scale-95 text-white font-bold rounded-full m-2 py-2 px-4'>
@@ -206,38 +179,22 @@ export default function Home() {
           <div id='educationHistorySection' className='bg-black'>
             <h2 className="text-3xls p-4 pt-4 text-white">Education History</h2>
             <div id="myPortfolioItems" className=' font-gothamBold text-xs'>
-              <div id="PortfolioItemGroup" class="group">
-                <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
-                  <div id='containerAllItems' className='flex items-center justify-between gap-6'>
-                    <div id='containerImageTitle' className='flex items-center gap-6'>
-                      <a href='https://www.b-tu.de/' target="_blank" rel="noreferrer" className='ml-2 w-16 h-16'>
-                      <Image src={btuLogoImage} alt="fallback-text" layout='fill' objectfit='cover'/>
-                      </a>
-                      <div className=' text-white text-ellipsis whitespace-nowrap overflow-hidden max-w-xl'>
-                        <h4 className='w-44 sm:w-64 md:w-64 xl:w-72  text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>MSc Economics and Engenieering</h4>
-                        <p className=' group-hover:text-white text-left font-gothamLight'>BTU Cottbus - Senftenberg</p>
-                      </div>
-                    </div>
-                    <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>October 2015 - March 2018</p>
-                  </div>
-                </div>
-              </div>
-              <div id="PortfolioItemGroup" class="group">
-                <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
-                  <div id='containerAllItems' className='flex items-center justify-between gap-6'>
-                    <div id='containerImageTitle' className='flex items-center gap-6'>
-                      <a href='https://www.b-tu.de/' target="_blank" rel="noreferrer" className='ml-2 w-16 h-16'>
-                      <Image src={btuLogoImage} alt="fallback-text" layout='fill' objectfit='cover'/>
-                      </a>
-                      <div className='text-white w-18'>
-                        <h4 className='w-44 sm:w-64 md:w-64 xl:w-72 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>BSc Economics and Engenieering</h4>
-                        <p className='group-hover:text-white text-left font-gothamLight'>BTU Cottbus - Senftenberg</p>
-                      </div>
-                    </div>
-                    <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>April 2011 - Jul 2015</p>
-                  </div>
-                </div>
-              </div>
+              <BigListItem 
+              src={btuLogoImage}
+              title='MSc Economics and Engenieering'
+              subline='BTU Cottbus - Senftenberg'
+              durationText='October 2015 - March 2018'
+              href={btuPage}
+              />  
+
+              <BigListItem 
+              src={btuLogoImage}
+              title='BSc Economics and Engenieering'
+              subline='BTU Cottbus - Senftenberg'
+              durationText='April 2011 - Jul 2015'
+              href={btuPage}
+              />  
+
 
               <div className='flex justify-center max-w-xl py-2'>
                 <Link href='/educationHistory'>
@@ -253,44 +210,22 @@ export default function Home() {
           <div id='certificationsSection' className='bg-black pb-20'>
             <h2 className="text-3xls p-4 pt-4 text-white">Certifications & Recommendations</h2>
             <div id="myPortfolioItems" className=' font-gothamBold text-xs'>
-              <div id="PortfolioItemGroup" class="group">
-                  <div id='PortfolioItem' className=' group-hover:bg-gray-700 rounded-md max-w-xl relative mx-4'>
-                    <a href='https://www.coursera.org/account/accomplishments/specialization/certificate/RDCB66AKZR6E' target="_blank" rel="noreferrer" className='absolute top-0 bottom-0 left-0 right-0'></a>
-                    <div id='containerAllItems' className='flex items-center justify-between gap-6 '>
-                      <div id='containerImageTitle' className='flex items-center py-2  gap-6'>
-                        <div className='relative pointer-events-none z-0 w-16 h-16 ml-2'>
-                          <a href='https://www.coursera.org/account/accomplishments/professional-cert/RDCB66AKZR6E' target="_blank" rel="noreferrer" className='pointer-events-auto'>
-                          <Image src={googleLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
-                          </a>
-                        </div>
-                        <div className='text-white w-18'>
-                          <h4 className='w-44 sm:w-64 md:w-64 xl:w-72 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Google IT Automation with Python</h4>
-                          <p className='group-hover:text-white text-left font-gothamLight'>Google</p>
-                        </div>
-                      </div>
-                      <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>Issued October 2021</p>
-                    </div>
-                  </div>
-              </div>
-              <div id="PortfolioItemGroup" class="group">
-                  <div id='PortfolioItem' className=' group-hover:bg-gray-700 rounded-md max-w-xl relative mx-4'>
-                    <a href='https://www.coursera.org/account/accomplishments/certificate/4AXBCMRR3HXH' target="_blank" rel="noreferrer" className='absolute top-0 bottom-0 left-0 right-0'></a>
-                    <div id='containerAllItems' className='flex items-center justify-between gap-6 '>
-                      <div id='containerImageTitle' className='flex items-center py-2  gap-6'>
-                        <div className='relative pointer-events-none z-0 w-16 h-16 ml-2'>
-                          <a href='https://www.coursera.org/learn/bootstrap-4' target="_blank" rel="noreferrer" className='pointer-events-auto'>
-                          <Image src={courseraLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
-                          </a>
-                        </div>
-                        <div className='text-white w-18'>
-                          <h4 className='w-44 sm:w-64 md:w-64 xl:w-72 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Crash Course on Python</h4>
-                          <p className='group-hover:text-white text-left font-gothamLight'>Coursera</p>
-                        </div>
-                      </div>
-                      <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>Issued August 2021</p>
-                    </div>
-                  </div>
-              </div>
+              
+              <BigListItem 
+              src={googleLogo}
+              title='Google IT Automation with Python'
+              subline='Google'
+              durationText='Issued October 2021'
+              href={googleItAutomationWithPython}
+              />  
+
+              <BigListItem 
+              src={googleLogo}
+              title='Crash Course on Python'
+              subline='Coursera'
+              durationText='Issued August 2021'
+              href={crashCourseOnPython}
+              />  
 
               <div className='flex justify-center max-w-xl py-2'>
                 <Link href='/certificates'>

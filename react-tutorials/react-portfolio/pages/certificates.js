@@ -19,8 +19,27 @@ import {AiFillPlayCircle} from 'react-icons/ai';
 import {BsThreeDots, BsFillPlayFill} from 'react-icons/bs'
 import {IoIosArrowBack} from 'react-icons/io'
 import Link from 'next/link';
-import Nabar from '../components/Navbar.js'
 import Navbar from '../components/Navbar.js';
+import BigListItem from '../components/BigListItem';
+
+let seniorProjectPage = '/seniorProjects';
+let professionalProjectPage ='/professionalProjects';
+let printManiaInstagram = 'https://www.instagram.com/sneaker_mania_berlin/';
+let juniorProjectPage = '/juniorProjects';
+let bvbPage = 'https://www.berliner-volksbank.de/homepage.html'
+let ibmiXPage = 'https://ibmix.de/en/';
+let btuPage = 'https://www.b-tu.de/';
+let auto1GroupPage = 'https://www.auto1-group.com/';
+let googleItAutomationWithPython = 'https://www.coursera.org/account/accomplishments/specialization/certificate/RDCB66AKZR6E';
+let crashCourseOnPython = 'https://www.coursera.org/account/accomplishments/certificate/Q7JSQHAYXBLD';
+let frontendWebUIBootstrap = 'https://www.coursera.org/account/accomplishments/certificate/4AXBCMRR3HXH' ;
+let usingPythonToInteractWithTheOperatingSystem = 'https://www.coursera.org/account/accomplishments/certificate/B86VSHH48CUE';
+let introductionToGitAndGitHub = 'https://www.coursera.org/account/accomplishments/certificate/Y73BAXWKKXHW';
+let troubleshootingAndDebuggingTechniques = 'https://www.coursera.org/account/accomplishments/certificate/KD826V2FYTTT';
+let configurationManagementAndTheCloud = 'https://www.coursera.org/account/accomplishments/certificate/8E2587W6GASA';
+let automatingRealWorldTasksWithPython = 'https://www.coursera.org/account/accomplishments/certificate/P74P725PVAWL';
+let rmitPage = 'https://www.rmit.edu.vn/';
+let csufPage = 'http://www.fullerton.edu/';
 
 
 export default function Home() {
@@ -40,280 +59,85 @@ export default function Home() {
                 <div id='certificationsHistorySection' className='bg-black'>
                     <h2 className="text-3xls p-4 text-white">Certifications</h2>
                     <div id="myPortfolioItems" className=' font-gothamBold text-xs'>
-                        <div id="PortfolioItemGroup" class="group">
-                            <div id='PortfolioItem' className=' group-hover:bg-gray-700 rounded-md max-w-xl relative mx-4'>
-                            <a href='https://www.coursera.org/account/accomplishments/specialization/certificate/RDCB66AKZR6E' target="_blank" rel="noreferrer" className='absolute top-0 bottom-0 left-0 right-0'>
-                            </a>
-                                <div id='containerAllItems' className='flex items-center justify-between gap-6 '>
-                                    <div id='containerImageTitle' className='flex items-center py-2  gap-6'>
-                                        <div className='relative pointer-events-none z-0 w-16 h-16 ml-2'>
-                                            <a href='https://www.coursera.org/account/accomplishments/professional-cert/RDCB66AKZR6E' target="_blank" rel="noreferrer" className='pointer-events-auto'>
-                                            <Image src={googleLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
-                                            </a>
-                                        </div>
-                                        
-                                        <div className='text-white w-18'>
-                                            <h4 className='w-44 sm:w-64 md:w-64 xl:w-72 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>
-                                            Google IT Automation with Python
-                                            </h4>
-                                            <p className='group-hover:text-white text-left font-gothamLight'>
-                                            Google
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>
-                                    Issued October 2021
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div id="PortfolioItemGroup" class="group">
-                            <div id='PortfolioItem' className=' group-hover:bg-gray-700 rounded-md max-w-xl relative mx-4'>
-                            <a href='https://www.coursera.org/account/accomplishments/certificate/4AXBCMRR3HXH' target="_blank" rel="noreferrer" className='absolute top-0 bottom-0 left-0 right-0'>
-                            </a>
-                                <div id='containerAllItems' className='flex items-center justify-between gap-6 '>
-                                    <div id='containerImageTitle' className='flex items-center py-2  gap-6'>
-                                        <div className='relative pointer-events-none z-0 w-16 h-16 ml-2'>
-                                            <a href='https://www.coursera.org/learn/bootstrap-4' target="_blank" rel="noreferrer" className='pointer-events-auto'>
-                                            <Image src={courseraLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
-                                            </a>
-                                        </div>
-                                        
-                                        <div className='text-white w-18'>
-                                            <h4 className='w-44 sm:w-64 md:w-64 xl:w-72 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>
-                                            Front-End Web UI Frameworks and Tools: Bootstrap 4
-                                            </h4>
-                                            <p className='group-hover:text-white text-left font-gothamLight'>
-                                            Coursera
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>
-                                    Issued August 2021
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        <BigListItem 
+                        src={courseraLogo}
+                        title='Front-End Web UI Frameworks and Tools: Bootstrap 4'
+                        subline='Coursera'
+                        durationText='Issued Januar 2022'
+                        href={frontendWebUIBootstrap}
+                        />  
 
-                        <div id="PortfolioItemGroup" class="group">
-                            <div id='PortfolioItem' className=' group-hover:bg-gray-700 rounded-md max-w-xl relative mx-4'>
-                            <a href='https://www.coursera.org/account/accomplishments/certificate/Q7JSQHAYXBLD' target="_blank" rel="noreferrer" className='absolute top-0 bottom-0 left-0 right-0'>
-                            </a>
-                                <div id='containerAllItems' className='flex items-center justify-between gap-6 '>
-                                    <div id='containerImageTitle' className='flex items-center py-2  gap-6'>
-                                        <div className='relative pointer-events-none z-0 w-16 h-16 ml-2'>
-                                            <a href='https://www.coursera.org/account/accomplishments/verify/Q7JSQHAYXBLD' target="_blank" rel="noreferrer" className='pointer-events-auto'>
-                                            <Image src={googleLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
-                                            </a>
-                                        </div>
-                                        
-                                        <div className='text-white w-18'>
-                                            <h4 className='w-44 sm:w-64 md:w-64 xl:w-72 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>
-                                            Crash Course on Python
-                                            </h4>
-                                            <p className='group-hover:text-white text-left font-gothamLight'>
-                                            Google
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>
-                                    Issued May 2021
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        <BigListItem 
+                        src={googleLogo}
+                        title='Google IT Automation with Python'
+                        subline='Google'
+                        durationText='Issued October 2021'
+                        href={googleItAutomationWithPython}
+                        />  
 
-                        <div id="PortfolioItemGroup" class="group">
-                            <div id='PortfolioItem' className=' group-hover:bg-gray-700 rounded-md max-w-xl relative mx-4'>
-                            <a href='https://www.coursera.org/account/accomplishments/certificate/B86VSHH48CUE' target="_blank" rel="noreferrer" className='absolute top-0 bottom-0 left-0 right-0'>
-                            </a>
-                                <div id='containerAllItems' className='flex items-center justify-between gap-6 '>
-                                    <div id='containerImageTitle' className='flex items-center py-2  gap-6'>
-                                        <div className='relative pointer-events-none z-0 w-16 h-16 ml-2'>
-                                            <a href='https://www.coursera.org/account/accomplishments/verify/B86VSHH48CUE' target="_blank" rel="noreferrer" className='pointer-events-auto'>
-                                            <Image src={googleLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
-                                            </a>
-                                        </div>
-                                        
-                                        <div className='text-white w-18'>
-                                            <h4 className='w-44 sm:w-64 md:w-64 xl:w-72 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>
-                                            Using Python to Interact with the Operating System
+                        <BigListItem 
+                        src={googleLogo}
+                        title='Automating Real-World Tasks with Python'
+                        subline='Google'
+                        durationText='Issued October 2021'
+                        href={automatingRealWorldTasksWithPython}
+                        />  
 
-                                            </h4>
-                                            <p className='group-hover:text-white text-left font-gothamLight'>
-                                            Google
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>
-                                    Issued June 2021
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        <BigListItem 
+                        src={googleLogo}
+                        title='Troubleshooting and Debugging Techniques'
+                        subline='Google'
+                        durationText='Issued September 2021'
+                        href={troubleshootingAndDebuggingTechniques}
+                        /> 
 
-                        <div id="PortfolioItemGroup" class="group">
-                            <div id='PortfolioItem' className=' group-hover:bg-gray-700 rounded-md max-w-xl relative mx-4'>
-                            <a href='https://www.coursera.org/account/accomplishments/certificate/Y73BAXWKKXHW' target="_blank" rel="noreferrer" className='absolute top-0 bottom-0 left-0 right-0'>
-                            </a>
-                                <div id='containerAllItems' className='flex items-center justify-between gap-6 '>
-                                    <div id='containerImageTitle' className='flex items-center py-2  gap-6'>
-                                        <div className='relative pointer-events-none z-0 w-16 h-16 ml-2'>
-                                            <a href='https://www.coursera.org/account/accomplishments/verify/Y73BAXWKKXHW' target="_blank" rel="noreferrer" className='pointer-events-auto'>
-                                            <Image src={googleLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
-                                            </a>
-                                        </div>
-                                        
-                                        <div className='text-white w-18'>
-                                            <h4 className='w-44 sm:w-64 md:w-64 xl:w-72 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>
-                                            Introduction to Git and GitHub
+                        <BigListItem 
+                        src={googleLogo}
+                        title='Introduction to Git and GitHub'
+                        subline='Google'
+                        durationText='Issued August 2021'
+                        href={introductionToGitAndGitHub}
+                        />  
 
-                                            </h4>
-                                            <p className='group-hover:text-white text-left font-gothamLight'>
-                                            Google
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>
-                                    Issued August 2021
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        <BigListItem 
+                        src={googleLogo}
+                        title='Using Python to Interact with the Operating System'
+                        subline='Google'
+                        durationText='Issued June 2021'
+                        href={usingPythonToInteractWithTheOperatingSystem}
+                        /> 
 
-                        <div id="PortfolioItemGroup" class="group">
-                            <div id='PortfolioItem' className=' group-hover:bg-gray-700 rounded-md max-w-xl relative mx-4'>
-                            <a href='https://www.coursera.org/account/accomplishments/certificate/KD826V2FYTTT' target="_blank" rel="noreferrer" className='absolute top-0 bottom-0 left-0 right-0'>
-                            </a>
-                                <div id='containerAllItems' className='flex items-center justify-between gap-6 '>
-                                    <div id='containerImageTitle' className='flex items-center py-2  gap-6'>
-                                        <div className='relative pointer-events-none z-0 w-16 h-16 ml-2'>
-                                            <a href='https://www.coursera.org/account/accomplishments/verify/KD826V2FYTTT' target="_blank" rel="noreferrer" className='pointer-events-auto'>
-                                            <Image src={googleLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
-                                            </a>
-                                        </div>
-                                        
-                                        <div className='text-white w-18'>
-                                            <h4 className='w-44 sm:w-64 md:w-64 xl:w-72 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>
-                                            Troubleshooting and Debugging Techniques
-
-                                            </h4>
-                                            <p className='group-hover:text-white text-left font-gothamLight'>
-                                            Google
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>
-                                    Issued September 2021
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="PortfolioItemGroup" class="group">
-                            <div id='PortfolioItem' className=' group-hover:bg-gray-700 rounded-md max-w-xl relative mx-4'>
-                            <a href='https://www.coursera.org/account/accomplishments/certificate/8E2587W6GASA' target="_blank" rel="noreferrer" className='absolute top-0 bottom-0 left-0 right-0'>
-                            </a>
-                                <div id='containerAllItems' className='flex items-center justify-between gap-6 '>
-                                    <div id='containerImageTitle' className='flex items-center py-2  gap-6'>
-                                        <div className='relative pointer-events-none z-0 w-16 h-16 ml-2'>
-                                            <a href='https://www.coursera.org/account/accomplishments/verify/8E2587W6GASA' target="_blank" rel="noreferrer" className='pointer-events-auto'>
-                                            <Image src={googleLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
-                                            </a>
-                                        </div>
-                                        
-                                        <div className='text-white w-18'>
-                                            <h4 className='w-44 sm:w-64 md:w-64 xl:w-72 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>
-                                            Configuration Management and the Cloud
-
-                                            </h4>
-                                            <p className='group-hover:text-white text-left font-gothamLight'>
-                                            Google
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>
-                                    Issued October 2021
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="PortfolioItemGroup" class="group">
-                            <div id='PortfolioItem' className=' group-hover:bg-gray-700 rounded-md max-w-xl relative mx-4'>
-                            <a href='https://www.coursera.org/account/accomplishments/certificate/P74P725PVAWL' target="_blank" rel="noreferrer" className='absolute top-0 bottom-0 left-0 right-0'>
-                            </a>
-                                <div id='containerAllItems' className='flex items-center justify-between gap-6 '>
-                                    <div id='containerImageTitle' className='flex items-center py-2  gap-6'>
-                                        <div className='relative pointer-events-none z-0 w-16 h-16 ml-2'>
-                                            <a href='https://www.coursera.org/account/accomplishments/verify/P74P725PVAWL' target="_blank" rel="noreferrer" className='pointer-events-auto'>
-                                            <Image src={googleLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
-                                            </a>
-                                        </div>
-                                        
-                                        <div className='text-white w-18'>
-                                            <h4 className='w-44 sm:w-64 md:w-64 xl:w-72 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>
-                                            Automating Real-World Tasks with Python
-
-                                            </h4>
-                                            <p className='group-hover:text-white text-left font-gothamLight'>
-                                            Google
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>
-                                    Issued October 2021
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
+                        <BigListItem 
+                        src={googleLogo}
+                        title='Crash Course on Python'
+                        subline='Coursera'
+                        durationText='Issued May 2021'
+                        href={crashCourseOnPython}
+                        />   
+                                                         
+                        
 
                     </div>
 
 
-                    <h2 className="text-3xls p-4 pt-4 text-white">Recommendations</h2>
-                    <div id="myPortfolioItems" className=' font-gothamBold text-xs'>
-                        <div id="PortfolioItemGroup" class="group">
-                            <Link href='https://www.rmit.edu.vn/' target="_blank" rel="noreferrer">
-                                <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
-                                    <div id='containerAllItems' className='flex items-center justify-between gap-6'>
-                                        <div id='containerImageTitle' className='flex items-center gap-6'>
-                                        <div className='ml-2 w-16 h-16'>
-                                        <Image src={rmitLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
-                                        </div>
-                                        <div className='text-white w-18'>
-                                            <h4 className='w-44 sm:w-64 md:w-64 xl:w-72 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>RMIT University</h4>
-                                            <p className='group-hover:text-white text-left font-gothamLight'>Vietnam</p>
-                                        </div>
-                                        </div>
-                                        <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>October 2016 - January 2017</p>
-                                    </div>
-                                </div>
-                            </Link>
-                        </div>
-                    </div>
-
-                    <div id="myPortfolioItems" className=' font-gothamBold text-xs'>
-                        <div id="PortfolioItemGroup" class="group">
-                            <Link href='http://www.fullerton.edu/' target="_blank" rel="noreferrer">
-                                <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
-                                    <div id='containerAllItems' className='flex items-center justify-between gap-6'>
-                                        <div id='containerImageTitle' className='flex items-center gap-6'>
-                                        <div className='ml-2 w-16 h-16'>
-                                        <Image src={csufLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
-                                        </div>
-                                        <div className='text-white w-18'>
-                                            <h4 className='w-44 sm:w-64 md:w-64 xl:w-72 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>California State University (CSUF)</h4>
-                                            <p className='group-hover:text-white text-left font-gothamLight'>Fullerton</p>
-                                        </div>
-                                        </div>
-                                        <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>August 2013 - December 2013</p>
-                                    </div>
-                                </div>
-                            </Link>
-                        </div>
+                    <h2 className="text-3xls p-4 pt-4 text-white ">Recommendations</h2>
+                    <div id="myPortfolioItems" className=' font-gothamBold text-xs pb-20'>
+                        <BigListItem 
+                        src={rmitLogo}
+                        title='RMIT University'
+                        subline='Vietnam'
+                        durationText='October 2016 - January 2017'
+                        href={rmitPage}
+                        />  
+                        
+                        <BigListItem 
+                        src={csufLogo}
+                        title='California State University (CSUF)'
+                        subline='Fullerton'
+                        durationText='August 2013 - December 2013'
+                        href={csufPage}
+                        />  
                     </div>
                 </div>
             </div>

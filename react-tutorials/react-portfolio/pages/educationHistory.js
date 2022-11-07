@@ -18,6 +18,15 @@ import {BsThreeDots, BsFillPlayFill} from 'react-icons/bs'
 import {IoIosArrowBack} from 'react-icons/io'
 import Link from 'next/link';
 import Navbar from '../components/Navbar';
+import BigListItem from '../components/BigListItem';
+
+let seniorProjectPage = '/seniorProjects';
+let professionalProjectPage ='/professionalProjects';
+let printManiaInstagram = 'https://www.instagram.com/sneaker_mania_berlin/';
+let juniorProjectPage = '/juniorProjects';
+let btuPage = 'https://www.b-tu.de/';
+let rmitPage = 'https://www.rmit.edu.vn/';
+let csufPage = 'http://www.fullerton.edu/';
 
 
 
@@ -37,89 +46,47 @@ export default function Home() {
                 <div id='educationHistorySection' className='bg-black'>
                     <h2 className="text-3xls p-4 text-white">University</h2>
                     <div id="myPortfolioItems" className=' font-gothamBold text-xs'>
-                        <div id="PortfolioItemGroup" class="group">
-                            <Link href='https://www.b-tu.de/' target="_blank" rel="noreferrer" >
-                                <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
-                                    <div id='containerAllItems' className='flex items-center justify-between gap-6'>
-                                        <div id='containerImageTitle' className='flex items-center gap-6'>
-                                            <div className='ml-2 w-16 h-16'>
-                                                <Image src={btuLogoImage} alt="fallback-text" layout='fill' objectfit='cover'/>
-                                            </div>
-                                            <div className='text-white'>
-                                                <h4 className='w-44 sm:w-64 md:w-64 xl:w-72 text-ellipsis w-18 whitespace-nowrap overflow-hidden inline-block text-base'>MSc Economics and Engenieering</h4>
-                                                <p className='group-hover:text-white text-left font-gothamLight'>BTU Cottbus - Senftenberg</p>
-                                            </div>
-                                        </div>
-                                        <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>October 2015 - March 2018</p>
-                                    </div>
-                                </div>
-                            </Link>
-                        </div>
 
-                        <div id="PortfolioItemGroup" class="group">
-                            <Link href='https://www.b-tu.de/' target="_blank" rel="noreferrer">
-                                <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
-                                    <div id='containerAllItems' className='flex items-center justify-between gap-6'>
-                                        <div id='containerImageTitle' className='flex items-center gap-6'>
-                                            <div className='ml-2 w-16 h-16'>
-                                            <Image src={btuLogoImage} alt="fallback-text" layout='fill' objectfit='cover'/>
-                                            </div>
-                                            <div className='text-white'>
-                                                <h4 className='w-44 sm:w-64 md:w-64 xl:w-72 text-ellipsis w-18 whitespace-nowrap overflow-hidden inline-block text-base'>BSc Economics and Engenieering</h4>
-                                                <p className='group-hover:text-white text-left font-gothamLight'>BTU Cottbus - Senftenberg</p>
-                                            </div>
-                                        </div>
-                                        <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>October 2011 - July 2015</p>
-                                    </div>
-                                </div>
-                            </Link>
-                        </div>
+                        <BigListItem 
+                        src={btuLogoImage}
+                        title='MSc Economics and Engenieering'
+                        subline='BTU Cottbus - Senftenberg'
+                        durationText='October 2015 - March 2018'
+                        href={btuPage}
+                        />  
+
+                        <BigListItem 
+                        src={btuLogoImage}
+                        title='BSc Economics and Engenieering'
+                        subline='BTU Cottbus - Senftenberg'
+                        durationText='October 2011 - July 2015'
+                        href={btuPage}
+                        />  
 
                     </div>
 
 
                     <h2 className="text-3xls p-4 pt-4 text-white">Semester Abroad</h2>
                     <div id="myPortfolioItems" className=' font-gothamBold text-xs'>
-                        <div id="PortfolioItemGroup" class="group">
-                            <Link href='https://www.rmit.edu.vn/' target="_blank" rel="noreferrer">
-                                <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
-                                    <div id='containerAllItems' className='flex items-center justify-between gap-6'>
-                                        <div id='containerImageTitle' className='flex items-center gap-6'>
-                                        <div className='ml-2 w-16 h-16'>
-                                        <Image src={rmitLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
-                                        </div>
-                                        <div className='text-white w-18'>
-                                            <h4 className='w-44 sm:w-64 md:w-64 xl:w-72 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>RMIT University</h4>
-                                            <p className='group-hover:text-white text-left font-gothamLight'>Vietnam</p>
-                                        </div>
-                                        </div>
-                                        <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>October 2016 - January 2017</p>
-                                    </div>
-                                </div>
-                            </Link>
-                        </div>
+
+                        <BigListItem 
+                        src={rmitLogo}
+                        title='RMIT University'
+                        subline='Vietnam'
+                        durationText='October 2016 - January 2017'
+                        href={rmitPage}
+                        />  
+                        
+                        <BigListItem 
+                        src={csufLogo}
+                        title='California State University (CSUF)'
+                        subline='Fullerton'
+                        durationText='August 2013 - December 2013'
+                        href={csufPage}
+                        />  
+
                     </div>
 
-                    <div id="myPortfolioItems" className=' font-gothamBold text-xs'>
-                        <div id="PortfolioItemGroup" class="group">
-                            <Link href='http://www.fullerton.edu/' target="_blank" rel="noreferrer">
-                                <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
-                                    <div id='containerAllItems' className='flex items-center justify-between gap-6'>
-                                        <div id='containerImageTitle' className='flex items-center gap-6'>
-                                        <div className='ml-2 w-16 h-16'>
-                                        <Image src={csufLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
-                                        </div>
-                                        <div className='text-white w-18'>
-                                            <h4 className='w-44 sm:w-64 md:w-64 xl:w-72 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>California State University (CSUF)</h4>
-                                            <p className='group-hover:text-white text-left font-gothamLight'>Fullerton</p>
-                                        </div>
-                                        </div>
-                                        <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>August 2013 - December 2013</p>
-                                    </div>
-                                </div>
-                            </Link>
-                        </div>
-                    </div>
                 </div>
             </div>
       </main>

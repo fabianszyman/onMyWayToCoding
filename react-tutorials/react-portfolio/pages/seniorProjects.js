@@ -16,6 +16,11 @@ import {BsThreeDots, BsFillPlayFill} from 'react-icons/bs'
 import {IoIosArrowBack} from 'react-icons/io'
 import Link from 'next/link';
 import Navbar from '../components/Navbar';
+import BigListItem from '../components/BigListItem'
+
+let forkProjectPage = '/forkProject';
+let backofficeProjectPage = '/backofficeProject';
+let nativeMessengerProjectPage = '/nativeMessenger';
 
 
 export default function Home() {
@@ -34,62 +39,32 @@ export default function Home() {
                 <div id='employmentHistorySection' className='bg-black'>
                     <h2 className="text-3xls p-4 text-white">Senior Product Manager (CHECK24 Profis)</h2>
                     <div id="myPortfolioItems" className=' font-gothamBold text-xs'>
-                        <div id="PortfolioItemGroup" class="group">
-                            <Link href='/forkProject'>
-                                <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
-                                <div id='containerAllItems' className='flex items-center justify-between gap-6'>
-                                    <div id='containerImageTitle' className='flex items-center gap-6'>
-                                    <div className='ml-2 w-16 h-16'>
-                                    <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
-                                    </div>
-                                    <div className='text-white'>
-                                        <h4 className='text-ellipsis w-18 whitespace-nowrap overflow-hidden inline-block text-base'>Fork Project</h4>
-                                        <p className='group-hover:text-white text-left font-gothamLight'>CHECK24 Profis</p>
-                                    </div>
-                                    </div>
-                                    <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>January 2022 - Present</p>
-                                </div>
-                                </div>
-                            </Link>
-                        </div>
 
-                        <div id="PortfolioItemGroup" class="group">
-                            <Link href='/backofficeProject'>
-                                <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
-                                <div id='containerAllItems' className='flex items-center justify-between gap-6'>
-                                    <div id='containerImageTitle' className='flex items-center gap-6'>
-                                    <div className='ml-2 w-16 h-16'>
-                                    <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
-                                    </div>
-                                    <div className='text-white w-18'>
-                                        <h4 className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Backoffice Project</h4>
-                                        <p className='group-hover:text-white text-left font-gothamLight'>CHECK24 Profis</p>
-                                    </div>
-                                    </div>
-                                    <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>April 2019 - December 2021</p>
-                                </div>
-                                </div>
-                            </Link>
-                        </div>
+                    <BigListItem 
+                    src={check24ProfisLogo}
+                    title='Fork Project'
+                    subline='CHECK24 Profis'
+                    durationText='January 2022 - Present'
+                    href={forkProjectPage}
+                    />  
 
-                        <div id="PortfolioItemGroup" class="group">
-                            <Link href='/nativeMessenger'>
-                                <div id='PortfolioItem' className='py-2 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
-                                <div id='containerAllItems' className='flex items-center justify-between gap-6'>
-                                    <div id='containerImageTitle' className='flex items-center gap-6'>
-                                    <div className='ml-2 w-16 h-16'>
-                                    <Image src={check24ProfisLogo} alt="fallback-text" layout='fill' objectfit='cover'/>
-                                    </div>
-                                    <div className='text-white w-18'>
-                                        <h4 className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>Native Messengers (iOS & Android)</h4>
-                                        <p className='group-hover:text-white text-left font-gothamLight'>CHECK24 Profis</p>
-                                    </div>
-                                    </div>
-                                    <p className='text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right max-w-xs mr-2'>March 2019 - Present</p>
-                                </div>
-                                </div>
-                            </Link>
-                        </div>
+                    <BigListItem 
+                    src={check24ProfisLogo}
+                    title='Backoffice Project'
+                    subline='CHECK24 Profis'
+                    durationText='April 2019 - December 2021'
+                    href={backofficeProjectPage}
+                    />  
+
+                    <BigListItem 
+                    src={check24ProfisLogo}
+                    title='Native Messengers (iOS & Android)'
+                    subline='CHECK24 Profis'
+                    durationText='March 2019 - Present'
+                    href={nativeMessengerProjectPage}
+                    />  
+                        
+
 
                     </div>
 
