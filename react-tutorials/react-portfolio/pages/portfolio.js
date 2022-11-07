@@ -29,7 +29,7 @@ export default function Home() {
       </Head>
       <main className='text-white font-gothamBold bg-black h-screen '>
       <Navbar headerName={pageName}/>
-        <div className=' bg-black pt-4 px-4'>
+        <div className=' bg-black pt-16 px-4'>
             <h2>Personal Projects</h2>
                 {/*SECTION: To Do App*/}
                 <div class='group'>

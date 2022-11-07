@@ -30,7 +30,7 @@ export default function Home() {
       <main className='text-white font-gothamBold bg-black h-screen '>
       <Navbar headerName={pageName}/>
             {/*SECTION: Employment History*/}
-            <div className='w-screen'>
+            <div className='w-screen pt-14'>
                 <div id='employmentHistorySection' className='bg-black'>
                     <h2 className="text-3xls p-4 text-white">Junior Product Manager (CHECK24 Profis)</h2>
                     <div id="myPortfolioItems" className=' font-gothamBold text-xs'>

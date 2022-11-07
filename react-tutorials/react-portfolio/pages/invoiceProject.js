@@ -26,7 +26,7 @@ export default function Home() {
       </Head>
       <main className='text-white font-gothamBold bg-black h-screen '>
       <Navbar headerName={pageName}/>
-        <div className=' bg-black pt-4 px-4'>
+        <div className=' bg-black pt-16 px-4'>
             <h4 className=' font-gothamLight text-sm'>Work related project</h4>
             <h1 className=' text-xl '>Invoice Feature Project</h1>
                 <div className='pt-2 h-1/3 md:w-2/3 lg:w-2/3'>

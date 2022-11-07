@@ -33,7 +33,7 @@ export default function Home() {
       <main className='text-white font-gothamBold bg-black h-screen '>
         <Navbar headerName={pageName}/>
             {/*SECTION: Education History*/}
-            <div className='w-screen'>
+            <div className='w-screen pt-14'>
                 <div id='educationHistorySection' className='bg-black'>
                     <h2 className="text-3xls p-4 text-white">University</h2>
                     <div id="myPortfolioItems" className=' font-gothamBold text-xs'>

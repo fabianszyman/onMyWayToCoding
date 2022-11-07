@@ -36,7 +36,7 @@ export default function Home() {
         <Navbar headerName={pageName}/>
         
             {/*SECTION: Certificates*/}
-            <div className='w-screen'>
+            <div className='w-screen pt-14'>
                 <div id='certificationsHistorySection' className='bg-black'>
                     <h2 className="text-3xls p-4 text-white">Certifications</h2>
                     <div id="myPortfolioItems" className=' font-gothamBold text-xs'>
