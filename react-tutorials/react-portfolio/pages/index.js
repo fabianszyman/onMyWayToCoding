@@ -1,6 +1,11 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import profileImage from '../public/profileImage.jpg';
+import profileImageCutted from '../public/profileImage.png';
+import profileImageSm from '../public/profileImage_sm.png';
+import profileImageMd from '../public/profileImage_md.png';
+import profileImageLg from '../public/profileImage_lg.png';
+import profileImageXl from '../public/profileImage_xl.png';
 import reaectToDoAppImage from '../public/reactToDoAppImage.png'
 import minimalisticLandingPageImage from '../public/minimalisticLandingPage.png'
 import check24ProfisLogo from '../public/check24ProfisLogo.png'
@@ -24,6 +29,7 @@ let juniorProjectPage = '/juniorProjects';
 let btuPage = 'https://www.b-tu.de/';
 let googleItAutomationWithPython = 'https://www.coursera.org/account/accomplishments/specialization/certificate/RDCB66AKZR6E';
 let crashCourseOnPython = 'https://www.coursera.org/account/accomplishments/certificate/Q7JSQHAYXBLD';
+let frontendWebUIBootstrap = 'https://www.coursera.org/account/accomplishments/certificate/4AXBCMRR3HXH' ;
 
 
 export default function Home() {
@@ -35,8 +41,11 @@ export default function Home() {
         <link rel="icon" href="/spotifyIcon.ico" />
       </Head>
       <main className='font-gothamLight text-white scroll-smooth'>
-      <div id="heroHeader" className="w-full h-1/3 max-h-96 bg-blue-200 text-white overflow-hidden relative" >  
-        <Image src={profileImage} className='w-full' layout='fill' objectfit='cover' alt="fallback-text"/>
+      <div id="heroHeader" className="w-full h-1/3 max-h-96 bg-blue-200 text-white overflow-hidden relative " >
+        <div className= 'bg-black max-h-96 flex justify-center'>
+          <Image src={profileImageCutted}  className='max-h-96 w-auto' layout='fill'  alt="fallback-text"/>
+        </div>
+
         <div id="ctasTop" className='absolute top-4 right-4 flex-auto justify-center font-gothamBold text-sm'>
           <button className='p-4 text-white hover:text-slate-50 hover:scale-105'><a href="mailto:fabianszy@gmail.com">Email</a></button>
           <button className='p-4 text-black bg-white ml-2 rounded-full px-7 py-3 hover:scale-105'> <a href="https://www.linkedin.com/in/fabian-szymanczyk-30a801154/" target="_blank" rel="noreferrer">LinkedIn</a></button>
@@ -212,19 +221,19 @@ export default function Home() {
             <div id="myPortfolioItems" className=' font-gothamBold text-xs'>
               
               <BigListItem 
+              src={courseraLogo}
+              title='Front-End Web UI Frameworks and Tools: Bootstrap 4'
+              subline='Coursera'
+              durationText='Issued Januar 2022'
+              href={frontendWebUIBootstrap}
+              />  
+
+              <BigListItem 
               src={googleLogo}
               title='Google IT Automation with Python'
               subline='Google'
               durationText='Issued October 2021'
               href={googleItAutomationWithPython}
-              />  
-
-              <BigListItem 
-              src={googleLogo}
-              title='Crash Course on Python'
-              subline='Coursera'
-              durationText='Issued August 2021'
-              href={crashCourseOnPython}
               />  
 
               <div className='flex justify-center max-w-xl py-2'>

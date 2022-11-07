@@ -27,8 +27,8 @@ export default function Home() {
       <main className='text-white font-gothamBold bg-black h-screen '>
       <Navbar headerName={pageName}/>
         <div className=' bg-black pt-16 px-4'>
-            <h4 className=' font-gothamLight text-sm'>Personal Project</h4>
-            <h1 className=' text-xl '>Responsive Single Page Landing Page</h1>
+            <h1 className=' font-gothamLight text-sm'>Personal Project</h1>
+            <h2 className=' text-xl '>Responsive Single Page Landing Page</h2>
                 <div className='pt-2 h-1/3 md:w-2/3 lg:w-2/3'>
                     <div className='relative'>
                         <Image src={minimalisticLandingPageImage} alt="fallback-text" className='overflow-hidden'/> 

@@ -16,7 +16,7 @@ export default function BigListItem({href, src, title, subline, durationText}) {
                             <Image src={src} alt="fallback-text" layout='fill' objectfit='cover'/>
                             </div>
                             <div className=' text-white text-ellipsis whitespace-nowrap overflow-hidden max-w-xl'>
-                                <h4 className='w-44 sm:w-64 md:w-64 xl:w-72  text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>{title}</h4>
+                                <h2 className='w-44 sm:w-64 md:w-64 xl:w-72  text-ellipsis whitespace-nowrap overflow-hidden inline-block text-base'>{title}</h2>
                                 <p className=' group-hover:text-white text-left font-gothamLight'>{subline}</p>
                             </div>
                         </div>
