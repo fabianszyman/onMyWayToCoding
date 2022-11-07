@@ -43,7 +43,7 @@ export default function Home() {
       <main className='font-gothamLight text-white scroll-smooth'>
       <div id="heroHeader" className="w-full h-1/3 max-h-96 bg-blue-200 text-white overflow-hidden relative " >
         <div className= 'bg-black max-h-96 flex justify-center'>
-          <Image src={profileImageCutted}  className='max-h-96 w-auto' layout='fill'  alt="fallback-text"/>
+          <Image src={profileImageCutted}  className='max-h-96 w-auto' layout='fill' objectfit='cover'  alt="fallback-text"/>
         </div>
 
         <div id="ctasTop" className='absolute top-4 right-4 flex-auto justify-center font-gothamBold text-sm'>
