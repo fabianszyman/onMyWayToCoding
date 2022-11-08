@@ -53,25 +53,14 @@ export default function Home() {
 
 
           <Image src={profileImagewebp} 
-          className='h-1/3 w-2/3 max-h-96 max-w-lg' 
-          layout='fill' 
-          objectFit='cover'  
-          quality={100} 
-          alt="fallback-text"
-          srcSet="
-          ..public/profileImageSm.png 800w,
-          ..public/profileImageMd.png 1200w,
-          ..public/profileImageLg.png 1600w,
-          "
-
-          
-          
-          
+            className='h-1/3 w-2/3 max-h-96 max-w-lg' 
+            layout='fill' 
+            objectFit='cover'  
+            quality={100} 
+            alt="fallback-text"          
           />
         
-        </div>
-      
-      
+        </div>      
 
         <div id="ctasTop" className='absolute top-4 right-4 flex-auto justify-center font-gothamBold text-sm'>
           <button className='p-4 text-white hover:text-slate-50 hover:scale-105'><a href="mailto:fabianszy@gmail.com">Email</a></button>
