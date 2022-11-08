@@ -3,7 +3,8 @@ import Image from 'next/image';
 import profileImage from '../public/profileImage.jpg';
 import profileImageCutted from '../public/profileImage.png';
 import profileImage_537_384 from '../public/profileImage_537_384.png';
-import profileImagewebp from '../public/profileImage.webp'
+import profileImageCompompressed from '../public/profileImageCompompressed.webp'
+import profileImagew from '../public/profileImage.webp'
 import profileImageSm from '../public/profileImage_sm.png';
 import profileImageMd from '../public/profileImage_md.png';
 import profileImageLg from '../public/profileImage_lg.png';
@@ -52,12 +53,16 @@ export default function Home() {
 
 
 
-          <Image src={profileImagewebp} 
+          <Image src={profileImageCompompressed} 
             className='h-1/3 w-2/3 max-h-96 max-w-lg' 
             layout='fill' 
             objectFit='cover'  
             quality={100} 
-            alt="fallback-text"          
+            alt="fallback-text"  
+            sizes="
+              (max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"        
           />
         
         </div>      
