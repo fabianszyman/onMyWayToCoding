@@ -49,7 +49,26 @@ export default function Home() {
 
       <div id="heroHeader" className="w-full h-1/3 max-h-96 bg-darkgray text-white overflow-hidden relative" >
         <div className='relative flex w-full flex-col items-center justify-center'>
-          <Image src={profileImagewebp} className='max-h-128 w-128' layout='fill' objectFit='cover'  quality={100} alt="fallback-text"/>
+
+
+
+          <Image src={profileImagewebp} 
+          className='h-1/3 w-2/3 max-h-96 max-w-lg' 
+          layout='fill' 
+          objectFit='cover'  
+          quality={100} 
+          alt="fallback-text"
+          srcSet="
+          ..public/profileImageSm.png 800w,
+          ..public/profileImageMd.png 1200w,
+          ..public/profileImageLg.png 1600w,
+          "
+
+          
+          
+          
+          />
+        
         </div>
       
       
