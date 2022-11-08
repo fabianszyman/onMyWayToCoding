@@ -24,6 +24,9 @@ module.exports = {
         'bermuda': '#78dcca',
         'darkgray' : '#0D1013'
       },
+      spacing: {
+        '128': '32rem',
+      }
     },
   },
   plugins: [],

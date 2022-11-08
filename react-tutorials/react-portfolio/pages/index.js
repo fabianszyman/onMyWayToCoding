@@ -48,8 +48,8 @@ export default function Home() {
 
 
       <div id="heroHeader" className="w-full h-1/3 max-h-96 bg-darkgray text-white overflow-hidden relative" >
-        <div className=' relative flex w-full flex-col items-center justify-center'>
-          <Image src={profileImagewebp} className='max-h-96 w-auto' layout='fill' objectFit='cover'  quality={100} alt="fallback-text"/>
+        <div className='relative flex w-full flex-col items-center justify-center'>
+          <Image src={profileImagewebp} className='max-h-128 w-128' layout='fill' objectFit='cover'  quality={100} alt="fallback-text"/>
         </div>
       
       
@@ -101,7 +101,7 @@ export default function Home() {
                   <div id='PortfolioItem' className='flex items-center gap-6 text-gray-400 py-2 pl-4 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                     <p className='group-hover:hidden px-2 w-2 h-2'>1</p>
                     <BsFillPlayFill className='hidden group-hover:block text-white w-8 h-8'/>
-                    <Image src={minimalisticLandingPageImage} alt="fallback-text" className='w-12 h-12' layout='fill' objectfit='cover'/>
+                    {/*<Image src={minimalisticLandingPageImage} alt="fallback-text" className='w-12 h-12' layout='fill' objectfit='cover'/>*/}
                     <h4 className='text-white max-w-lg w-40 text-ellipsis whitespace-nowrap overflow-hidden inline-block'>Minimalistic Landing Page</h4>
                     <p className=' group-hover:text-white text-right w-28'>HTML|CSS</p>
                     <p className='pl-4 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right'>12 hours</p>
@@ -114,7 +114,7 @@ export default function Home() {
                   <div id='PortfolioItem' className='flex items-center gap-6 text-gray-400 py-2 pl-4 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                     <p className='group-hover:hidden px-2 w-2 h-2'>2</p>
                     <BsFillPlayFill className='hidden group-hover:block text-white w-8 h-8'/>
-                    <Image src={reaectToDoAppImage} alt="fallback-text" className='w-12 h-12' layout='fill' objectfit='cover'/>
+                    {/*<Image src={reaectToDoAppImage} alt="fallback-text" className='w-12 h-12' layout='fill' objectfit='cover'/>*/}
                     <h4 className='text-white max-w-lg w-40 text-ellipsis whitespace-nowrap overflow-hidden inline-block'>To Do App</h4>
                     <p className='group-hover:text-white text-right w-28'>React</p>
                     <p className='pl-4 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right'>23 hours</p>
@@ -127,7 +127,7 @@ export default function Home() {
                   <div id='PortfolioItem' className='flex items-center gap-6 text-gray-400 py-2 pl-4 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                     <p className='group-hover:hidden px-2 w-2 h-2'>3</p>
                     <BsFillPlayFill className='hidden group-hover:block text-white w-8 h-8'/>
-                    <Image src={instaBotLogo} alt="fallback-text" className='w-12 h-12' layout='fill' objectfit='cover'/>
+                    {/*<Image src={instaBotLogo} alt="fallback-text" className='w-12 h-12' layout='fill' objectfit='cover'/>*/}
                     <h4 className='text-white max-w-lg w-40 text-ellipsis whitespace-nowrap overflow-hidden inline-block'>Instagram LikeBot</h4>
                     <p className=' group-hover:text-white text-right w-28 text-ellipsis whitespace-nowrap overflow-hidden inline-block'>Node.js|JavaScript</p>
                     <p className='pl-4 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right'>34 hours</p>
