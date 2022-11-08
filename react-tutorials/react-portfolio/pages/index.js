@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import profileImage from '../public/profileImage.jpg';
 import profileImageCutted from '../public/profileImage.png';
+import profileImage_537_384 from '../public/profileImage_537_384.png';
 import profileImageSm from '../public/profileImage_sm.png';
 import profileImageMd from '../public/profileImage_md.png';
 import profileImageLg from '../public/profileImage_lg.png';
@@ -42,8 +43,8 @@ export default function Home() {
       </Head>
       <main className='font-gothamLight text-white scroll-smooth'>
       <div id="heroHeader" className="w-full h-1/3 max-h-96 bg-blue-200 text-white overflow-hidden relative " >
-        <div className= 'bg-black max-h-96 flex justify-center'>
-          <Image src={profileImageCutted}  className='max-h-96 w-auto' layout='fill' objectfit='cover'  alt="fallback-text"/>
+        <div className= 'bg-black max-h-96 flex justify-center relative  overflow-hidden'>
+          <Image src={profileImage_537_384}  className='max-h-96 w-auto' layout='fill' objectfit='contain'  alt="fallback-text"/>
         </div>
 
         <div id="ctasTop" className='absolute top-4 right-4 flex-auto justify-center font-gothamBold text-sm'>
