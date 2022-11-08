@@ -9,11 +9,11 @@ import profileImageSm from '../public/profileImage_sm.png';
 import profileImageMd from '../public/profileImage_md.png';
 import profileImageLg from '../public/profileImage_lg.png';
 import profileImageXl from '../public/profileImage_xl.png';
-import reaectToDoAppImage from '../public/reactToDoAppImage.png'
-import minimalisticLandingPageImage from '../public/minimalisticLandingPage.png'
+import reaectToDoAppImage from '../public/reactToDoAppImage-min.png'
+import minimalisticLandingPageImage from '../public/minimalisticLandingPage-min.png'
 import check24ProfisLogo from '../public/check24ProfisLogo.png'
 import printManiaLogo from '../public/print_mania.png'
-import instaBotLogo from '../public/instabot.jpeg'
+import instaBotLogo from '../public/instabot-min.jpeg'
 import btuLogoImage from '../public/btuLogo.png'
 import googleLogo from '../public/googleLogo.png'
 import courseraLogo from '../public/courseraLogo.jpeg'
@@ -59,10 +59,7 @@ export default function Home() {
             objectFit='cover'  
             quality={100} 
             alt="fallback-text"  
-            sizes="
-              (max-width: 768px) 100vw,
-              (max-width: 1200px) 50vw,
-              33vw"        
+                
           />
         
         </div>      
@@ -114,7 +111,7 @@ export default function Home() {
                   <div id='PortfolioItem' className='flex items-center gap-6 text-gray-400 py-2 pl-4 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                     <p className='group-hover:hidden px-2 w-2 h-2'>1</p>
                     <BsFillPlayFill className='hidden group-hover:block text-white w-8 h-8'/>
-                    {/*<Image src={minimalisticLandingPageImage} alt="fallback-text" className='w-12 h-12' layout='fill' objectfit='cover'/>*/}
+                    <Image src={minimalisticLandingPageImage} alt="fallback-text" className='w-12 h-12' layout='fill' objectfit='cover'/>
                     <h4 className='text-white max-w-lg w-40 text-ellipsis whitespace-nowrap overflow-hidden inline-block'>Minimalistic Landing Page</h4>
                     <p className=' group-hover:text-white text-right w-28'>HTML|CSS</p>
                     <p className='pl-4 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right'>12 hours</p>
@@ -127,7 +124,7 @@ export default function Home() {
                   <div id='PortfolioItem' className='flex items-center gap-6 text-gray-400 py-2 pl-4 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                     <p className='group-hover:hidden px-2 w-2 h-2'>2</p>
                     <BsFillPlayFill className='hidden group-hover:block text-white w-8 h-8'/>
-                    {/*<Image src={reaectToDoAppImage} alt="fallback-text" className='w-12 h-12' layout='fill' objectfit='cover'/>*/}
+                    <Image src={reaectToDoAppImage} alt="fallback-text" className='w-12 h-12' layout='fill' objectfit='cover'/>
                     <h4 className='text-white max-w-lg w-40 text-ellipsis whitespace-nowrap overflow-hidden inline-block'>To Do App</h4>
                     <p className='group-hover:text-white text-right w-28'>React</p>
                     <p className='pl-4 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right'>23 hours</p>
@@ -140,7 +137,7 @@ export default function Home() {
                   <div id='PortfolioItem' className='flex items-center gap-6 text-gray-400 py-2 pl-4 mx-4 group-hover:bg-gray-700 rounded-md max-w-xl'>
                     <p className='group-hover:hidden px-2 w-2 h-2'>3</p>
                     <BsFillPlayFill className='hidden group-hover:block text-white w-8 h-8'/>
-                    {/*<Image src={instaBotLogo} alt="fallback-text" className='w-12 h-12' layout='fill' objectfit='cover'/>*/}
+                    <Image src={instaBotLogo} alt="fallback-text" className='w-12 h-12' layout='fill' objectfit='cover'/>
                     <h4 className='text-white max-w-lg w-40 text-ellipsis whitespace-nowrap overflow-hidden inline-block'>Instagram LikeBot</h4>
                     <p className=' group-hover:text-white text-right w-28 text-ellipsis whitespace-nowrap overflow-hidden inline-block'>Node.js|JavaScript</p>
                     <p className='pl-4 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right'>34 hours</p>
