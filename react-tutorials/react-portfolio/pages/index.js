@@ -3,6 +3,7 @@ import Image from 'next/image';
 import profileImage from '../public/profileImage.jpg';
 import profileImageCutted from '../public/profileImage.png';
 import profileImage_537_384 from '../public/profileImage_537_384.png';
+import profileImage_384_367 from '../public/profileImage_384_367.webp'
 import profileImageCompressed from '../public/profileImageCompressed.webp'
 import profileImagew from '../public/profileImage.webp'
 import profileImageSm from '../public/profileImage_sm.png';
@@ -11,7 +12,7 @@ import profileImageLg from '../public/profileImage_lg.png';
 import profileImageXl from '../public/profileImage_xl.png';
 import reaectToDoAppImage from '../public/reactToDoAppImage-min_48_48.webp'
 import minimalisticLandingPageImage from '../public/minimalisticLandingPage-min_48_48.webp'
-import check24ProfisLogo from '../public/check24ProfisLogo.png'
+import check24ProfisLogo from '../public/check24ProfisLogo-min_64_64.webp'
 import printManiaLogo from '../public/print_mania-min_64_64.webp'
 import instaBotLogo from '../public/instabot-min_48_48.webp'
 import btuLogoImage from '../public/btuLogo-min_64_64.webp'
@@ -53,7 +54,7 @@ export default function Home() {
 
 
 
-          <Image src={profileImageCompressed} 
+          <Image src={profileImage_384_367} 
             className='h-2/8 w-6/8 max-h-96 max-w-sm' 
             layout='fill' 
             objectfit='cover'  
@@ -112,7 +113,7 @@ export default function Home() {
                     <p className='group-hover:hidden px-2 w-2 h-2'>1</p>
                     <BsFillPlayFill className='hidden group-hover:block text-white w-8 h-8'/>
                     <Image src={minimalisticLandingPageImage} alt="fallback-text" className='w-12 h-12' layout='fill' objectfit='cover'/>
-                    <h4 className='text-white max-w-lg w-40 text-ellipsis whitespace-nowrap overflow-hidden inline-block'>Minimalistic Landing Page</h4>
+                    <h3 className='text-white max-w-lg w-40 text-ellipsis whitespace-nowrap overflow-hidden inline-block'>Minimalistic Landing Page</h3>
                     <p className=' group-hover:text-white text-right w-28'>HTML|CSS</p>
                     <p className='pl-4 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right'>12 hours</p>
                   </div>
@@ -125,7 +126,7 @@ export default function Home() {
                     <p className='group-hover:hidden px-2 w-2 h-2'>2</p>
                     <BsFillPlayFill className='hidden group-hover:block text-white w-8 h-8'/>
                     <Image src={reaectToDoAppImage} alt="fallback-text" className='w-12 h-12' layout='fill' objectfit='cover'/>
-                    <h4 className='text-white max-w-lg w-40 text-ellipsis whitespace-nowrap overflow-hidden inline-block'>To Do App</h4>
+                    <h3 className='text-white max-w-lg w-40 text-ellipsis whitespace-nowrap overflow-hidden inline-block'>To Do App</h3>
                     <p className='group-hover:text-white text-right w-28'>React</p>
                     <p className='pl-4 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right'>23 hours</p>
                   </div>
@@ -138,7 +139,7 @@ export default function Home() {
                     <p className='group-hover:hidden px-2 w-2 h-2'>3</p>
                     <BsFillPlayFill className='hidden group-hover:block text-white w-8 h-8'/>
                     <Image src={instaBotLogo} alt="fallback-text" className='w-12 h-12' layout='fill' objectfit='cover'/>
-                    <h4 className='text-white max-w-lg w-40 text-ellipsis whitespace-nowrap overflow-hidden inline-block'>Instagram LikeBot</h4>
+                    <h3 className='text-white max-w-lg w-40 text-ellipsis whitespace-nowrap overflow-hidden inline-block'>Instagram LikeBot</h3>
                     <p className=' group-hover:text-white text-right w-28 text-ellipsis whitespace-nowrap overflow-hidden inline-block'>Node.js|JavaScript</p>
                     <p className='pl-4 text-ellipsis whitespace-nowrap overflow-hidden inline-block text-right'>34 hours</p>
                   </div>
