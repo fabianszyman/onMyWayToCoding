@@ -10,7 +10,7 @@ import profileImageMd from '../public/profileImage_md.png';
 import profileImageLg from '../public/profileImage_lg.png';
 import profileImageXl from '../public/profileImage_xl.png';
 import reaectToDoAppImage from '../public/reactToDoAppImage-min.webp'
-import minimalisticLandingPageImage from '../public/minimalisticLandingPage-min.webp'
+import minimalisticLandingPageImage from '../public/minimalisticLandingPage-min_48_48.webp'
 import check24ProfisLogo from '../public/check24ProfisLogo.png'
 import printManiaLogo from '../public/print_mania-min.webp'
 import instaBotLogo from '../public/instabot-min.webp'
