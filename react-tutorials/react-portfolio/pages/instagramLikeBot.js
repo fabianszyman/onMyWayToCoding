@@ -29,35 +29,33 @@ export default function Home() {
       </Head>
       <main className='text-white font-gothamBold bg-black h-screen break-words md:px-24 lg:px-40 2xl:px-48' >
         <Navbar headerName={pageName}/>
-        <div className=' bg-black pt-16 px-4 grid grid-cols-1 lg:grid-cols-8 gap-4'>
-            <div id='leftContainer' className='lg:col-span-4 lg:py-4 bg-black'>
-                <div id='headerContainer' className=' lg:hidden'>
-                    <h1 className=' font-gothamLight text-sm'>Personal Project</h1>
-                    <h2 className=' text-2xl '>My Instagram Bot</h2>
-                </div>
-
-                <div id='imageContainer' className='pt-2 lg:pt-12 h-1/3 w-auto rounded'>                
-                    <div className='relative'>
-                        <Image src={loginPage} alt="fallback-text" className='overflow-hidden rounded lg:hidden'/> 
-                        <Image src={loginPageMobile} alt="fallback-text" className='hidden lg:inline-block overflow-hidden rounded'/> 
-                        <a href='https://github.com/fabianszyman/myinstagram-bot' target="_blank" rel="noreferrer">
-                            <button className=' absolute top-4 right-4 text-black bg-white rounded-full px-7 py-3 hover:scale-105 border border-gray-400 hover:border-green-500  m-2 '>
-                                <div className='flex items-center gap-2'>
-                                    <BsGithub/> 
-                                        Github
-                                </div>
-                            </button>
-                        </a>
+        <div className=' bg-black pt-16 px-4 grid grid-cols-1 lg:grid-cols-8 gap-6'>
+                <div id='leftContainer' className='lg:col-span-4 bg-black'>
+                    
+                    <div id='headerContainer' className=' lg:hidden'>
+                        <h1 className=' font-gothamLight text-sm'>Personal Project</h1>
+                        <h2 className=' text-2xl '>My Instagram Bot</h2>
                     </div>
-                </div>
-            </div>    
 
-                <div id='rightContainer' className='lg:col-span-4 bg-black'>
+                    <div id='imageContainer' className='pt-2 lg:pt-12 w-auto rounded lg:hidden overflow-hidden'>                
+                        <div className='relative'>
+                            <Image src={loginPage} alt="fallback-text" className='rounded'/> 
+                            <a href='https://github.com/fabianszyman/myinstagram-bot' target="_blank" rel="noreferrer">
+                                <button className=' absolute top-4 right-4 text-black bg-white rounded-full px-7 py-3 hover:scale-105 border border-gray-400 hover:border-green-500  m-2 '>
+                                    <div className='flex items-center gap-2'>
+                                        <BsGithub/> 
+                                            Github
+                                    </div>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
                     <div id='headerContainer' className='hidden lg:inline-block pb-3'>
                         <h1 className=' font-gothamLight text-sm'>Personal Project</h1>
                         <h2 className=' text-2xl '>My Instagram Bot</h2>
                     </div>
-                    <div id='textContainer'>
+                    <div id='textContainer' className='pt-4'>
                         <div className='text-lg'>
                         Background:
                         </div>
@@ -93,13 +91,13 @@ export default function Home() {
                                     1. Bau einer HTML Seite, um Input Parameter entgegen zu nehmen.
                                 </li>
                                 <li>
-                                    2. Erstellen eine <a href='https://www.mongodb.com/' className='hover:underline hover:text-green-500'>MongoDB</a> Datenbank (Backend aufsetzen).
+                                    2. Erstellen eine <a href='https://www.mongodb.com/' className='underline hover:underline hover:text-green-500'>MongoDB</a> Datenbank (Backend aufsetzen).
                                 </li>
                                 <li>
-                                    3. Definition und bau mehrerer API Endpunkte mit Hilfe von <a href='https://expressjs.com/' className='hover:underline hover:text-green-500'>Express.js</a>.
+                                    3. Definition und bau mehrerer API Endpunkte mit Hilfe von <a href='https://expressjs.com/' className='underline hover:underline hover:text-green-500'>Express.js</a>.
                                 </li>
                                 <li>
-                                    4. Bau der Automatisierungs-Logiken mit Hilfe von <a href='https://playwright.dev/' className='hover:underline hover:text-green-500'>Playwright.js</a>.  
+                                    4. Bau der Automatisierungs-Logiken mit Hilfe von <a href='https://playwright.dev/' className=' underline hover:underline hover:text-green-500'>Playwright.js</a>.  
                                 </li>
                             </ul>
                                 
@@ -108,13 +106,30 @@ export default function Home() {
                         Github-Link:
                         </div>
                         <div className='font-gothamLight text-lg pt-1 pb-20'>
-                            <a href='https://github.com/fabianszyman/myinstagram-bot' className='hover:underline hover:text-green-500'>
+                            <a href='https://github.com/fabianszyman/myinstagram-bot' className='underline hover:underline hover:text-green-500'>
                                 https://github.com/fabianszyman/myinstagram-bot
                             </a>
                                 
                         </div>  
                     </div>
                 </div>
+
+            <div id='rightContainer' className='lg:col-span-4 lg:py-4 bg-black hidden lg:inline-block'>
+
+                <div id='imageContainer' className='pt-2 lg:pt-12 h-1/3 w-auto rounded'>                
+                    <div className='relative'>
+                        <Image src={loginPageMobile} alt="fallback-text" className='overflow-hidden rounded'/> 
+                        <a href='https://github.com/fabianszyman/myinstagram-bot' target="_blank" rel="noreferrer">
+                            <button className=' absolute top-4 right-4 text-black bg-white rounded-full px-7 py-3 hover:scale-105 border border-gray-400 hover:border-green-500  m-2 '>
+                                <div className='flex items-center gap-2'>
+                                    <BsGithub/> 
+                                        Github
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div> 
 
             
         </div>
