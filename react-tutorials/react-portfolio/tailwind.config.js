@@ -9,26 +9,27 @@ module.exports = {
       fontFamily: {
         gothamBold: "gothamBold",
         gothamLight: "gothamLight",
-        gothamBlack: "gothamBlack"
+        gothamBlack: "gothamBlack",
       },
       colors: {
-        transparent: 'transparent',
-        current: 'currentColor',
-        'white': '#ffffff',
-        'purple': '#3f3cbb',
-        'midnight': '#121063',
-        'metal': '#565584',
-        'tahiti': '#3ab7bf',
-        'silver': '#ecebff',
-        'bubble-gum': '#ff77e9',
-        'bermuda': '#78dcca',
-        'darkgray' : '#0D1013'
+        transparent: "transparent",
+        current: "currentColor",
+        white: "#ffffff",
+        purple: "#3f3cbb",
+        midnight: "#121063",
+        metal: "#565584",
+        tahiti: "#3ab7bf",
+        silver: "#ecebff",
+        "bubble-gum": "#ff77e9",
+        bermuda: "#78dcca",
+        darkgray: "#0D1013",
       },
       spacing: {
-        '128': '32rem',
-      }
+        95: "26rem",
+        100: "28rem",
+        128: "32rem",
+      },
     },
   },
   plugins: [],
-}
-
+};
