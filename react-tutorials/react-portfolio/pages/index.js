@@ -107,7 +107,7 @@ export default function Home() {
                   >
                     <TbBrandGithub className=" w-10 h-10 hover:text-white text-gray-400 my-2 hover:scale-105" />
                   </Link>
-                  <a href="../spotifyCV.pdf">
+                  <a href="../SpotifyCV.pdf">
                     <button className=" text-white border-solid border py-2 px-6 rounded-full border-gray-400 my-2 text-sm hover:border-white hover:border-2">
                       RESUME
                     </button>
@@ -119,7 +119,7 @@ export default function Home() {
                  */}
                 </div>
                 <div className="flex justify-start  sm:pl-10 md:pl-10">
-                  <a href="../spotifyCV.pdf">
+                  <a href="../SpotifyCV.pdf">
                     <AiFillPlayCircle className="fill-green-500 w-16 h-16 hover:scale-105" />
                   </a>
                 </div>
