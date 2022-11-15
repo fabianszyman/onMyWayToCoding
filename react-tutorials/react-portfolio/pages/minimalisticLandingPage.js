@@ -4,7 +4,7 @@ import Image from "next/image";
 import profileImage from "../public/profileImage.jpg";
 import reaectToDoAppImage from "../public/reactToDoAppImage.png";
 import minimalisticLandingPageImage from "../public/minimalisticLandingPage.png";
-import minimalisticLPBigImage from "../public/minimalisticLP_BigImage.png";
+import minimalisticLPBigImage from "../public/minimalisticLP_bigImage.png";
 import minimalisticLPSmallImage from "../public/minimalisticLP_SmallImage.png";
 import loginPage from "../public/toDoApp/loginPage.png";
 import loginPageMobile from "../public/toDoApp/loginHTML.png";
