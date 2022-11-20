@@ -20,7 +20,7 @@ import Link from "next/link";
 import Navbar from "../components/Navbar";
 
 export default function Home() {
-  let pageName = "Grow user sign ups";
+  let pageName = "Increase Sign Ups Rate";
   return (
     <div>
       <Head>
@@ -36,7 +36,7 @@ export default function Home() {
               <h1 className=" font-gothamLight text-sm">
                 Work related project
               </h1>
-              <h2 className=" text-2xl ">Grow user sign ups</h2>
+              <h2 className=" text-2xl ">{pageName}</h2>
             </div>
 
             <div
@@ -49,18 +49,32 @@ export default function Home() {
                   alt="fallback-text"
                   className="rounded"
                 />
+                <a
+                  href="https://github.com/fabianszyman/onMyWayToCoding/tree/main/html-css-tutorials/minimalistic-website"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className=" absolute top-4 right-4 text-black bg-white rounded-full px-7 py-3 hover:scale-105 border border-gray-400 hover:border-green-500  m-2 ">
+                    <div className="flex items-center gap-2">
+                      <BsGithub />
+                      Github
+                    </div>
+                  </button>
+                </a>
               </div>
             </div>
 
             <div id="headerContainer" className="hidden lg:inline-block pb-3">
-              <h1 className=" font-gothamLight text-sm">Personal Project</h1>
+              <h1 className=" font-gothamLight text-sm">
+                Work related project
+              </h1>
               <h2 className=" text-2xl ">{pageName}</h2>
             </div>
             <div id="textContainer" className="pt-4">
-              <div className="text-lg">Executive Summary: </div>
+              <div className="text-lg">Executive summary:</div>
               <div className="font-gothamLight text-lg pt-1">
                 <p className="pb-2">
-                  Grew users-signup number from 30 per day by 30% MoM by
+                  Grew users-signup number from 900 per month by 30% MoM by
                   implementing an automated e-mail sending-process which
                   informed cold leads about real customer inquiries on our
                   platform and their business growth potential.
@@ -68,58 +82,82 @@ export default function Home() {
               </div>
               <div className="text-lg pt-6">Background:</div>
               <div className="font-gothamLight text-lg pt-1">
-                By analyzing user data from past projects, we found out, that we
-                are able to nudge our not yet onboarded users (service provider)
-                to complete their profile information and thus finish our
-                onboarding process by matching them with real customer
-                inquiries.
+                <p className="pb-2">
+                  By analyzing user data from past projects, we found out, that
+                  we are able to nudge not yet fully onboarded users (service
+                  provider) to complete their profile information and thus
+                  finish up our onboarding process by matching them with real
+                  customer inquiries.
+                </p>
               </div>
-              <div className="text-lg pt-6">Problem</div>
+
+              <div className="text-lg pt-6">Problem:</div>
               <div className="font-gothamLight text-lg pt-1">
-                The customer request in certain regions were very high although
-                we had very little users (service provider) offering the
-                specific service in that area.
-              </div>
-              <div className="text-lg pt-6">Question:</div>
-              <div className="font-gothamLight text-lg pt-1">
-                What if we use the same mechanism for not yet sign up service
-                providers, so that we are able to increase user growth?
+                <p className="pb-2">
+                  The customer request in certain regions were very high,
+                  although we had very little users (service provider) offering
+                  the specific service in that area.
+                </p>
               </div>
               <div className="text-lg pt-6">Idea:</div>
               <div className="font-gothamLight text-lg pt-1">
-                <p>
+                <p className="pb-2">
+                  What if we use the same mechanism for not yet sign up service
+                  providers, so that we are able to increase user growth in
+                  those regions?
+                </p>
+                <p className="pb-2">
                   Send out real customer inquiries to potential users (service
                   providers), that are not yet sign up on our platform and make
-                  use the information, that we have collected already to build a
-                  very slim sign-up process.
+                  use of collected information about the cold lead and thus
+                  provide a frictionless sign-up process.
                 </p>
-                <p className="pt-2">
-                  All mandatory information were prefilled and the user only had
-                  to define a password.
+                <p className="pb-2">
+                  All mandatory information are getting prefilled, so that the
+                  user only has to type in a password.
                 </p>
               </div>
-              <div className="text-lg pt-6">Idea:</div>
-              <div className="font-gothamLight text-lg pt-1">
+
+              <div className="text-lg pt-6">Team:</div>
+              <div className="font-gothamLight text-lg pt-0">
                 <ul>
-                  <li>
+                  <li className="pt-1">1 UX designer</li>
+                  <li>2 Backend engineers</li>
+                  <li>2 Frontend engineers</li>
+                </ul>
+              </div>
+
+              <div className="text-lg pt-6">Process:</div>
+              <div className="font-gothamLight text-lg pt-0">
+                <ul>
+                  <li className="pt-1">
                     1. Find potential users (service providers), that are not
-                    yet signed up with us. (e.g. using Google Places API)
+                    yet signed up with us (e.g. using{" "}
+                    <a
+                      href="https://mapsplatform.google.com/maps-products/#places-section"
+                      className="underline hover:underline hover:text-green-500"
+                    >
+                      Google Places API
+                    </a>{" "}
+                    ).
                   </li>
                   <li>
-                    2. Clean Up imported data coming from API, to make sure,
-                    that categorization was correct and user is providing the
-                    service.
+                    2. Clean up imported data coming from API, to make sure,
+                    that categorization was correct, and the cold lead is
+                    providing the specific service, we are looking for.
                   </li>
                   <li>
-                    3. Reduce friction of sign-up process as much as possible.
-                    We built an extra sign-up flow for those specific users.
+                    3. Reduce friction of sign-up process by building an
+                    individual sign-up flow for potential new users and prefill
+                    input values with information we already have about the
+                    lead.
                   </li>
                   <li>
-                    4.Create method, that triggers Email to users including a
-                    specific link to separate sign-up process.
+                    4. Create method, that triggers Email to cold leads
+                    including a specific link to separate sign-up process.
                   </li>
                   <li>
-                    5.Make sure, that users are able to sign off from email
+                    5. Make sure, that users are able to sign off from email
                     easily.
                   </li>
                 </ul>
@@ -141,6 +179,18 @@ export default function Home() {
                   alt="fallback-text"
                   className="overflow-hidden rounded"
                 />
+                <a
+                  href="https://github.com/fabianszyman/onMyWayToCoding/tree/main/html-css-tutorials/minimalistic-website"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className=" absolute top-4 right-4 text-black bg-white rounded-full px-7 py-3 hover:scale-105 border border-gray-400 hover:border-green-500  m-2 ">
+                    <div className="flex items-center gap-2">
+                      <BsGithub />
+                      Github
+                    </div>
+                  </button>
+                </a>
               </div>
             </div>
           </div>
