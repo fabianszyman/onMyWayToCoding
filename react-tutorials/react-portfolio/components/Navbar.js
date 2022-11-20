@@ -13,7 +13,7 @@ export default function Navbar(props) {
           </button>
         </div>
         <div className="text-center text-ellipsis w-full whitespace-nowrap overflow-hidden inline-block text-base">
-          <h3>{props.headerName}</h3>
+          <div>{props.headerName}</div>
         </div>
       </nav>
     </div>

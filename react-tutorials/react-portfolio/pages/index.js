@@ -142,9 +142,9 @@ export default function Home() {
                       layout="fill"
                       objectfit="cover"
                     />
-                    <h3 className="text-white max-w-lg w-40 text-ellipsis whitespace-nowrap overflow-hidden inline-block">
+                    <div className="text-white max-w-lg w-40 text-ellipsis whitespace-nowrap overflow-hidden inline-block">
                       Minimalistic Landing Page
-                    </h3>
+                    </div>
                     <p className=" group-hover:text-white text-right w-28">
                       HTML|CSS
                     </p>
@@ -170,9 +170,9 @@ export default function Home() {
                       layout="fill"
                       objectfit="cover"
                     />
-                    <h3 className="text-white max-w-lg w-40 text-ellipsis whitespace-nowrap overflow-hidden inline-block">
+                    <div className="text-white max-w-lg w-40 text-ellipsis whitespace-nowrap overflow-hidden inline-block">
                       To Do App
-                    </h3>
+                    </div>
                     <p className="group-hover:text-white text-right w-28">
                       React
                     </p>
@@ -198,9 +198,9 @@ export default function Home() {
                       layout="fill"
                       objectfit="cover"
                     />
-                    <h3 className="text-white max-w-lg w-40 text-ellipsis whitespace-nowrap overflow-hidden inline-block">
+                    <div className="text-white max-w-lg w-40 text-ellipsis whitespace-nowrap overflow-hidden inline-block">
                       Instagram LikeBot
-                    </h3>
+                    </div>
                     <p className=" group-hover:text-white text-right w-28 text-ellipsis whitespace-nowrap overflow-hidden inline-block">
                       Node.js|JavaScript
                     </p>
