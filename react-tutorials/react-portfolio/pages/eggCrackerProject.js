@@ -68,19 +68,21 @@ export default function Home() {
               <h1 className=" font-gothamLight text-sm">
                 Work related project
               </h1>
-              <h2 className=" text-2xl ">{pageName}</h2>
+              <h2 className=" text-3xl ">{pageName}</h2>
             </div>
             <div id="textContainer" className="pt-4">
-              <div className="text-lg">Executive summary:</div>
+              <h3 className="pt-0">Executive summary:</h3>
               <div className="font-gothamLight text-lg pt-1">
                 <p className="pb-2">
-                  Grew users-signup number from 900 per month by 30% MoM by
-                  implementing an automated e-mail sending-process which
+                  <span className=" font-gothamBold">
+                    Grew users-signup number from 900 per month by 30% MoM
+                  </span>{" "}
+                  by implementing an automated e-mail sending-process which
                   informed cold leads about real customer inquiries on our
                   platform and their business growth potential.
                 </p>
               </div>
-              <div className="text-lg pt-6">Background:</div>
+              <h3>Background:</h3>
               <div className="font-gothamLight text-lg pt-1">
                 <p className="pb-2">
                   By analyzing user data from past projects, we found out, that
@@ -90,8 +92,7 @@ export default function Home() {
                   customer inquiries.
                 </p>
               </div>
-
-              <div className="text-lg pt-6">Problem:</div>
+              <h3>Problem:</h3>
               <div className="font-gothamLight text-lg pt-1">
                 <p className="pb-2">
                   The customer request in certain regions were very high,
@@ -99,7 +100,7 @@ export default function Home() {
                   the specific service in that area.
                 </p>
               </div>
-              <div className="text-lg pt-6">Idea:</div>
+              <h3>Idea:</h3>
               <div className="font-gothamLight text-lg pt-1">
                 <p className="pb-2">
                   What if we use the same mechanism for not yet sign up service
@@ -117,8 +118,7 @@ export default function Home() {
                   user only has to type in a password.
                 </p>
               </div>
-
-              <div className="text-lg pt-6">Team:</div>
+              <h3>Team:</h3>
               <div className="font-gothamLight text-lg pt-0">
                 <ul>
                   <li className="pt-1">1 UX designer</li>
@@ -126,8 +126,7 @@ export default function Home() {
                   <li>2 Frontend engineers</li>
                 </ul>
               </div>
-
-              <div className="text-lg pt-6">Process:</div>
+              <h3>Process:</h3>
               <div className="font-gothamLight text-lg pt-0">
                 <ul>
                   <li className="pt-1">
