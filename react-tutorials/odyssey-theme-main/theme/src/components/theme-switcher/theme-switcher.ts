@@ -10,15 +10,15 @@ import {
 } from './icons';
 
 const themes = [
-  {
+    {
+		name: 'dark',
+		icon: darkThemeIcon,
+		label: 'Dark',
+	},
+	{
     name: 'default',
     icon: classicThemeIcon,
-    label: 'Classic',
-  },
-  {
-    name: 'dark',
-    icon: darkThemeIcon,
-    label: 'Dark',
+    label: 'Light',
   },
   {
     name: 'earth',
@@ -91,7 +91,7 @@ export class ThemeSwitcher extends LitElement {
 		if (localStorageTheme !== null) {
 			this._setTheme(localStorageTheme);
 		} else {
-      this._setTheme('default');
+      this._setTheme('dark');
     }
 	}
 
@@ -103,11 +103,11 @@ export class ThemeSwitcher extends LitElement {
 		this._doc.setAttribute('data-theme', theme);
 
     const _heroImage = document.querySelector('#home-hero-image') as HTMLImageElement;
-		if (theme === 'default') {
-			_heroImage.src = '/assets/images/home/classic-hero.jpg';
-		}
 		if (theme === 'dark') {
 			_heroImage.src = '/assets/images/home/dark-hero.jpg';
+		}
+		if (theme === 'default') {
+			_heroImage.src = '/assets/images/home/classic-hero.jpg';
 		}
 		if (theme === 'earth') {
 			_heroImage.src = '/assets/images/home/earth-hero.jpg';

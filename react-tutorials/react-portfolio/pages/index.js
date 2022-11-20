@@ -323,7 +323,7 @@ export default function Home() {
           </div>
         </div>
 
-        <nav className="fixed bottom-0 inset-x-0 flex justify-between text-xs text-white-100 bg-black font-gothamBold md:px-24 lg:px-80 2xl:px-96 3xl:px-128">
+        <nav className="fixed bottom-0 inset-x-0 flex justify-between text-xs text-white-100 bg-black font-gothamBold md:px-24 lg:px-48 3xl:px-128">
           <div className="w-full block py-2 px-3 text-center text-gray-400">
             <div class="group">
               <a href="#heroHeader" className="w-full">
