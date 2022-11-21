@@ -157,7 +157,9 @@ export default function Home() {
                     every fork project.
                   </li>
                   <li>3. Scope down 1st-level must have features.</li>
-                  <li>4. Mark dependencies towards other teams' topics.</li>
+                  <li>
+                    4. Mark dependencies towards other teams&apos; topics.
+                  </li>
                   <li>
                     5. Discuss with other team leads to Identify critical
                     blocker.
