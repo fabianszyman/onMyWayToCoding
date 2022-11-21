@@ -50,7 +50,7 @@ let rmitPage = "https://www.rmit.edu.vn/";
 let csufPage = "http://www.fullerton.edu/";
 
 export default function Home() {
-  let pageName = "Certifications & Recommendations";
+  let pageName = "Certifications & Awards";
   return (
     <div>
       <Head>
@@ -123,7 +123,7 @@ export default function Home() {
               />
             </div>
 
-            <h2 className="text-3xls p-4 pt-4 text-white ">Recommendations</h2>
+            <h2 className="text-3xls p-4 pt-4 text-white ">Awards</h2>
             <div
               id="myPortfolioItems"
               className=" font-gothamBold text-xs pb-20"

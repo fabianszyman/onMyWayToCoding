@@ -16,6 +16,9 @@ import { IoIosArrowBack } from "react-icons/io";
 import Link from "next/link";
 import Navbar from "../components/Navbar";
 
+let instagramLikeBotGitHubLink =
+  "https://github.com/fabianszyman/myinstagram-bot";
+
 export default function Home() {
   let pageName = "Instagram LikeBot";
   return (
@@ -31,7 +34,7 @@ export default function Home() {
           <div id="leftContainer" className="lg:col-span-4 bg-black">
             <div id="headerContainer" className=" lg:hidden">
               <h1 className=" font-gothamLight text-sm">Personal Project</h1>
-              <h2 className=" text-2xl ">My Instagram Bot</h2>
+              <h2 className=" text-2xl ">{pageName}</h2>
             </div>
 
             <div
@@ -45,7 +48,7 @@ export default function Home() {
                   className="rounded"
                 />
                 <a
-                  href="https://github.com/fabianszyman/myinstagram-bot"
+                  href={instagramLikeBotGitHubLink}
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -61,7 +64,7 @@ export default function Home() {
 
             <div id="headerContainer" className="hidden lg:inline-block pb-3">
               <h1 className=" font-gothamLight text-sm">Personal Project</h1>
-              <h2 className=" text-2xl ">My Instagram Bot</h2>
+              <h2 className=" text-2xl ">{pageName}</h2>
             </div>
             <div id="textContainer" className="pt-4">
               <div className="text-lg">Background:</div>
@@ -133,7 +136,7 @@ export default function Home() {
               <div className="text-lg pt-6">Github-Link:</div>
               <div className="font-gothamLight text-lg pt-1 pb-20">
                 <a
-                  href="https://github.com/fabianszyman/myinstagram-bot"
+                  href={instagramLikeBotGitHubLink}
                   className="underline hover:underline hover:text-green-500"
                 >
                   https://github.com/fabianszyman/myinstagram-bot
@@ -157,7 +160,7 @@ export default function Home() {
                   className="overflow-hidden rounded"
                 />
                 <a
-                  href="https://github.com/fabianszyman/myinstagram-bot"
+                  href={instagramLikeBotGitHubLink}
                   target="_blank"
                   rel="noreferrer"
                 >

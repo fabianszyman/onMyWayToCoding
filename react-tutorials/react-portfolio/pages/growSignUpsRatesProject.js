@@ -20,7 +20,7 @@ import Link from "next/link";
 import Navbar from "../components/Navbar";
 
 export default function Home() {
-  let pageName = "Increase Sign Ups Rate";
+  let pageName = "Grow sign ups rates";
   return (
     <div>
       <Head>
@@ -74,10 +74,8 @@ export default function Home() {
               <h3 className="pt-0">Executive summary:</h3>
               <div className="font-gothamLight text-lg pt-1">
                 <p className="pb-2">
-                  <span className=" font-gothamBold">
-                    Grew users-signup number from 900 per month by 30% MoM
-                  </span>{" "}
-                  by implementing an automated e-mail sending-process which
+                  Grew users-signup number from 900 per month by 30% MoM by
+                  implementing an automated e-mail sending-process which
                   informed cold leads about real customer inquiries on our
                   platform and their business growth potential.
                 </p>
@@ -137,7 +135,7 @@ export default function Home() {
                       className="underline hover:underline hover:text-green-500"
                     >
                       Google Places API
-                    </a>{" "}
+                    </a>
                     ).
                   </li>
                   <li>

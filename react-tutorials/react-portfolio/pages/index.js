@@ -143,7 +143,7 @@ export default function Home() {
                       objectfit="cover"
                     />
                     <div className="text-white max-w-lg w-40 text-ellipsis whitespace-nowrap overflow-hidden inline-block">
-                      Minimalistic Landing Page
+                      Minimalistic landing page - TBD englisch
                     </div>
                     <p className=" group-hover:text-white text-right w-28">
                       HTML|CSS
@@ -171,7 +171,7 @@ export default function Home() {
                       objectfit="cover"
                     />
                     <div className="text-white max-w-lg w-40 text-ellipsis whitespace-nowrap overflow-hidden inline-block">
-                      To Do App
+                      To do app - TBD englisch
                     </div>
                     <p className="group-hover:text-white text-right w-28">
                       React
@@ -199,7 +199,7 @@ export default function Home() {
                       objectfit="cover"
                     />
                     <div className="text-white max-w-lg w-40 text-ellipsis whitespace-nowrap overflow-hidden inline-block">
-                      Instagram LikeBot
+                      Instagram LikeBot - TBD englisch
                     </div>
                     <p className=" group-hover:text-white text-right w-28 text-ellipsis whitespace-nowrap overflow-hidden inline-block">
                       Node.js|JavaScript
@@ -293,7 +293,7 @@ export default function Home() {
           {/*SECTION: Certifications*/}
           <div id="certificationsSection" className="bg-black pb-20">
             <h2 className="text-3xls p-4 pt-4 text-white">
-              Certifications & Recommendations
+              Certifications & Awards
             </h2>
             <div id="myPortfolioItems" className=" font-gothamBold text-xs">
               <BigListItem
