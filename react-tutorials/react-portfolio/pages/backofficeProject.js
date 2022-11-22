@@ -62,117 +62,105 @@ export default function Home() {
               <h3 className="pt-0">Executive summary:</h3>
               <div className="font-gothamLight text-lg pt-1">
                 <p className="pb-2">
-                  Adding 3x the flexibility to future feature ideas by planning
-                  new IT-infrastructure, rebuilding 1st-level features and
-                  defining backbone services and their relevant API-endpoints,
-                  that future forks will be using as shared functionality.
-                  Delivering critical must have features on time by identifying
-                  blocking topics and coordinating 4 different IT-teams
-                  (1.Backend, 2.Frontend [iOS] 3.Frontend [Android] 4.Frontend
-                  [React]).
+                  Reduced business spent per year by 25k EUR by replacing our
+                  Salesforce integration with custom build back office features
+                  (e.g. call logs, e-mail inbox, ticketing system).
                 </p>
               </div>
               <h3>Background:</h3>
               <div className="font-gothamLight text-lg pt-1">
                 <p className="pb-2">
-                  During my first 3 year within CHECK24 Profis we had one
-                  IT-system, that included features for every category of
-                  services. Every new feature requirement had to be quite broad
-                </p>
-                <ul className="pb-2">
-                  <li className="pt-0">a) relevant for each service</li>
-                  <li>b) fitting - for each service</li>
-                </ul>
-                <p>
-                  When talking to service provider from different categories, we
-                  frequently came to the conclusion, that critical feature
-                  requests for service provider A were not solving issues for
-                  service provider B.
+                  When CHECH24 Profis started Salesforce was integrated within
+                  our internally built Backoffice application. While this was
+                  maybe useful for the beginning growth phase of the company, it
+                  was causing trouble when our product was getting more complex.
                 </p>
               </div>
               <h3>Problem:</h3>
               <div className="font-gothamLight text-lg pt-1">
                 <p className="pb-2">
-                  Customers needs are different between categories, so that the
-                  one IT system fits all approach was limiting new product
-                  ideas. Concrete example: A feature concept that would help
-                  moving companies to predict a better price was not beneficial
-                  to a personal trainer or english teacher, since their pricing
-                  structure is way simpler and usually consists of a hour-based
-                  price. Thus important feature requests:
+                  We constantly got the feedback from our Customer Support Team,
+                  that
                 </p>
                 <ul>
-                  <li className="pt-0">a) were getting deprioritized </li>
-                  <li>b) not able to bee implemented without workarounds</li>
+                  <li className="pt-0">
+                    a) our customer data in our internal Backoffice application
+                    is not consistent with the the Salesforce data.
+                  </li>
+                  <li>
+                    b) asynchronous data were triggering different function that
+                    e.g. send out Email accidentally.
+                  </li>
                 </ul>
               </div>
               <h3>Idea:</h3>
               <div className="font-gothamLight text-lg pt-1">
                 <p className="pb-2">
-                  Divide one overall IT system into three independent IT-silos
-                  (Mover, Craftsman, Lessons and Events), which have a very thin
-                  common ground using backbone services (Email, Account
-                  handling, Push Notifications, Payment Processing).
-                </p>
-                <p>
-                  Each page inside alle application needs to be identified as
-                  1st level (Portal-level - information that are collected from
-                  different forks, getting aggregated and displayed inside one
-                  1st-level page) or 2nd level (Fork-level - information e.g. a
-                  mover-pricelist, that are inside mover-fork and another
-                  personal trainer pricelist, that lays inside a lesson and
-                  events-fork. Fork IT-systems are completely decentralized and
-                  thus able to implement individual features.
-                </p>
-              </div>
-              <h3>Idea:</h3>
-              <div className="font-gothamLight text-lg pt-1">
-                <p className="pb-2">
-                  Building 1st-level Backoffice features from scratch (Define
-                  API endpoint structure + Design Frontend layouts)
-                </p>
-                <p>
-                  Building 1st-level Native App features - iOS / Android /
-                  Huawei (Define API endpoint structure + Design Frontend
-                  layouts)
+                  What if we are able to get rid of Salesforce completely, but
+                  implemented the functionality, which was used inside
+                  Salesforce.
                 </p>
               </div>
               <h3>Team:</h3>
               <div className="font-gothamLight text-lg pt-0">
                 <ul>
                   <li className="pt-1">1 UX designer</li>
-                  <li>3 Backend engineers</li>
-                  <li>4 iOS engineers</li>
-                  <li>6 Android engineers</li>
+                  <li>2 Backend engineers</li>
+                  <li>2 Frontend engineers (React)</li>
+                  <li>1 Assistent product manager</li>
                 </ul>
               </div>
               <h3>Process:</h3>
               <div className="font-gothamLight text-lg pt-0">
                 <ul>
                   <li className="pt-1">
-                    1. Create strategic roadmap including high level topics.
+                    1. 1.collecting qualitative data by talking to our Customer
+                    Service team.
                   </li>
                   <li>
-                    2. Define common 1st-level features, that need to be used by
-                    every fork project.
+                    2. Unterstanding feature usage while observing customer
+                    support employees as they do their work.
                   </li>
-                  <li>3. Scope down 1st-level must have features.</li>
+                  <li>3. Identify all critical features.</li>
                   <li>
-                    4. Mark dependencies towards other teams&apos; topics.
-                  </li>
-                  <li>
-                    5. Discuss with other team leads to Identify critical
-                    blocker.
-                  </li>
-                  <li>6. Split down must have features into smaller epics.</li>
-                  <li>
-                    7. Identify individual topics, that can be parallelized.
+                    4. Identify all critical data, which needs to be migrated.
                   </li>
                   <li>
-                    8. Estimate time for small topics including including
-                    IT-teams.
+                    5. Building Call Log feature for Inbound and Outbound Calls.
                   </li>
-                  <li>9. Update roadmap topics WoW with current status</li>
+                  <li>
+                    6. Building Inbound Email process that links a contact
+                    activity to relevant consumer or service provider account
+                    automatically.
+                  </li>
+                  <li>
+                    7. Building an Outbound Email sending tool, that is able to
+                    use email templates and creates an contact activity, which
+                    is can be linked a relative inbound Contact activity (call
+                    or email).
+                  </li>
+                  <li>
+                    8. Building a ticketing system, that can be linked to
+                    multiple contact activities.
+                  </li>
+                  <li>
+                    9. Adding a personal reminder function to the ticketing
+                    system by using a basic three column Kanban (To Do, In
+                    Progress, Done) approach, where I can see all the to dos
+                    (tickets) I need to work on today and set a reminder for the
+                    future, that moves the ticket in another column.
+                  </li>
+                  <li>
+                    10. Building a Note taking Feature to a user account, so
+                    that internal information can be shared between customer
+                    services and everyone is updated about critical insights to
+                    a person.
+                  </li>
+                  <li>
+                    11. Building a migration Job that imports all necessary data
+                    from Salesforce and maps it with all relevant new objects we
+                    defined inside our new Backoffice Features.
+                  </li>
                 </ul>
               </div>
             </div>
