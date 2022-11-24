@@ -138,7 +138,7 @@ export default function Home() {
           <div id="myPortfolioItems" className=" font-gothamBold text-xs">
             <BigListItem
               src={check24ProfisLogo}
-              title="Native messengers (iOS & Android) - TBD"
+              title="Native messengers (iOS & Android) - DONE"
               subline="CHECK24 Profis"
               durationText="2022"
               href={nativeMessengerProjectPage}
@@ -154,7 +154,7 @@ export default function Home() {
 
             <BigListItem
               src={check24ProfisLogo}
-              title="Backoffice project - TBD"
+              title="Backoffice project - DONE"
               subline="CHECK24 Profis"
               durationText="2021"
               href={backofficeProjectPage}

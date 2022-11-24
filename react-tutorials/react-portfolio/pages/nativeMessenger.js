@@ -62,86 +62,43 @@ export default function Home() {
               <h3 className="pt-0">Executive summary:</h3>
               <div className="font-gothamLight text-lg pt-1">
                 <p className="pb-2">
-                  Adding 3x the flexibility to future feature ideas by planning
-                  new IT-infrastructure, rebuilding 1st-level features and
-                  defining backbone services and their relevant API-endpoints,
-                  that future forks will be using as shared functionality.
-                  Delivering critical must have features on time by identifying
-                  blocking topics and coordinating 4 different IT-teams
-                  (1.Backend, 2.Frontend [iOS] 3.Frontend [Android] 4.Frontend
-                  [React]).
+                  Improved the usability by 4x by replacing integrated Web Views
+                  with 4 different native chat messengers including improved
+                  layouts and haptic features (e.g. add appointment, swipe to
+                  see message details).
                 </p>
               </div>
               <h3>Background:</h3>
               <div className="font-gothamLight text-lg pt-1">
                 <p className="pb-2">
-                  During my first 3 year within CHECK24 Profis we had one
-                  IT-system, that included features for every category of
-                  services. Every new feature requirement had to be quite broad
-                </p>
-                <ul className="pb-2">
-                  <li className="pt-0">a) relevant for each service</li>
-                  <li>b) fitting - for each service</li>
-                </ul>
-                <p>
-                  When talking to service provider from different categories, we
-                  frequently came to the conclusion, that critical feature
-                  requests for service provider A were not solving issues for
-                  service provider B.
+                  When we went live with our fork project, we were forced to
+                  disable all our native messenger.
                 </p>
               </div>
               <h3>Problem:</h3>
               <div className="font-gothamLight text-lg pt-1">
                 <p className="pb-2">
-                  Customers needs are different between categories, so that the
-                  one IT system fits all approach was limiting new product
-                  ideas. Concrete example: A feature concept that would help
-                  moving companies to predict a better price was not beneficial
-                  to a personal trainer or english teacher, since their pricing
-                  structure is way simpler and usually consists of a hour-based
-                  price. Thus important feature requests:
-                </p>
-                <ul>
-                  <li className="pt-0">a) were getting deprioritized </li>
-                  <li>b) not able to bee implemented without workarounds</li>
-                </ul>
-              </div>
-              <h3>Idea:</h3>
-              <div className="font-gothamLight text-lg pt-1">
-                <p className="pb-2">
-                  Divide one overall IT system into three independent IT-silos
-                  (Mover, Craftsman, Lessons and Events), which have a very thin
-                  common ground using backbone services (Email, Account
-                  handling, Push Notifications, Payment Processing).
-                </p>
-                <p>
-                  Each page inside alle application needs to be identified as
-                  1st level (Portal-level - information that are collected from
-                  different forks, getting aggregated and displayed inside one
-                  1st-level page) or 2nd level (Fork-level - information e.g. a
-                  mover-pricelist, that are inside mover-fork and another
-                  personal trainer pricelist, that lays inside a lesson and
-                  events-fork. Fork IT-systems are completely decentralized and
-                  thus able to implement individual features.
+                  One user (service provider) can have chats within different
+                  forks. How can we make sure that future forks are able to have
+                  a native messenger integration and make sure that the UX is
+                  similar.
                 </p>
               </div>
               <h3>Idea:</h3>
               <div className="font-gothamLight text-lg pt-1">
                 <p className="pb-2">
-                  Building 1st-level Backoffice features from scratch (Define
-                  API endpoint structure + Design Frontend layouts)
-                </p>
-                <p>
-                  Building 1st-level Native App features - iOS / Android /
-                  Huawei (Define API endpoint structure + Design Frontend
-                  layouts)
+                  Instead of building the native messenger features 3 times
+                  within different forks, the approach was to create an overall
+                  Native Messenger project, that has all possible message types
+                  integrated and can be used easily bundled into their Fork.
                 </p>
               </div>
+
               <h3>Team:</h3>
               <div className="font-gothamLight text-lg pt-0">
                 <ul>
                   <li className="pt-1">1 UX designer</li>
-                  <li>3 Backend engineers</li>
+                  <li>1 Backend engineers</li>
                   <li>4 iOS engineers</li>
                   <li>6 Android engineers</li>
                 </ul>
@@ -150,29 +107,21 @@ export default function Home() {
               <div className="font-gothamLight text-lg pt-0">
                 <ul>
                   <li className="pt-1">
-                    1. Create strategic roadmap including high level topics.
+                    1. Identify all message types and improve layouts.
                   </li>
                   <li>
-                    2. Define common 1st-level features, that need to be used by
-                    every fork project.
-                  </li>
-                  <li>3. Scope down 1st-level must have features.</li>
-                  <li>
-                    4. Mark dependencies towards other teams&apos; topics.
+                    2. Define API specs together with Backend engineers from
+                    different forks.
                   </li>
                   <li>
-                    5. Discuss with other team leads to Identify critical
-                    blocker.
+                    3. Build an independent Demo App, which can be used to QA
+                    the native messenger tickets without the need of creating a
+                    dependency towards any for.
                   </li>
+                  <li>4. Build and QA Backend endpoints.</li>
+                  <li>5. Build and QA Frontend components.</li>
                   <li>6. Split down must have features into smaller epics.</li>
-                  <li>
-                    7. Identify individual topics, that can be parallelized.
-                  </li>
-                  <li>
-                    8. Estimate time for small topics including including
-                    IT-teams.
-                  </li>
-                  <li>9. Update roadmap topics WoW with current status</li>
+                  <li>7.Coordinate integration into first fork project.</li>
                 </ul>
               </div>
             </div>
@@ -192,18 +141,6 @@ export default function Home() {
                   alt="fallback-text"
                   className="overflow-hidden rounded"
                 />
-                <a
-                  href="https://github.com/fabianszyman/onMyWayToCoding/tree/main/html-css-tutorials/minimalistic-website"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button className=" absolute top-4 right-4 text-black bg-white rounded-full px-7 py-3 hover:scale-105 border border-gray-400 hover:border-green-500  m-2 ">
-                    <div className="flex items-center gap-2">
-                      <BsGithub />
-                      Github
-                    </div>
-                  </button>
-                </a>
               </div>
             </div>
           </div>

@@ -44,7 +44,7 @@ export default function Home() {
             <div id="myPortfolioItems" className=" font-gothamBold text-xs">
               <BigListItem
                 src={check24ProfisLogo}
-                title="Backoffice project - TBD"
+                title="Backoffice project - DONE"
                 subline="CHECK24 Profis"
                 durationText="2021"
                 href={backofficeProjectPage}
