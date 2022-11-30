@@ -65,15 +65,16 @@ export default function Home() {
                 durationText="January 2022 - Present"
                 href={documentUploaderProjectPage}
               />
-              */}
+             
 
               <BigListItem
                 src={check24ProfisLogo}
                 title="Invoice feature - TBD"
                 subline="CHECK24 Profis"
                 durationText="2020"
-                href={invoiceProjectPage}
+                href={invoiceProjectPage}                
               />
+               */}
             </div>
           </div>
         </div>

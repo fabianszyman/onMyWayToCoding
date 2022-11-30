@@ -170,15 +170,7 @@ export default function Home() {
 
             <BigListItem
               src={check24ProfisLogo}
-              title="Invoice feature - TBD"
-              subline="CHECK24 Profis"
-              durationText="2020"
-              href={invoiceProjectPage}
-            />
-
-            <BigListItem
-              src={check24ProfisLogo}
-              title="Question editor - TBD"
+              title="Question editor - DONE"
               subline="CHECK24 Profis"
               durationText="2019"
               href={questionEditorPage}
