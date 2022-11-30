@@ -37,6 +37,8 @@ let crashCourseOnPython =
   "https://www.coursera.org/account/accomplishments/certificate/Q7JSQHAYXBLD";
 let frontendWebUIBootstrap =
   "https://www.coursera.org/account/accomplishments/certificate/4AXBCMRR3HXH";
+let check24excellenceURL =
+  "https://jobs.check24.de/de/blog/check24-excellence-programm/";
 
 export default function Home() {
   return (
@@ -293,23 +295,22 @@ export default function Home() {
           {/*SECTION: Certifications*/}
           <div id="certificationsSection" className="bg-black pb-20">
             <h2 className="text-3xls p-4 pt-4 text-white">
-              Certifications & Awards
+              Awards & Certifications
             </h2>
             <div id="myPortfolioItems" className=" font-gothamBold text-xs">
               <BigListItem
-                src={courseraLogo}
-                title="Front-End Web UI Frameworks and Tools: Bootstrap 4"
-                subline="Coursera"
-                durationText="Issued Januar 2022"
-                href={frontendWebUIBootstrap}
+                src={check24ProfisLogo}
+                title="Excellence Programm"
+                subline="CHECK24 Top 10% Performance"
+                durationText="2023"
+                href={check24excellenceURL}
               />
-
               <BigListItem
-                src={googleLogo}
-                title="Google IT Automation with Python"
-                subline="Google"
-                durationText="Issued October 2021"
-                href={googleItAutomationWithPython}
+                src={check24ProfisLogo}
+                title="Excellence Programm"
+                subline="CHECK24 Top 10% Performance"
+                durationText="2019"
+                href={check24excellenceURL}
               />
 
               <div className="flex justify-center max-w-xl py-2">

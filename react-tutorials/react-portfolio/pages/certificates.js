@@ -30,6 +30,8 @@ let bvbPage = "https://www.berliner-volksbank.de/homepage.html";
 let ibmiXPage = "https://ibmix.de/en/";
 let btuPage = "https://www.b-tu.de/";
 let auto1GroupPage = "https://www.auto1-group.com/";
+let check24excellenceURL =
+  "https://jobs.check24.de/de/blog/check24-excellence-programm/";
 let googleItAutomationWithPython =
   "https://www.coursera.org/account/accomplishments/specialization/certificate/RDCB66AKZR6E";
 let crashCourseOnPython =
@@ -64,8 +66,29 @@ export default function Home() {
         {/*SECTION: Certificates*/}
         <div className="w-screen pt-14">
           <div id="certificationsHistorySection" className="bg-black">
-            <h2 className="text-3xls p-4 text-white">Certifications</h2>
-            <div id="myPortfolioItems" className=" font-gothamBold text-xs">
+            <h2 className="text-3xls p-4 text-white">Awards</h2>
+            <div id="myPortfolioItems" className=" font-gothamBold text-xs ">
+              <BigListItem
+                src={check24ProfisLogo}
+                title="Excellence Programm"
+                subline="CHECK24 Top 10% Performance"
+                durationText="2023"
+                href={check24excellenceURL}
+              />
+              <BigListItem
+                src={check24ProfisLogo}
+                title="Excellence Programm"
+                subline="CHECK24 Top 10% Performance"
+                durationText="2019"
+                href={check24excellenceURL}
+              />
+            </div>
+
+            <h2 className="text-3xls p-4 text-white ">Certifications</h2>
+            <div
+              id="myPortfolioItems"
+              className=" font-gothamBold text-xs pb-20"
+            >
               <BigListItem
                 src={courseraLogo}
                 title="Front-End Web UI Frameworks and Tools: Bootstrap 4"
@@ -120,28 +143,6 @@ export default function Home() {
                 subline="Coursera"
                 durationText="Issued May 2021"
                 href={crashCourseOnPython}
-              />
-            </div>
-
-            <h2 className="text-3xls p-4 pt-4 text-white ">Awards</h2>
-            <div
-              id="myPortfolioItems"
-              className=" font-gothamBold text-xs pb-20"
-            >
-              <BigListItem
-                src={rmitLogo}
-                title="RMIT University"
-                subline="Vietnam"
-                durationText="October 2016 - January 2017"
-                href={rmitPage}
-              />
-
-              <BigListItem
-                src={csufLogo}
-                title="California State University (CSUF)"
-                subline="Fullerton"
-                durationText="August 2013 - December 2013"
-                href={csufPage}
               />
             </div>
           </div>
