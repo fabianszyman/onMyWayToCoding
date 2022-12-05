@@ -46,7 +46,7 @@ export default function Home() {
             <div id="myPortfolioItems" className=" font-gothamBold text-xs">
               <BigListItem
                 src={btuLogoImage}
-                title="MSc Economics and Engenieering"
+                title="MSc Economics and Engineering"
                 subline="BTU Cottbus - Senftenberg"
                 durationText="October 2015 - March 2018"
                 href={btuPage}
@@ -54,7 +54,7 @@ export default function Home() {
 
               <BigListItem
                 src={btuLogoImage}
-                title="BSc Economics and Engenieering"
+                title="BSc Economics and Engineering"
                 subline="BTU Cottbus - Senftenberg"
                 durationText="October 2011 - July 2015"
                 href={btuPage}
