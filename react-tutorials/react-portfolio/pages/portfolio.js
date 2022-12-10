@@ -178,7 +178,7 @@ export default function Home() {
 
             <BigListItem
               src={check24ProfisLogo}
-              title="Payment process (Stripe) - TBD"
+              title="Payment process (Stripe) - DONE"
               subline="CHECK24 Profis"
               durationText="2018 - 2019"
               href={paymentProcessProjectPage}
