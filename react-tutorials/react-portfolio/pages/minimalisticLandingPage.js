@@ -42,7 +42,7 @@ export default function Home() {
 
             <div
               id="imageContainer"
-              className="pt-2 lg:pt-12 w-auto h-1/3 rounded lg:hidden overflow-hidden relative"
+              className="pt-2 lg:pt-12 w-auto rounded lg:hidden overflow-hidden relative"
             >
               <div>
                 <Image
@@ -69,7 +69,7 @@ export default function Home() {
               <h1 className=" font-gothamLight text-sm">Personal Project</h1>
               <h2 className=" text-2xl ">{pageName}</h2>
             </div>
-            <div id="textContainer" className="pt-4">
+            <div id="textContainer" className="pt-2">
               <div className="text-lg">Executive summary:</div>
               <div className="font-gothamLight text-lg pt-1">
                 <p className="pb-2">
