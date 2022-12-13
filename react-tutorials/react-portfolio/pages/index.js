@@ -145,7 +145,7 @@ export default function Home() {
                       objectfit="cover"
                     />
                     <div className="text-white max-w-lg w-40 text-ellipsis whitespace-nowrap overflow-hidden inline-block">
-                      Minimalistic landing page - TBD englisch
+                      Minimalistic landing page
                     </div>
                     <p className=" group-hover:text-white text-right w-28">
                       HTML|CSS

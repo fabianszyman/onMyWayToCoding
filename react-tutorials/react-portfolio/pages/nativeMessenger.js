@@ -30,8 +30,8 @@ export default function Home() {
       </Head>
       <main className="text-white font-gothamBold bg-black h-full break-words md:px-24 lg:px-40 2xl:px-48 ">
         <Navbar headerName={pageName} />
-        <div className=" bg-black px-4 grid grid-cols-1 lg:grid-cols-8 gap-6 py-20">
-          <div id="leftContainer" className="lg:col-span-4 bg-black">
+        <div className="float-none bg-black px-4 grid grid-cols-1 lg:grid-cols-8 gap-6 py-20">
+          <div id="leftContainer" className="lg:col-span-4 bg-black float-left">
             <div id="headerContainer" className=" lg:hidden">
               <h1 className=" font-gothamLight text-sm">
                 Work related project
@@ -129,7 +129,7 @@ export default function Home() {
 
           <div
             id="rightContainer"
-            className="lg:col-span-4 lg:py-4 bg-black hidden lg:inline-block"
+            className="lg:col-span-4 lg:py-4 bg-black hidden lg:inline-block float-right w-128"
           >
             <div
               id="imageContainer"
