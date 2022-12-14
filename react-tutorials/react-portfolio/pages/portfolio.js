@@ -59,7 +59,7 @@ export default function Home() {
                     />
                   </div>
                   <div className="w-6/12 py-4 px-3 text-left group-hover:text-white text-ellipsis whitespace-nowrap overflow-hidden">
-                    Minimalistic landing page - DONE
+                    Minimalistic landing page
                   </div>
                   <div className=" w-2/12 h-12 py-4 text-right group-hover:text-white text-ellipsis whitespace-nowrap overflow-hidden">
                     HTML|CSS
@@ -90,7 +90,7 @@ export default function Home() {
                     />
                   </div>
                   <div className="w-6/12 py-4 px-3 text-left group-hover:text-white text-ellipsis whitespace-nowrap overflow-hidden">
-                    To do app - TBD englisch
+                    To do list app
                   </div>
                   <div className=" w-2/12 h-12 py-4 text-right group-hover:text-white text-ellipsis whitespace-nowrap overflow-hidden">
                     React

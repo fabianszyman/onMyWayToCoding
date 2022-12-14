@@ -173,7 +173,7 @@ export default function Home() {
                       objectfit="cover"
                     />
                     <div className="text-white max-w-lg w-40 text-ellipsis whitespace-nowrap overflow-hidden inline-block">
-                      To do app - TBD englisch
+                      To do list app
                     </div>
                     <p className="group-hover:text-white text-right w-28">
                       React
