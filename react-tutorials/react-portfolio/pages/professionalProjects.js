@@ -44,7 +44,7 @@ export default function Home() {
             <div id="myPortfolioItems" className=" font-gothamBold text-xs">
               <BigListItem
                 src={check24ProfisLogo}
-                title="Backoffice project - DONE"
+                title="Backoffice project"
                 subline="CHECK24 Profis"
                 durationText="2021"
                 href={backofficeProjectPage}
@@ -52,7 +52,7 @@ export default function Home() {
 
               <BigListItem
                 src={check24ProfisLogo}
-                title="Grow sign ups rates - DONE"
+                title="Grow sign ups rates"
                 subline="CHECK24 Profis"
                 durationText="2020"
                 href={growSignUpsRatesProjectPage}

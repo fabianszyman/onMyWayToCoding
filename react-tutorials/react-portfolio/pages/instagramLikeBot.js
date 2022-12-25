@@ -15,9 +15,17 @@ import { BsThreeDots, BsFillPlayFill, BsGithub } from "react-icons/bs";
 import { IoIosArrowBack } from "react-icons/io";
 import Link from "next/link";
 import Navbar from "../components/Navbar";
+let check24ProfisURL = "https://www.check24.de/profis/";
+let playwirghtjsURL = "https://playwright.dev/";
+let instagramBusinessAccountURL =
+  "https://www.instagram.com/sneaker_mania_berlin/";
 
 let instagramLikeBotGitHubLink =
   "https://github.com/fabianszyman/myinstagram-bot";
+
+let mongoDBURL = "https://www.mongodb.com/";
+
+let expressjsURL = "https://expressjs.com/";
 
 export default function Home() {
   let pageName = "Instagram LikeBot";
@@ -67,54 +75,71 @@ export default function Home() {
               <h2 className=" text-2xl ">{pageName}</h2>
             </div>
             <div id="textContainer" className="pt-4">
-              <div className="text-lg">Background:</div>
+              <div className="text-lg">Executive summary:</div>
               <div className="font-gothamLight text-lg pt-1">
                 <p className="pb-2">
-                  Während meiner Zeit bei CHECK24 Profis kam ich zum ersten mal
-                  mit dem Thema Web-Crawler und WebScraping in Kontakt. Als ich
-                  mich näher mit dem Thema auseinandergesetzt habe, merkte ich
-                  wie vielseitig die Möglichkeiten mittlerweile sind sowohl
-                  Klick-Flows als auch das Daten sammeln externer Seiten zu
-                  automatisieren.
-                </p>
-
-                <p>
-                  Da mit das Thema Automatisierung so sehr faszinierte, suchte
-                  ich mir ein konkretes Projekt, um unterschiedliche Ansätze
-                  besser zu verstehen.
+                  Scaled my business Instagram account to more than 8.8k
+                  follower by creating a script, that does human-like
+                  interactions (e.g. liking, commenting and following).
                 </p>
               </div>
-              <div className="text-lg pt-6">Idee:</div>
+              <div className="text-lg pt-6">Background:</div>
               <div className="font-gothamLight text-lg pt-1">
                 <p>
-                  Als Instagram Nutzer soll es mir möglich sein, bestimmte
-                  Such-Parameter einzugeben und damit ein Script zu starten,
-                  dass auf Grundlage meiner eingegebenen Input-Parametern
-                  automatisiert die neusten Instagram Post zu bestimmten
-                  Hashtags liked.
+                  In my time at{" "}
+                  <a
+                    href={check24ProfisURL}
+                    className="underline hover:underline hover:text-green-500"
+                  >
+                    CHECK24 Profis
+                  </a>{" "}
+                  I first got in touch with the Node.js library{" "}
+                  <a
+                    href={playwirghtjsURL}
+                    className="underline hover:underline hover:text-green-500"
+                  >
+                    Playwright.js
+                  </a>
+                  . After realizing how easy it is to automate click funnels, I
+                  wanted to use this power of automation and mock human like
+                  interaction for my{" "}
+                  <a
+                    href={instagramBusinessAccountURL}
+                    className="underline hover:underline hover:text-green-500"
+                  >
+                    Instagram business account
+                  </a>
+                  .
+                </p>
+              </div>
+              <div className="text-lg pt-6">Idea:</div>
+              <div className="font-gothamLight text-lg pt-1">
+                <p className="pb-2">
+                  As a user, I should be able to define an array of prompts,
+                  that will be typed in inside the search input. After clicking
+                  on search, the script should select the latest entry and
+                  either like it, write a comment or follow the user if the user
+                  is not already followed.
                 </p>
               </div>
               <div className="text-lg pt-6">Process:</div>
-              <div className="font-gothamLight text-lg pt-1">
+              <div className="font-gothamLight text-lg">
                 <ul>
+                  <li>1. Create HTML Frontend Input area.</li>
                   <li>
-                    1. Bau einer HTML Seite, um Input Parameter entgegen zu
-                    nehmen.
-                  </li>
-                  <li>
-                    2. Erstellen eine{" "}
+                    2. Build{" "}
                     <a
-                      href="https://www.mongodb.com/"
+                      href={mongoDBURL}
                       className="underline hover:underline hover:text-green-500"
                     >
                       MongoDB
                     </a>{" "}
-                    Datenbank (Backend aufsetzen).
+                    database.
                   </li>
                   <li>
-                    3. Definition und bau mehrerer API Endpunkte mit Hilfe von{" "}
+                    3. Define API endpoints with{" "}
                     <a
-                      href="https://expressjs.com/"
+                      href={expressjsURL}
                       className="underline hover:underline hover:text-green-500"
                     >
                       Express.js
@@ -122,15 +147,16 @@ export default function Home() {
                     .
                   </li>
                   <li>
-                    4. Bau der Automatisierungs-Logiken mit Hilfe von{" "}
+                    4. Create functions using{" "}
                     <a
-                      href="https://playwright.dev/"
-                      className=" underline hover:underline hover:text-green-500"
+                      href={playwirghtjsURL}
+                      className="underline hover:underline hover:text-green-500"
                     >
                       Playwright.js
                     </a>
                     .
                   </li>
+                  <li>5. Connect all parts together.</li>
                 </ul>
               </div>
               <div className="text-lg pt-6">Github-Link:</div>

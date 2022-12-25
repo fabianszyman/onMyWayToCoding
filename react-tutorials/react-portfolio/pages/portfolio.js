@@ -119,7 +119,7 @@ export default function Home() {
                     />
                   </div>
                   <div className="w-5/12 py-4 px-3 text-left group-hover:text-white text-ellipsis whitespace-nowrap overflow-hidden">
-                    Instagram LikeBot - TBD englisch
+                    Instagram LikeBot
                   </div>
                   <div className=" w-3/12 h-12 py-4 text-right group-hover:text-white text-ellipsis whitespace-nowrap overflow-hidden">
                     Node.js|JavaScript
@@ -146,7 +146,7 @@ export default function Home() {
 
             <BigListItem
               src={check24ProfisLogo}
-              title="Fork project - DONE"
+              title="Fork project"
               subline="CHECK24 Profis"
               durationText="2021 - 2022"
               href={forkProjectPage}
@@ -154,7 +154,7 @@ export default function Home() {
 
             <BigListItem
               src={check24ProfisLogo}
-              title="Backoffice project - DONE"
+              title="Backoffice project"
               subline="CHECK24 Profis"
               durationText="2021"
               href={backofficeProjectPage}
@@ -162,7 +162,7 @@ export default function Home() {
 
             <BigListItem
               src={check24ProfisLogo}
-              title="Grow sign ups rates - DONE"
+              title="Grow sign ups rates "
               subline="CHECK24 Profis"
               durationText="2020"
               href={growSignUpsRatesProjectPage}
