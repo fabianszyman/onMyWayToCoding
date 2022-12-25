@@ -94,7 +94,7 @@ export default function Home() {
                   client, so there is no need to connect to a backend server.
                 </p>
               </div>
-              <h3>Idea:</h3>
+              <h3>Process:</h3>
               <div className="font-gothamLight text-lg pt-0">
                 <ul>
                   <li className="pt-1">1. Create a React.js file.</li>
@@ -123,7 +123,7 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <div className="text-lg pt-6">Github-Link:</div>
+              <h3 className="pt-6">Github-Link:</h3>
               <div className="font-gothamLight text-lg pt-1 pb-20">
                 <a
                   href={toDoAppGitHubLink}

@@ -201,7 +201,7 @@ export default function Home() {
                       objectfit="cover"
                     />
                     <div className="text-white max-w-lg w-40 text-ellipsis whitespace-nowrap overflow-hidden inline-block">
-                      Instagram LikeBot - TBD englisch
+                      Instagram LikeBot
                     </div>
                     <p className=" group-hover:text-white text-right w-28 text-ellipsis whitespace-nowrap overflow-hidden inline-block">
                       Node.js|JavaScript

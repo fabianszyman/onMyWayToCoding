@@ -114,7 +114,7 @@ export default function Home() {
                   common ground using backbone services (Email, Account
                   handling, Push Notifications, Payment Processing).
                 </p>
-                <p>
+                <p className="pb-2">
                   Each page inside alle application needs to be identified as
                   1st level (Portal-level - information that are collected from
                   different forks, getting aggregated and displayed inside one
@@ -123,18 +123,6 @@ export default function Home() {
                   personal trainer pricelist, that lays inside a lesson and
                   events-fork. Fork IT-systems are completely decentralized and
                   thus able to implement individual features.
-                </p>
-              </div>
-              <h3>Idea:</h3>
-              <div className="font-gothamLight text-lg pt-1">
-                <p className="pb-2">
-                  Building 1st-level Backoffice features from scratch (Define
-                  API endpoint structure + Design Frontend layouts)
-                </p>
-                <p>
-                  Building 1st-level Native App features - iOS / Android /
-                  Huawei (Define API endpoint structure + Design Frontend
-                  layouts)
                 </p>
               </div>
               <h3>Team:</h3>

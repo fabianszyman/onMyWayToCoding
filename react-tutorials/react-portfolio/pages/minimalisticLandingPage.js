@@ -70,14 +70,15 @@ export default function Home() {
               <h2 className=" text-2xl ">{pageName}</h2>
             </div>
             <div id="textContainer" className="pt-2">
-              <div className="text-lg">Executive summary:</div>
+              <h3 className="pt-0">Executive summary:</h3>
+
               <div className="font-gothamLight text-lg pt-1">
                 <p className="pb-2">
                   Built a landing page for a yoga studio using basic HTML, CSS
                   and JavaScript.
                 </p>
               </div>
-              <div className="text-lg pt-6">Background:</div>
+              <h3>Background:</h3>
               <div className="font-gothamLight text-lg pt-1">
                 <p>
                   I haven&apos;t written basic HTML, CSS since quite a while
@@ -85,7 +86,7 @@ export default function Home() {
                   responsive landing page project.
                 </p>
               </div>
-              <div className="text-lg pt-6">Idea:</div>
+              <h3>Idea:</h3>
               <div className="font-gothamLight text-lg pt-1">
                 <p>
                   Use a project, that can be done using HTML, CSS. In addition
@@ -100,7 +101,7 @@ export default function Home() {
                   .
                 </p>
               </div>
-              <div className="text-lg pt-6">Process:</div>
+              <h3>Process:</h3>
               <div className="font-gothamLight text-lg pt-1">
                 <ul>
                   <li>1. Create basic Elements in basic HTML.</li>
@@ -123,7 +124,7 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <div className="text-lg pt-6">Github-Link:</div>
+              <h3 className="pt-6">Github-Link:</h3>
               <div className="font-gothamLight text-lg pt-1 pb-20">
                 <a
                   href={minimalisticLPGitHubLink}

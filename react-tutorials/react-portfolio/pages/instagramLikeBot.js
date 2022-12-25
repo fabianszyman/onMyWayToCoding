@@ -75,7 +75,7 @@ export default function Home() {
               <h2 className=" text-2xl ">{pageName}</h2>
             </div>
             <div id="textContainer" className="pt-4">
-              <div className="text-lg">Executive summary:</div>
+              <h3 className="pt-0">Executive summary:</h3>
               <div className="font-gothamLight text-lg pt-1">
                 <p className="pb-2">
                   Scaled my business Instagram account to more than 8.8k
@@ -83,7 +83,7 @@ export default function Home() {
                   interactions (e.g. liking, commenting and following).
                 </p>
               </div>
-              <div className="text-lg pt-6">Background:</div>
+              <h3>Background:</h3>
               <div className="font-gothamLight text-lg pt-1">
                 <p>
                   In my time at{" "}
@@ -112,7 +112,7 @@ export default function Home() {
                   .
                 </p>
               </div>
-              <div className="text-lg pt-6">Idea:</div>
+              <h3>Idea:</h3>
               <div className="font-gothamLight text-lg pt-1">
                 <p className="pb-2">
                   As a user, I should be able to define an array of prompts,
@@ -122,7 +122,8 @@ export default function Home() {
                   is not already followed.
                 </p>
               </div>
-              <div className="text-lg pt-6">Process:</div>
+              <h3>Process:</h3>
+
               <div className="font-gothamLight text-lg">
                 <ul>
                   <li>1. Create HTML Frontend Input area.</li>
@@ -159,7 +160,7 @@ export default function Home() {
                   <li>5. Connect all parts together.</li>
                 </ul>
               </div>
-              <div className="text-lg pt-6">Github-Link:</div>
+              <h3 className="pt-6">Github-Link:</h3>
               <div className="font-gothamLight text-lg pt-1 pb-20">
                 <a
                   href={instagramLikeBotGitHubLink}
