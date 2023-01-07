@@ -6,6 +6,7 @@ import reaectToDoAppImage from "../public/reactToDoAppImage.png";
 import minimalisticLandingPageImage from "../public/minimalisticLandingPage.png";
 import minimalisticLPBigImage from "../public/minimalisticLP_bigImage.png";
 import minimalisticLPSmallImage from "../public/minimalisticLP_smallImage.png";
+import nativeMessengerImage from "../public/native_Messenger.png";
 import loginPage from "../public/toDoApp/loginPage.png";
 import loginPageMobile from "../public/toDoApp/loginHTML.png";
 import check24ProfisLogo from "../public/check24ProfisLogo.png";
@@ -45,7 +46,7 @@ export default function Home() {
             >
               <div className="relative">
                 <Image
-                  src={minimalisticLPBigImage}
+                  src={nativeMessengerImage}
                   alt="fallback-text"
                   className="rounded"
                 />
@@ -137,7 +138,7 @@ export default function Home() {
             >
               <div className="relative">
                 <Image
-                  src={minimalisticLPSmallImage}
+                  src={nativeMessengerImage}
                   alt="fallback-text"
                   className="overflow-hidden rounded"
                 />

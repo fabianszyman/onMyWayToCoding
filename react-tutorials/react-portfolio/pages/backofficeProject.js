@@ -6,6 +6,7 @@ import reaectToDoAppImage from "../public/reactToDoAppImage.png";
 import minimalisticLandingPageImage from "../public/minimalisticLandingPage.png";
 import minimalisticLPBigImage from "../public/minimalisticLP_bigImage.png";
 import minimalisticLPSmallImage from "../public/minimalisticLP_smallImage.png";
+import backofficeImage from "../public/backoffice.png";
 import loginPage from "../public/toDoApp/loginPage.png";
 import loginPageMobile from "../public/toDoApp/loginHTML.png";
 import check24ProfisLogo from "../public/check24ProfisLogo.png";
@@ -45,7 +46,7 @@ export default function Home() {
             >
               <div className="relative">
                 <Image
-                  src={minimalisticLPBigImage}
+                  src={backofficeImage}
                   alt="fallback-text"
                   className="rounded"
                 />
@@ -176,22 +177,10 @@ export default function Home() {
             >
               <div className="relative">
                 <Image
-                  src={minimalisticLPSmallImage}
+                  src={backofficeImage}
                   alt="fallback-text"
                   className="overflow-hidden rounded"
                 />
-                <a
-                  href="https://github.com/fabianszyman/onMyWayToCoding/tree/main/html-css-tutorials/minimalistic-website"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button className=" absolute top-4 right-4 text-black bg-white rounded-full px-7 py-3 hover:scale-105 border border-gray-400 hover:border-green-500  m-2 ">
-                    <div className="flex items-center gap-2">
-                      <BsGithub />
-                      Github
-                    </div>
-                  </button>
-                </a>
               </div>
             </div>
           </div>
